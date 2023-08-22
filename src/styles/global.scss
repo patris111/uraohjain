@@ -1,0 +1,97 @@
+// Global styling
+
+:root {
+  // Main color scheme
+  --uraohjain-white: #ffffff;
+  --uraohjain-black: #000000;
+  --uraohjain-pink: #f7bfc9;
+  --uraohjain-burgundy: #701c3e;
+  --uraohjain-green: #008089;
+  --uraohjain-yellow: #ffdfac;
+
+  // Font family & font sizes
+  --base-font-size: 1.3rem;
+  --base-font-size-mobile: 1.1rem;
+  --uraohjain-main-font: Arial, sans-serif;
+}
+
+/* Box-sizing reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-family: var(--uraohjain-main-font);
+}
+html {
+  /* Typography reset */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  /* Lists reset */
+  ul,
+  ol {
+    list-style: none;
+  }
+
+  /* Links reset */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  /* Form elements reset */
+  input,
+  textarea,
+  button,
+  select {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none;
+    font-family: inherit;
+    font-size: inherit;
+  }
+
+  /* Reset headings to have consistent margins */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    color: var(--uraohjain-burgundy);
+    font-family: var(--uraohjain-main-font);
+  }
+
+  /* Reset some default styles for lists */
+  ul,
+  ol {
+    padding-left: 0;
+  }
+
+  /* Reset default margins for paragraphs */
+  p {
+    margin: 0;
+  }
+
+  /* Images reset */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Reset form field and button styles for consistency */
+  input,
+  textarea,
+  button {
+    appearance: none;
+  }
+}
