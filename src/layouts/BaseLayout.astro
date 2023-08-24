@@ -1,5 +1,5 @@
 ---
-import '../styles/global.scss';
+import '../styles/index.scss';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 const { pageTitle } = Astro.props;
@@ -17,8 +17,9 @@ const { pageTitle } = Astro.props;
     <header>
       <Header />
     </header>
-    <h1>{pageTitle}</h1>
-    <slot />
+    <div class='main-wrapper'>
+      <slot />
+    </div>
     <footer>
       <Footer />
     </footer>

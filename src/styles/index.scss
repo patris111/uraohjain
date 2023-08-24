@@ -1,5 +1,35 @@
 @import 'global';
 
+// Common elements
+html {
+  h1 {
+    font-size: 2.5rem !important;
+  }
+  h3 {
+    font-size: 1.9rem;
+    font-weight: 700;
+  }
+
+  p {
+    color: var(--uraohjain-burgundy);
+  }
+}
+
+// Others
+.main-wrapper {
+  padding: 4rem;
+}
+
+.benefits-list {
+  background-color: var(--uraohjain-pink);
+  padding: 4rem;
+  color: var(--uraohjain-burgundy);
+
+  ul > li {
+    margin: 2.5rem 0;
+  }
+}
+
 // Components styling
 .navbar {
   background-color: var(--uraohjain-green);
