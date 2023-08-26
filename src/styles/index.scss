@@ -1,9 +1,27 @@
 @import 'global';
 
+// Background colors scheme
+.burgundy-bg {
+  background: var(--uraohjain-burgundy);
+}
+.green-bg {
+  background: var(--uraohjain-green);
+}
+.yellow-bg {
+  background: var(--uraohjain-yellow);
+}
+// Font colors scheme
+.green-color {
+  color: var(--uraohjain-green);
+}
 // Common elements
 html {
   h1 {
     font-size: 2.5rem !important;
+  }
+  h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
   }
   h3 {
     font-size: 1.9rem;
@@ -13,11 +31,17 @@ html {
   p {
     color: var(--uraohjain-burgundy);
   }
+  footer {
+    background-color: var(--uraohjain-white);
+    a {
+      color: var(--uraohjain-burgundy);
+    }
+  }
 }
 
 // Others
 .main-wrapper {
-  padding: 4rem;
+  padding: 4rem 5.5rem;
 }
 
 .benefits-list {
