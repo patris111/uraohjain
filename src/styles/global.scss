@@ -1,5 +1,4 @@
 // Global styling
-
 :root {
   // Main color scheme
   --uraohjain-white: #ffffff;
@@ -12,7 +11,7 @@
   // Font family & font sizes
   --base-font-size: 1.3rem;
   --base-font-size-mobile: 1.1rem;
-  --uraohjain-main-font: Arial, sans-serif;
+  --uraohjain-main-font: 'Nunito', sans-serif;
 }
 
 /* Box-sizing reset */
@@ -28,7 +27,6 @@
 html {
   /* Typography reset */
   body {
-    font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
   }
@@ -94,4 +92,13 @@ html {
   button {
     appearance: none;
   }
+}
+
+/* Register your custom font family and tell the browser where to find it. */
+@font-face {
+  font-family: 'Avenir';
+  src: url('/fonts/AvenirLTStd-Black.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
