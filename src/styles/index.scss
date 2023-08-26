@@ -10,7 +10,7 @@
 .yellow-bg {
   background: var(--uraohjain-yellow);
 }
-// Font colors scheme
+// Colors scheme
 .green-color {
   color: var(--uraohjain-green);
 }
@@ -33,6 +33,7 @@ html {
   }
   footer {
     background-color: var(--uraohjain-white);
+    padding: 4rem 5.5rem;
     a {
       color: var(--uraohjain-burgundy);
     }
@@ -52,6 +53,9 @@ html {
   ul > li {
     margin: 2.5rem 0;
   }
+}
+.footer-border {
+  border-top: solid 34px var(--uraohjain-pink);
 }
 
 // Components styling
