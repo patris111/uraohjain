@@ -34,6 +34,7 @@ html {
   footer {
     background-color: var(--uraohjain-white);
     padding: 4rem 5.5rem;
+
     a {
       color: var(--uraohjain-burgundy);
     }
@@ -56,6 +57,12 @@ html {
 }
 .footer-border {
   border-top: solid 34px var(--uraohjain-pink);
+}
+.footer-title {
+  color: var(--uraohjain-burgundy);
+  opacity: 1 !important;
+  font-size: 1rem;
+  margin-bottom: 1rem !important;
 }
 
 // Components styling
