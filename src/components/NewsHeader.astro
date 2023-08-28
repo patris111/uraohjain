@@ -1,0 +1,21 @@
+---
+import { formatDate } from '../js/utils';
+import { Picture } from '@astrojs/image/components';
+const { title, description, date, image } = Astro.props;
+---
+
+<header>
+  <div>
+    <p class='font-bold'>{formatDate(date)}</p>
+    <h1>{title}</h1>
+    <Picture
+      src={image.src}
+      alt={image.alt}
+      widths={[200, 400, 800]}
+      sizes='(max-width: 800px) 100vw, 800px'
+      aspectRatio='16:9'
+      format='webp'
+    />
+    <h3>{description}</h3>
+  </div>
+</header>

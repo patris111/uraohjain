@@ -1,38 +1,19 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import NewsCard from '../../components/NewsCard.astro';
+const allNews = await Astro.glob('./*.md');
 const pageTitle = 'Ajankohtaista';
 ---
 
---- import BaseLayout from '../../layouts/BaseLayout.astro'; const pageTitle = 'Ajankohtaista'; ---
-
 <BaseLayout pageTitle={pageTitle}>
-  <section class='text-center px-40'>
-    <h1 class='mb-10'>Ajankohtaista</h1>
-
-    <div class='text-2xl mb-20 leading-9'>
-      <ul>
-        <li><a href='/news/news-1'>News 1</a></li>
-        <li><a href='/news/news-2'>News 2</a></li>
-        <li><a href='/news/news-3'>News 3</a></li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Take test section -->
-  <section class='flex justify-around mb-16 mt-6'>
-    <div class='basis-3/5 green-bg py-8 px-12'>
-      <h3 class='text-white'>Kenelle Uraohjain+ -palvelu on?</h3>
-      <ul class='text-white list-disc ml-6 mt-4'>
-        <li>Olet suorittanut vähintään 2.asteen tutkinnon</li>
-        <li>Tavoitteesi on työllistyä ICT-, ohjelmistokehitys-, tai media-alalle</li>
-        <li>Suomen tai englanninkielen tasosi on vähintään B2</li>
-        <li>Olet ilmoittautunut työttömäksi työnhakijaksi</li>
-      </ul>
-    </div>
-    <div class='basis-2/5 yellow-bg ml-5 flex justify-center items-center'>
-      <h2 class='green-color underline'>
-        <a href=''>Tee testi ja <br /> ilmoittaudu!</a>
-      </h2>
+  <h1 class=''>Ajankohtaista</h1>
+  <section class='flex justify-center' aria-label='New Blog News'>
+    <div class='grid grid-cols-4 gap-8'>
+      {
+        allNews.map((news) => (
+          <NewsCard frontmatter={news.frontmatter} url={news.url} tagType='h3' />
+        ))
+      }
     </div>
   </section>
 </BaseLayout>

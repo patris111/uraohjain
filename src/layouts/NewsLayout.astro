@@ -1,18 +1,12 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-
-import { formatDate } from '../js/utils';
+import NewsHeader from '../components/NewsHeader.astro';
 const { frontmatter } = Astro.props;
 const { title, description, date, image } = frontmatter;
 ---
 
 <BaseLayout {title} {description}>
-  <header>
-    <div>
-      <h1>{title}</h1>
-      <p class='font-bold'>{formatDate(date)}</p>
-    </div>
-  </header>
+  <NewsHeader {title} {description} {date} {image} />
   <div>
     <div class='text-xl'>
       <slot />

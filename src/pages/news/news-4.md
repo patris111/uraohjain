@@ -1,12 +1,12 @@
 ---
 layout: '../../layouts/NewsLayout.astro'
-title: Ensimmäinen uutinen
-date: 2022-11-20
-author: Darnell McClure
-image: { src: '/img/news/news-1.jpg', alt: 'Two women sitting on sofas and working' }
-description: Roident aute ad in velit labore enim sit cillum ad mollit proident et qui. Esse sunt ullamco ullamco.
+title: Building an Astro Post Tag Component
+date: 2022-12-06
+author: Anna Dixon
+image: { src: '/img/news/news-4.jpg', alt: 'A picture of a coder' }
+description: In this project, we’ll build out a custom Astro component for post tags.
 draft: false
-category: Reference Docs
+category: Astro
 ---
 
 Nisi duis ex aliqua eu officia eiusmod duis magna pariatur. Irure laborum qui aliqua nulla esse cillum laborum aliquip nulla elit. Id id Lorem duis irure cillum culpa. Nulla sint et aliqua velit do. Nulla sit sit proident consectetur enim ullamco aliqua in reprehenderit ullamco officia.

@@ -1,0 +1,32 @@
+---
+// library imports
+import { Image } from '@astrojs/image/components';
+
+// utils imports
+import { formatDate } from '../js/utils';
+
+const { frontmatter, url, tagType } = Astro.props;
+
+const Tag = tagType;
+
+const { title, date, author, image, description, category } = frontmatter;
+---
+
+<article class=''>
+  <a href={url} aria-hidden='true' tabindex='-1'>
+    <Image
+      src={image.src}
+      alt={image.alt}
+      width='400'
+      height='250'
+      format='webp'
+      fit='cover'
+      quality={80}
+      aspectRatio='4:1'
+    />
+  </a>
+  <Tag class='h3'>
+    <a href={url}>{title}</a>
+  </Tag>
+  <p>{description}</p>
+</article>

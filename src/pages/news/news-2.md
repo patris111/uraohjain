@@ -1,9 +1,9 @@
 ---
 layout: '../../layouts/NewsLayout.astro'
-title: Running out of sample post ideas
+title: Running out of News ideas
 date: 2022-11-25
 author: Victoria Greenfelder
-image: { src: '/images/post-2.jpg', alt: 'A picture of a coder' }
+image: { src: '/img/news/news-2.jpg', alt: 'A picture of a coder' }
 description: Sometimes you just run out of ideas for sample blog posts. It’s no one’s fault, it’s just the way it is.
 draft: false
 category: General
