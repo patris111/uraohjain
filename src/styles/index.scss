@@ -83,4 +83,13 @@ html {
   a:hover {
     color: var(--uraohjain-pink);
   }
+  button {
+    border: solid 2px var(--uraohjain-pink);
+    padding: 0.5rem 2rem;
+    border-radius: 20px;
+  }
+  button:hover {
+    background-color: var(--uraohjain-pink);
+    font-weight: 800;
+  }
 }
