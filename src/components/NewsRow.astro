@@ -1,0 +1,15 @@
+---
+const { frontmatter, url, tagType } = Astro.props;
+
+const Tag = tagType;
+
+const { title, description } = frontmatter;
+---
+
+<article>
+  <a href={url} aria-hidden='true' tabindex='-1'> </a>
+  <Tag class='h3'>
+    <a href={url}>{title}</a>
+  </Tag>
+  <p>{description}</p>
+</article>

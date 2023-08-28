@@ -2,18 +2,15 @@
 // library imports
 import { Image } from '@astrojs/image/components';
 
-// utils imports
-import { formatDate } from '../js/utils';
-
-const { frontmatter, url, tagType } = Astro.props;
+const { frontmatter, url, tagType, showImage = 'block' } = Astro.props;
 
 const Tag = tagType;
 
-const { title, date, author, image, description, category } = frontmatter;
+const { title, date, author, image, description } = frontmatter;
 ---
 
-<article class=''>
-  <a href={url} aria-hidden='true' tabindex='-1'>
+<article>
+  <a href={url} aria-hidden='true' tabindex='-1' class={showImage}>
     <Image
       src={image.src}
       alt={image.alt}
@@ -28,5 +25,7 @@ const { title, date, author, image, description, category } = frontmatter;
   <Tag class='h3'>
     <a href={url}>{title}</a>
   </Tag>
-  <p>{description}</p>
+  <a href={url}>
+    <p>{description}</p>
+  </a>
 </article>

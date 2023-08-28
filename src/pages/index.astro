@@ -1,5 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import NewsCard from '../components/NewsCard.astro';
+const allNews = await Astro.glob('../pages/news/*.md');
 const pageTitle = 'Etusivu';
 ---
 
@@ -90,11 +92,29 @@ const pageTitle = 'Etusivu';
     </div>
   </section>
   <!-- Service path -->
-  <section class='flex justify-center items-center'>
-    <div class='flex-column'>
-      <h3>Palvelupolku</h3>
-      <p>Kesto 3-6kk</p>
-      <img src='/img/frontpage/service-path.png' alt='service-path' />
+  <section class='flex flex-col justify-center items-center'>
+    <h3>Palvelupolku</h3>
+    <p>Kesto 3-6kk</p>
+    <img src='/img/frontpage/service-path.png' alt='service-path' />
+  </section>
+  <!-- News section -->
+  <section>
+    <div class='flex justify-center'>
+      <h3 class='py-16'>Ajankohtaiset asiat</h3>
+    </div>
+    <div class='flex flex-col'>
+      {
+        allNews.map((news) => (
+          <div class='news-row'>
+            <NewsCard
+              showImage={'hidden'}
+              frontmatter={news.frontmatter}
+              url={news.url}
+              tagType='h3'
+            />
+          </div>
+        ))
+      }
     </div>
   </section>
 </BaseLayout>

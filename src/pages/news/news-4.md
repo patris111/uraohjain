@@ -1,6 +1,6 @@
 ---
 layout: '../../layouts/NewsLayout.astro'
-title: Building an Astro Post Tag Component
+title: Building an Astro Component
 date: 2022-12-06
 author: Anna Dixon
 image: { src: '/img/news/news-4.jpg', alt: 'A picture of a coder' }

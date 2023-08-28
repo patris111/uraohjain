@@ -8,7 +8,7 @@ const pageTitle = 'Ajankohtaista';
 <BaseLayout pageTitle={pageTitle}>
   <h1 class=''>Ajankohtaista</h1>
   <section class='flex justify-center' aria-label='New Blog News'>
-    <div class='grid grid-cols-4 gap-8'>
+    <div class='grid grid-cols-4 gap-4'>
       {
         allNews.map((news) => (
           <NewsCard frontmatter={news.frontmatter} url={news.url} tagType='h3' />
