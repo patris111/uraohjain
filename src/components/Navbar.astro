@@ -2,6 +2,17 @@
 import '../styles/index.scss';
 ---
 
+<script>
+  const nav = document.querySelector('.navbar');
+  const navLinks = nav?.querySelectorAll('a');
+  const currentURL = window.location.href;
+  navLinks?.forEach((link) => {
+    if (link.href === currentURL) {
+      link.classList.add('active');
+    }
+  });
+</script>
+
 <!-- Navbar -->
 <nav class='navbar shadow-lg'>
   <div class='max-w-fit mx-auto'>
@@ -9,13 +20,13 @@ import '../styles/index.scss';
       <div class='flex'>
         <div>
           <!-- Primary Navbar items -->
-          <div class='hidden md:flex items-center space-x-1'>
-            <a href='' class='py-4 px-4 mx-10 active'>Etusivu</a>
-            <a href='' class='py-4 px-14 transition duration-300'>Yrityksille</a>
-            <a href='' class='py-4 px-14 transition duration-300'>Ilmoittaudu</a>
-            <a href='' class='py-4 px-14 transition duration-300'>Ajankohtaista</a>
-            <a href='' class='py-4 px-14 transition duration-300'>Hanke</a>
-            <a href='' class='py-4 px-14 transition duration-300'>Yhteystiedot</a>
+          <div class='hidden md:flex items-center space-x-20'>
+            <a href='/'>Etusivu</a>
+            <a href='/companies'>Yrityksille</a>
+            <a href='/signup'>Ilmoittaudu</a>
+            <a href='/news'>Ajankohtaista</a>
+            <a href='/project'>Hanke</a>
+            <a href='/contact'>Yhteystiedot</a>
             <!-- <a href='' class='py-4 px-14 transition duration-300'>ENG</a> -->
             <button class='py-4 px-20'>EN</button>
           </div>

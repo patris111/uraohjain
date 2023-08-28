@@ -52,7 +52,7 @@ html {
   color: var(--uraohjain-burgundy);
 
   ul > li {
-    margin: 2.5rem 0;
+    margin: 1rem 0;
   }
 }
 .footer-border {
@@ -71,7 +71,10 @@ html {
   color: var(--uraohjain-white);
   font-size: 1.125rem;
 
-  .active {
+  a {
+    padding: 1rem;
+  }
+  a.active {
     color: var(--uraohjain-pink);
     border-bottom: solid 4px var(--uraohjain-pink);
     font-weight: 700;
