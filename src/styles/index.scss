@@ -18,10 +18,12 @@
 html {
   h1 {
     font-size: 2.5rem !important;
+    margin-bottom: 2rem;
   }
   h2 {
     font-size: 2.2rem;
     font-weight: 700;
+    margin: 2rem 0;
   }
   h3 {
     font-size: 1.9rem;
@@ -30,12 +32,16 @@ html {
 
   p {
     color: var(--uraohjain-burgundy);
+    padding: 1rem 0;
   }
   footer {
     background-color: var(--uraohjain-white);
-    padding: 4rem 5.5rem;
+    padding: 2rem 4rem 5.5rem 4rem;
 
     a {
+      color: var(--uraohjain-burgundy);
+    }
+    div {
       color: var(--uraohjain-burgundy);
     }
   }
@@ -43,7 +49,7 @@ html {
 
 // Others
 .main-wrapper {
-  padding: 4rem 5.5rem;
+  padding: 3.5rem 5.5rem;
 }
 
 .benefits-list {
