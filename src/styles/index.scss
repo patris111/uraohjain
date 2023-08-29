@@ -36,6 +36,11 @@ html {
     padding: 1rem 0;
     font-size: 1.3rem;
   }
+  ul,
+  ol {
+    color: var(--uraohjain-burgundy);
+    font-size: 1.3rem;
+  }
   footer {
     background-color: var(--uraohjain-white);
     padding: 2rem 4rem 5.5rem 4rem;
