@@ -29,6 +29,7 @@ html {
   h3 {
     font-size: 1.9rem;
     font-weight: 700;
+    margin: 1rem 0;
   }
 
   p {
@@ -61,7 +62,7 @@ html {
 
 .benefits-list {
   background-color: var(--uraohjain-pink);
-  padding: 4rem;
+  padding: 2rem 4rem;
   color: var(--uraohjain-burgundy);
 
   ul > li {

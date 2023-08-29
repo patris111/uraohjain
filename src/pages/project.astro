@@ -1,0 +1,51 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import NewsCard from '../components/NewsCard.astro';
+const allNews = await Astro.glob('../pages/news/*.md');
+const pageTitle = 'Hanke';
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <section>
+    <h3>
+      {pageTitle}
+    </h3>
+
+    <p class=''>
+      URAOHJAIN+-hanke keskittyy osaavaa työvoimaa etsivään IT-alaan sekä moniosaamista vaativaan
+      media-alaan. Pääkaupunkiseudulla aloille koulutettuja työttömiä on useita tuhansia. Samaan
+      aikaan työvoiman tarve etenkin IT-alalla on valtava. Hankkeen räätälöidyillä palveluilla
+      vastataan ko. alojen työvoiman kohtaanto-ongelmiin, työnantajien rekrytointihaasteisiin sekä
+      työntekijöille asetettaviin koulutus- ja osaamisvaatimuksiin. Hanke keskittyy nuorten ja
+      pitkäaikaistyöttömien työ- ja toimintakyvyn sekä työllistymisedellytysten vahvistamiseen.
+      Hankkeella haastetaan työnhakijat, työnantajat, työllisyyspalvelut ja oppilaitokset yhdessä
+      pohtimaan, kehittämään ja mallintamaan kestäviä työllisyysratkaisuja, joissa asiakkaan
+      osaaminen ja työnantajan tarpeet aidosti kohtaavat ja työllistyminen helpottuu. Hankkeen
+      tavoitteena on luoda uudenlainen kestävän työllistymisen malli.
+    </p>
+
+    <p class='font-bold'>Mallia kehitetään neljällä toisiinsa limittyvällä painopisteellä:</p>
+
+    <ol class='list-decimal pl-6'>
+      <li>asiakasohjauksen kehittämisellä nopeammin työllistymispliulle</li>
+      <li>yritysyhteistyön kehittäminen kestävien kumppanuuksien pohjalta</li>
+      <li>kokonaisvaltaisen ohjausmallin kehittäminen ja</li>
+      <li>jatkuva oppiminen työllistymisen tukena</li>
+    </ol>
+
+    <p>
+      Uudessa mallissa panostetaan samanaikaisesti tarjonnan monipuolistamiseen ja palvelupolun
+      selkeyteen henkilöasiakkaan näkökulmasta. Mallissa eri oppilaitosten koulutustarjontaa ja
+      ohjausosaamista yhdistelemällä räätälöidään henkilöasiakkaalle yhdistelmä osaamista ja tukea.
+      Hankekumppanit luovat yhdessä saumattoman palvelukokonaisuuden, jossa työ- ja toimintakyvyn,
+      työelämätaitojen ja substanssiosaamisen kehittäminen tapahtuu yhtäaikaisesti, jolloin
+      työllistymispolkuja saadaan nopeutettua ja tehostettua.
+    </p>
+    <p>
+      Malli juurrutetaan hankkeen aikana osaksi Helsingin työllisyyspalveluiden palvelutarjontaa.
+      Pilotoinnin jälkeen malli kuvataan yksityiskohtaisesti ja julkaistaan vapaasti käytettäväksi.
+      Vaikuttavuuden arviointi toteutetaan määrällisin ja laadullisin mittarein.
+      Vaikuttavuusarviointi julkaistaan mallin julkaisun yhteydessä.
+    </p>
+  </section>
+</BaseLayout>

@@ -1,10 +1,10 @@
 ---
 layout: '../../layouts/NewsLayout.astro'
-title: Beginning with CSS
+title: Beginning with Uraohjaus
 date: 2022-12-03
 author: Darnell McClure
 image: { src: '/img/news/news-3.jpg', alt: 'A picture of a coder' }
-description: CSS is a great way to style your website. In fact, there are no alternatives! Learn how to use it here.
+description: Uraohjaus is a great way to improve your career.
 draft: false
 category: CSS
 ---
