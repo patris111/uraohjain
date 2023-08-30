@@ -21,14 +21,14 @@ const Test = () => {
   };
 
   return (
-    <div className='pink-bg p-10 rounded-md' id='pink-box'>
+    <div className='pink-bg rounded-md' id='pink-box'>
       {testPassed ? (
         // <p className='text-center text-green-500 text-2xl'>Welcome</p>
         <div>
           <SignupForm />
         </div>
       ) : (
-        <div>
+        <div className='p-10'>
           <h3>Tee testi ja ilmoittaudu Uraohjain+ -palveluun!</h3>
           <ol className='list-decimal ml-5'>
             <li className='my-4'>Oletko ilmoittautunut työttömäksi työnhakijaksi?</li>
