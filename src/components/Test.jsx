@@ -99,13 +99,13 @@ const Test = () => {
             <span className='mx-4 font-bold'>Ei</span>
           </ol>
           <div className='flex justify-end mt-4'>
-            <button className='btn btn-lg w-40' onClick={handleNextClick}>
+            <button className='btn btn-lg btn-outline float-right w-40' onClick={handleNextClick}>
               Seuraava
             </button>
           </div>
         </div>
       )}
-      {testPassed === false && <p className='text-center text-red-500 text-2xl'>Failed</p>}
+      {/* {testPassed === false && <p className='text-center text-red-500 text-2xl'>Failed</p>} */}
     </div>
   );
 };
