@@ -1,15 +1,25 @@
 ---
 layout: '../../layouts/NewsLayout.astro'
-title: CV workshop
+title: Etätyöt lisäävät tehokkuutta
 date: 2022-12-06
 author: Anna Dixon
 image: { src: '/img/news/news-4.jpg', alt: 'A picture of a coder' }
-description: In this project, we’ll build out a custom Astro component for post tags.
+description: Työntekijälle etätyön hyötyjä ovat mm. työajan joustavuus ja rytmittäminen omien tarpeiden mukaan
 draft: false
 category: Astro
 ---
 
+Työntekijälle etätyön hyötyjä ovat mm. työajan joustavuus ja rytmittäminen omien tarpeiden mukaan, lisääntynyt työrauha ja keskittyminen, työtyytyväisyyden ja -tehon paraneminen, ajan ja rahan säästö työmatkoissa sekä työn ja vapaa-ajan joustavampi yhteensovitus. Etätyötä tekevällä työntekijällä on myös mahdollisuus valita asuinpaikkansa muilla perusteilla kuin työn sijaintipaikan perusteella.
+
+Työnantajan näkökulmasta katsoen etätyön hyötyjä ovat mm. työtehon ja työn tuottavuuden paraneminen, työuran piteneminen paremman jaksamisen myötä, säästöt toimitilakustannuksissa ja työnantajan ympäristövastuullisuuden paraneminen työmatkaliikenteen vähentyessä. Etätyömahdollisuuden tarjoaminen lisää myös työpaikan houkuttelevuutta ja parantaa organisaation mahdollisuuksia saada enemmän päteviä hakijoita avoimiin työpaikkoihin.
+
+### Etätyön hyödyt
+
 Nisi duis ex aliqua eu officia eiusmod duis magna pariatur. Irure laborum qui aliqua nulla esse cillum laborum aliquip nulla elit. Id id Lorem duis irure cillum culpa. Nulla sint et aliqua velit do. Nulla sit sit proident consectetur enim ullamco aliqua in reprehenderit ullamco officia.
+
+Ipsum adipisicing exercitation dolor pariatur labore qui. Culpa cupidatat ea elit eiusmod tempor ea qui dolor Lorem laborum adipisicing. Ad ea laboris qui cupidatat deserunt culpa. Nulla ex velit adipisicing proident fugiat deserunt sunt eu adipisicing sint incididunt quis qui. Nulla fugiat labore duis ullamco reprehenderit excepteur laboris tempor ullamco aliquip laborum aliqua. Est tempor nisi magna ut elit pariatur commodo.
+
+### Kenelle?
 
 Ad ipsum velit sint enim exercitation mollit consequat elit mollit qui commodo aute. Laboris culpa voluptate aliquip incididunt duis. Cupidatat aliquip et sunt aute fugiat cupidatat irure voluptate. Occaecat officia et sunt.
 
