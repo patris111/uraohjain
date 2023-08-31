@@ -104,9 +104,9 @@ const Test = () => {
           </div>
         </div>
       )}
-      {testPassed === false && Object.values(answers).some((answer) => answer !== 'Kyllä') && (
+      {/* {testPassed === false && Object.values(answers).some((answer) => answer !== 'Kyllä') && (
         <div className='text-center text-red-500 text-2xl mt-4'>Failed</div>
-      )}
+      )} */}
     </div>
   );
 };
