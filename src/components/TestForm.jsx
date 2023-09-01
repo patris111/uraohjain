@@ -39,7 +39,7 @@ const TestForm = () => {
   }, [answers]);
 
   return (
-    <div className='pink-bg rounded-md' id='pink-box'>
+    <div className='pink-bg rounded-md mt-8' id='pink-box'>
       {showRadioForm && (
         <div className='p-10'>
           <h3 className='mb-14'>Tee testi ja ilmoittaudu Uraohjain+ -palveluun!</h3>
