@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import SignupForm from './SignupForm';
 
 const TestForm = () => {
@@ -12,7 +12,7 @@ const TestForm = () => {
   const [showRadioForm, setShowRadioForm] = useState(true);
   const [showSignupForm, setShowSignupForm] = useState(false);
   const [showMessage, setShowMessage] = useState(false);
-  // const [testPassed, setTestPassed] = useState(false);
+  const [allRadioChecked, setAllRadioChecked] = useState(false);
 
   const handleAnswerChange = (name, value) => {
     setAnswers((prevAnswers) => ({ ...prevAnswers, [name]: value }));
@@ -32,6 +32,12 @@ const TestForm = () => {
     }
   };
 
+  useEffect(() => {
+    // Check if all radio buttons have been selected (with any value)
+    const anyRadioUnselected = Object.values(answers).some((value) => value === '');
+    setAllRadioChecked(!anyRadioUnselected);
+  }, [answers]);
+
   return (
     <div className='pink-bg rounded-md' id='pink-box'>
       {showRadioForm && (
@@ -44,14 +50,18 @@ const TestForm = () => {
                 type='radio'
                 name='unemployement'
                 className='radio'
-                onChange={() => handleAnswerChange('unemployement', 'Yes')}
+                onChange={() => {
+                  handleAnswerChange('unemployement', 'Yes');
+                }}
               />
               <span className='mx-4 font-bold'>Kyllä</span>
               <input
                 type='radio'
                 name='unemployement'
                 className='radio'
-                onChange={() => handleAnswerChange('unemployement', 'No')}
+                onChange={() => {
+                  handleAnswerChange('unemployement', 'No');
+                }}
               />
               <span className='mx-4 font-bold'>Ei</span>
             </div>
@@ -62,14 +72,18 @@ const TestForm = () => {
               type='radio'
               name='interest'
               className='radio'
-              onChange={() => handleAnswerChange('interest', 'Yes')}
+              onChange={() => {
+                handleAnswerChange('interest', 'Yes');
+              }}
             />
             <span className='mx-4 font-bold'>Kyllä</span>
             <input
               type='radio'
               name='interest'
               className='radio'
-              onChange={() => handleAnswerChange('interest', 'No')}
+              onChange={() => {
+                handleAnswerChange('interest', 'No');
+              }}
             />
             <span className='mx-4 font-bold'>Ei</span>
 
@@ -78,14 +92,18 @@ const TestForm = () => {
               type='radio'
               name='language'
               className='radio'
-              onChange={() => handleAnswerChange('language', 'Yes')}
+              onChange={() => {
+                handleAnswerChange('language', 'Yes');
+              }}
             />
             <span className='mx-4 font-bold'>Kyllä</span>
             <input
               type='radio'
               name='language'
               className='radio'
-              onChange={() => handleAnswerChange('language', 'No')}
+              onChange={() => {
+                handleAnswerChange('language', 'No');
+              }}
             />
             <span className='mx-4 font-bold'>Ei</span>
 
@@ -94,19 +112,29 @@ const TestForm = () => {
               type='radio'
               name='diploma'
               className='radio'
-              onChange={() => handleAnswerChange('diploma', 'Yes')}
+              onChange={() => {
+                handleAnswerChange('diploma', 'Yes');
+              }}
             />
             <span className='mx-4 font-bold'>Kyllä</span>
             <input
               type='radio'
               name='diploma'
               className='radio'
-              onChange={() => handleAnswerChange('diploma', 'No')}
+              onChange={() => {
+                handleAnswerChange('diploma', 'No');
+              }}
             />
             <span className='mx-4 font-bold'>Ei</span>
           </ol>
           <div className='flex justify-end mt-4'>
-            <button className='btn btn-lg btn-outline float-right w-40' onClick={handleNextClick}>
+            <button
+              className={`btn btn-lg btn-outline float-right w-40 ${
+                allRadioChecked ? '' : 'cursor-not-allowed opacity-80'
+              }`}
+              onClick={handleNextClick}
+              disabled={!allRadioChecked}
+            >
               Seuraava
             </button>
           </div>
