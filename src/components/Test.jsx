@@ -16,7 +16,7 @@ const Test = () => {
   };
 
   const handleNextClick = () => {
-    const allYesSelected = Object.values(answers).every((answer) => answer === 'Kyllä');
+    const allYesSelected = Object.values(answers).every((answer) => answer === 'Yes');
     setTestPassed(allYesSelected);
   };
 
@@ -36,14 +36,14 @@ const Test = () => {
                 type='radio'
                 name='unemployement'
                 className='radio'
-                onChange={() => handleAnswerChange('unemployement', 'Kyllä')}
+                onChange={() => handleAnswerChange('unemployement', 'Yes')}
               />
               <span className='mx-4 font-bold'>Kyllä</span>
               <input
                 type='radio'
                 name='unemployement'
                 className='radio'
-                onChange={() => handleAnswerChange('unemployement', 'Ei')}
+                onChange={() => handleAnswerChange('unemployement', 'No')}
               />
               <span className='mx-4 font-bold'>Ei</span>
             </div>
@@ -54,14 +54,14 @@ const Test = () => {
               type='radio'
               name='interest'
               className='radio'
-              onChange={() => handleAnswerChange('interest', 'Kyllä')}
+              onChange={() => handleAnswerChange('interest', 'Yes')}
             />
             <span className='mx-4 font-bold'>Kyllä</span>
             <input
               type='radio'
               name='interest'
               className='radio'
-              onChange={() => handleAnswerChange('interest', 'Ei')}
+              onChange={() => handleAnswerChange('interest', 'No')}
             />
             <span className='mx-4 font-bold'>Ei</span>
 
@@ -70,14 +70,14 @@ const Test = () => {
               type='radio'
               name='language'
               className='radio'
-              onChange={() => handleAnswerChange('language', 'Kyllä')}
+              onChange={() => handleAnswerChange('language', 'Yes')}
             />
             <span className='mx-4 font-bold'>Kyllä</span>
             <input
               type='radio'
               name='language'
               className='radio'
-              onChange={() => handleAnswerChange('language', 'Ei')}
+              onChange={() => handleAnswerChange('language', 'No')}
             />
             <span className='mx-4 font-bold'>Ei</span>
 
@@ -86,14 +86,14 @@ const Test = () => {
               type='radio'
               name='diploma'
               className='radio'
-              onChange={() => handleAnswerChange('diploma', 'Kyllä')}
+              onChange={() => handleAnswerChange('diploma', 'Yes')}
             />
             <span className='mx-4 font-bold'>Kyllä</span>
             <input
               type='radio'
               name='diploma'
               className='radio'
-              onChange={() => handleAnswerChange('diploma', 'Ei')}
+              onChange={() => handleAnswerChange('diploma', 'No')}
             />
             <span className='mx-4 font-bold'>Ei</span>
           </ol>
