@@ -142,7 +142,16 @@ const TestForm = () => {
       )}
 
       {showMessage && (
-        <div className='text-center text-red-500 text-2xl mt-4'>Kiitos mielenkiinnostasi!</div>
+        <div className='flex flex-col items-center px-8 py-48'>
+          <h3 className='text-center'>Kiitos mielenkiinnostasi!</h3>
+          <p className='text-center'>
+            Valitettavasti et täytä <br />
+            Uraohjain+ -palvelun <br />
+            osallistumisvaatimuksia.
+            <br /> Suosittelemme olemaan yhteydessä xxx <br />
+            sinulle sopivan palvelun löytämiseksi.
+          </p>
+        </div>
       )}
 
       {showSignupForm && <SignupForm />}
