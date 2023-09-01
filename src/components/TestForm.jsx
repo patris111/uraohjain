@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import SignupForm from '../components/SignupForm';
+import SignupForm from './SignupForm';
 
-const Test = () => {
+const TestForm = () => {
   const [answers, setAnswers] = useState({
     unemployement: '',
     interest: '',
@@ -122,4 +122,4 @@ const Test = () => {
   );
 };
 
-export default Test;
+export default TestForm;

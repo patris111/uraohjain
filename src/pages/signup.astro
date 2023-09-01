@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import Test from '../components/Test.jsx';
+import TestForm from '../components/TestForm.jsx';
 const pageTitle = 'Ilmoittatuminen';
 ---
 
@@ -9,6 +9,6 @@ const pageTitle = 'Ilmoittatuminen';
     <h2>
       {pageTitle}
     </h2>
-    <Test client:load />
+    <TestForm client:load />
   </section>
 </BaseLayout>
