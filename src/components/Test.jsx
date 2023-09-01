@@ -9,7 +9,10 @@ const Test = () => {
     diploma: '',
   });
 
-  const [testPassed, setTestPassed] = useState(false);
+  const [showRadioForm, setShowRadioForm] = useState(true);
+  const [showSignupForm, setShowSignupForm] = useState(false);
+  const [showMessage, setShowMessage] = useState(false);
+  // const [testPassed, setTestPassed] = useState(false);
 
   const handleAnswerChange = (name, value) => {
     setAnswers((prevAnswers) => ({ ...prevAnswers, [name]: value }));
@@ -17,16 +20,21 @@ const Test = () => {
 
   const handleNextClick = () => {
     const allYesSelected = Object.values(answers).every((answer) => answer === 'Yes');
-    setTestPassed(allYesSelected);
+
+    if (allYesSelected) {
+      setShowRadioForm(false);
+      setShowSignupForm(true);
+      setShowMessage(false);
+    } else {
+      setShowRadioForm(false);
+      setShowSignupForm(false);
+      setShowMessage(true);
+    }
   };
 
   return (
     <div className='pink-bg rounded-md' id='pink-box'>
-      {testPassed ? (
-        <div>
-          <SignupForm />
-        </div>
-      ) : (
+      {showRadioForm && (
         <div className='p-10'>
           <h3 className='mb-14'>Tee testi ja ilmoittaudu Uraohjain+ -palveluun!</h3>
           <ol className='list-decimal ml-5'>
@@ -104,9 +112,12 @@ const Test = () => {
           </div>
         </div>
       )}
-      {/* {testPassed === false && Object.values(answers).some((answer) => answer !== 'Kyllä') && (
-        <div className='text-center text-red-500 text-2xl mt-4'>Failed</div>
-      )} */}
+
+      {showMessage && (
+        <div className='text-center text-red-500 text-2xl mt-4'>Kiitos mielenkiinnostasi!</div>
+      )}
+
+      {showSignupForm && <SignupForm />}
     </div>
   );
 };
