@@ -1,0 +1,27 @@
+---
+import fetchApi from '../lib/strapi';
+import type Article from '../Interfaces/article';
+import { truncateText } from '../js/utils';
+
+const apiUrl = import.meta.env.STRAPI_URL;
+
+const articles = await fetchApi<Article[]>({
+  endpoint: 'articles?populate=*',
+  wrappedByKey: 'data',
+});
+---
+
+<article class='grid grid-cols-4 gap-4'>
+  {
+    articles.map((article) => (
+      <a href={`/news/${article.attributes.slug}`} aria-hidden='true' tabindex='-1'>
+        <img
+          src={`${apiUrl}${article.attributes.image.data.attributes.formats.small.url}`}
+          alt={article.attributes.title}
+        />
+        <h3>{article.attributes.title}</h3>
+        <p>{truncateText(article.attributes.introduction, 90, 'Lue lisää...')}</p>
+      </a>
+    ))
+  }
+</article>

@@ -9,6 +9,9 @@ export default interface Article {
             thumbnail: {
               url: string;
             };
+            small: {
+              url: string;
+            };
           };
         };
       };

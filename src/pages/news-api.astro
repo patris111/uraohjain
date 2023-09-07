@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import NewsCardAPI from '../components/NewsCardAPI.astro';
+const pageTitle = 'Ajankohtaista';
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <h1 class=''>Ajankohtaista</h1>
+  <section>
+    <NewsCardAPI />
+  </section>
+</BaseLayout>
