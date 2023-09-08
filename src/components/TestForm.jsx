@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import SignupForm from './SignupForm';
+import { motion } from 'framer-motion';
 
 const TestForm = () => {
   const [answers, setAnswers] = useState({
@@ -41,7 +42,12 @@ const TestForm = () => {
   return (
     <div className='pink-bg rounded-md mt-8' id='pink-box'>
       {showRadioForm && (
-        <div className='p-10'>
+        <motion.div
+          className='p-10'
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ type: 'spring', duration: 1 }}
+        >
           <h3 className='mb-14'>Tee testi ja ilmoittaudu Uraohjain+ -palveluun!</h3>
           <ol className='list-decimal ml-5'>
             <li className='my-4'>Oletko ilmoittautunut työttömäksi työnhakijaksi?</li>
@@ -138,11 +144,16 @@ const TestForm = () => {
               Seuraava
             </button>
           </div>
-        </div>
+        </motion.div>
       )}
 
       {showMessage && (
-        <div className='flex flex-col items-center px-8 py-48'>
+        <motion.div
+          className='flex flex-col items-center px-8 py-48'
+          initial={{ opacity: 0, translateX: 200 }}
+          animate={{ opacity: 1, translateX: 0 }}
+          transition={{ type: 'spring', stiffness: 80, duration: 0.5 }}
+        >
           <h3 className='text-center'>Kiitos mielenkiinnostasi!</h3>
           <p className='text-center'>
             Valitettavasti et täytä <br />
@@ -151,10 +162,18 @@ const TestForm = () => {
             <br /> Suosittelemme olemaan yhteydessä xxx <br />
             sinulle sopivan palvelun löytämiseksi.
           </p>
-        </div>
+        </motion.div>
       )}
 
-      {showSignupForm && <SignupForm />}
+      {showSignupForm && (
+        <motion.div
+          initial={{ opacity: 0, translateX: 200 }}
+          animate={{ opacity: 1, translateX: 0 }}
+          transition={{ type: 'spring', stiffness: 50, duration: 2 }}
+        >
+          <SignupForm />
+        </motion.div>
+      )}
     </div>
   );
 };
