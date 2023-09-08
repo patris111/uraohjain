@@ -1,0 +1,33 @@
+---
+import NewsLayoutAPI from '../../layouts/NewsLayoutAPI.astro';
+import fetchApi from '../../lib/strapi';
+import type Article from '../../Interfaces/article';
+
+export async function getStaticPaths() {
+  const articles = await fetchApi<Article[]>({
+    endpoint: 'articles?populate=*',
+    wrappedByKey: 'data',
+  });
+
+  return articles.map((article) => ({
+    params: { slug: article.attributes.slug },
+    props: article,
+  }));
+}
+type Props = Article;
+
+const article = Astro.props;
+const apiUrl = import.meta.env.STRAPI_URL;
+---
+
+<NewsLayoutAPI>
+  <img src={apiUrl + article.attributes.image.data.attributes.formats.small} />
+
+  <h1>{article.attributes.title}</h1>
+
+  <!-- Render plain text -->
+  <p>{article.attributes.title}</p>
+
+  <!-- Render html -->
+  <Fragment set:html={article.attributes.introduction} />
+</NewsLayoutAPI>

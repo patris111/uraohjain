@@ -14,7 +14,7 @@ const articles = await fetchApi<Article[]>({
 <article class='grid grid-cols-4 gap-4'>
   {
     articles.map((article) => (
-      <a href={`/news/${article.attributes.slug}`} aria-hidden='true' tabindex='-1'>
+      <a href={`/news/${article.attributes.slug}`}>
         <img
           src={`${apiUrl}${article.attributes.image.data.attributes.formats.small.url}`}
           alt={article.attributes.title}
