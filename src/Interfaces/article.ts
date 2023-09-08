@@ -12,15 +12,18 @@ export default interface Article {
             small: {
               url: string;
             };
+            medium: {
+              url: string;
+            };
           };
         };
       };
     };
     introduction: string;
     subtitle_1: string;
-    paragraphe_1: string;
+    paragraph_1: string;
     subtitle_2: string;
-    paragraphe_2: string;
+    paragraph_2: string;
     slug: string;
     createdAt: string;
     updatedAt: string;

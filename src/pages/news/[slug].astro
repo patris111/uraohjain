@@ -21,13 +21,20 @@ const apiUrl = import.meta.env.STRAPI_URL;
 ---
 
 <NewsLayoutAPI>
-  <img src={apiUrl + article.attributes.image.data.attributes.formats.small} />
-
   <h1>{article.attributes.title}</h1>
 
-  <!-- Render plain text -->
-  <p>{article.attributes.title}</p>
+  <img
+    src={apiUrl + article.attributes.image.data.attributes.formats.medium.url}
+    alt=`Image ${article.attributes.title}`
+    class='mb-2'
+  />
+  <p>{article.attributes.introduction}</p>
 
-  <!-- Render html -->
-  <Fragment set:html={article.attributes.introduction} />
+  <h3>{article.attributes.subtitle_1}</h3>
+
+  <p>{article.attributes.paragraph_1}</p>
+
+  <h3>{article.attributes.subtitle_2}</h3>
+
+  <p>{article.attributes.paragraph_2}</p>
 </NewsLayoutAPI>
