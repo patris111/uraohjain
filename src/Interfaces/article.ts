@@ -20,10 +20,7 @@ export default interface Article {
       };
     };
     introduction: string;
-    subtitle_1: string;
-    paragraph_1: string;
-    subtitle_2: string;
-    paragraph_2: string;
+    content: string;
     slug: string;
     createdAt: string;
     updatedAt: string;

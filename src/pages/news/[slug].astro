@@ -28,12 +28,6 @@ const apiUrl = import.meta.env.STRAPI_URL;
     alt=`Image ${article.attributes.title}`
     class='mb-2'
   />
-  <!-- <p><Fragment set:html={article.attributes.introduction.replace(regex, '<br />')} /></p> -->
-  <Markdown>
-    <p>{article.attributes.introduction}</p>
-    <h3>{article.attributes.subtitle_1}</h3>
-    <p>{article.attributes.paragraph_1}</p>
-    <h3>{article.attributes.subtitle_2}</h3>
-    <p>{article.attributes.paragraph_2}</p>
-  </Markdown>
+  <Markdown>{article.attributes.introduction}</Markdown>
+  <Markdown>{article.attributes.content}</Markdown>
 </NewsLayoutAPI>
