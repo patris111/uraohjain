@@ -24,7 +24,7 @@ const apiUrl = import.meta.env.STRAPI_URL;
 <NewsLayoutAPI>
   <h1>{article.attributes.title}</h1>
   <img
-    src={apiUrl + article.attributes.image.data.attributes.formats.medium.url}
+    src={apiUrl + article.attributes.image.data?.attributes.formats.medium.url}
     alt=`Image ${article.attributes.title}`
     class='mb-2'
   />
