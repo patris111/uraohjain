@@ -47,6 +47,13 @@ html {
   ol {
     color: var(--uraohjain-burgundy);
     font-size: 1.3rem;
+    margin-left: 1.3rem;
+  }
+  ul {
+    list-style: disc;
+  }
+  ol {
+    list-style: decimal;
   }
   footer {
     background-color: var(--uraohjain-white);
