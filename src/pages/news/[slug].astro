@@ -2,6 +2,7 @@
 import NewsLayoutAPI from '../../layouts/NewsLayoutAPI.astro';
 import fetchApi from '../../lib/strapi';
 import type Article from '../../Interfaces/article';
+import Markdown from '@astrojs/markdown-component';
 
 export async function getStaticPaths() {
   const articles = await fetchApi<Article[]>({
@@ -22,19 +23,17 @@ const apiUrl = import.meta.env.STRAPI_URL;
 
 <NewsLayoutAPI>
   <h1>{article.attributes.title}</h1>
-
   <img
     src={apiUrl + article.attributes.image.data.attributes.formats.medium.url}
     alt=`Image ${article.attributes.title}`
     class='mb-2'
   />
-  <p>{article.attributes.introduction}</p>
-
-  <h3>{article.attributes.subtitle_1}</h3>
-
-  <p>{article.attributes.paragraph_1}</p>
-
-  <h3>{article.attributes.subtitle_2}</h3>
-
-  <p>{article.attributes.paragraph_2}</p>
+  <!-- <p><Fragment set:html={article.attributes.introduction.replace(regex, '<br />')} /></p> -->
+  <Markdown>
+    <p>{article.attributes.introduction}</p>
+    <h3>{article.attributes.subtitle_1}</h3>
+    <p>{article.attributes.paragraph_1}</p>
+    <h3>{article.attributes.subtitle_2}</h3>
+    <p>{article.attributes.paragraph_2}</p>
+  </Markdown>
 </NewsLayoutAPI>
