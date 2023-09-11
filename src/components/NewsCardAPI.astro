@@ -16,7 +16,7 @@ const articles = await fetchApi<Article[]>({
     articles.map((article) => (
       <a href={`/news/${article.attributes.slug}`}>
         <img
-          src={`${apiUrl}${article.attributes.image.data.attributes.formats.small.url}`}
+          src={`${apiUrl}${article.attributes.image.data?.attributes.formats.small.url}`}
           alt={article.attributes.title}
         />
         <h3>{article.attributes.title}</h3>
