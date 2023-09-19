@@ -23,25 +23,23 @@
 // Common elements
 html {
   h1 {
-    font-size: 2.5rem !important;
-    margin: 2rem 0;
+    font-size: 1.7rem !important;
+    margin: 0.8rem 0;
   }
   h2 {
-    font-size: 2.2rem;
+    font-size: 1.7rem;
     font-weight: 700;
-    margin: 1rem 0;
+    margin: 0.8rem 0;
   }
   h3 {
-    font-size: 1.9rem;
-
+    font-size: 1.5rem;
     font-weight: 700;
-    margin: 1rem 0;
+    margin: 0.8rem 0;
   }
-
   p {
     color: var(--uraohjain-burgundy);
-    padding: 1rem 0;
-    font-size: 1.3rem;
+    padding: 0.8rem 0;
+    font-size: var(--base-font-size-mobile);
   }
   ul,
   ol {
@@ -58,7 +56,7 @@ html {
   footer {
     background-color: var(--uraohjain-white);
     font-size: 1.1rem !important;
-    padding: 2rem 6rem 5.5rem 5.2rem;
+    padding: 1rem;
 
     a {
       color: var(--uraohjain-burgundy);
@@ -71,12 +69,12 @@ html {
 
 // Others
 .main-wrapper {
-  padding: 1rem 5.5rem 3.5rem 5.5rem;
+  padding: 1rem;
 }
 
 .benefits-list {
   background-color: var(--uraohjain-pink);
-  padding: 2rem 4rem;
+  padding: 1rem;
   color: var(--uraohjain-burgundy);
 
   ul > li {
@@ -98,7 +96,16 @@ html {
   margin-bottom: 1rem !important;
 }
 .calendar {
-  margin: 0 auto;
+  iframe {
+    width: 1100px;
+    height: 1950px;
+    body {
+      background-color: red !important;
+    }
+  }
+  .headerSection {
+    background-color: red !important;
+  }
 }
 
 // Components styling
@@ -131,4 +138,56 @@ html {
 }
 .patnersLogos {
   display: block;
+}
+
+// Responsiveness
+
+@media (min-width: 1024px) {
+  .calendar {
+    iframe {
+      width: 1100px;
+      height: 1530px;
+    }
+  }
+  .main-wrapper {
+    padding: 1rem 5.5rem 3.5rem 5.5rem;
+  }
+  .benefits-list {
+    padding: 2rem 4rem;
+  }
+  html {
+    h1 {
+      font-size: 2.5rem !important;
+      margin: 2rem 0;
+    }
+    h2 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin: 1rem 0;
+    }
+    h3 {
+      font-size: 1.9rem;
+
+      font-weight: 700;
+      margin: 1rem 0;
+    }
+    p {
+      color: var(--uraohjain-burgundy);
+      padding: 1rem 0;
+      font-size: var(--base-font-size);
+    }
+  }
+
+  footer {
+    background-color: var(--uraohjain-white);
+    font-size: 1.1rem !important;
+    padding: 2rem 6rem 5.5rem 5.2rem;
+
+    a {
+      color: var(--uraohjain-burgundy);
+    }
+    div {
+      color: var(--uraohjain-burgundy);
+    }
+  }
 }
