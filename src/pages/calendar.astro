@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import NewsCard from '../components/NewsCard.astro';
+const pageTitle = 'Kalenteri';
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <section>
+    <h2>
+      {pageTitle}
+    </h2>
+
+    <div class='calendar flex justify-center'>
+      <iframe
+        src='https://outlook.office365.com/owa/calendar/Uraohjaintesti@helsinginkaupunki.onmicrosoft.com/bookings/'
+        width='1400'
+        height='1600'
+        scrolling='yes'
+        style='border:0'
+      >
+      </iframe>
+    </div>
+  </section>
+</BaseLayout>
