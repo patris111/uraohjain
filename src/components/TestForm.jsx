@@ -133,9 +133,9 @@ const TestForm = () => {
             />
             <span className='mx-4 font-bold'>Ei</span>
           </ol>
-          <div className='flex justify-end mt-4'>
+          <div className='flex justify-end mt-10 md:mt-4'>
             <button
-              className={`btn btn-lg btn-outline float-right w-40 ${
+              className={`btn btn-lg btn-outline w-40 ${
                 allRadioChecked ? '' : 'cursor-not-allowed opacity-80'
               }`}
               onClick={handleNextClick}
