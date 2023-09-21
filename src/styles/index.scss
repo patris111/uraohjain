@@ -134,6 +134,8 @@ html {
   }
 }
 .mobile-menu {
+  position: absolute;
+  z-index: 1;
   color: var(--uraohjain-white);
   text-align: center;
   background-color: var(--uraohjain-green);
