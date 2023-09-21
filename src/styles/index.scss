@@ -44,7 +44,7 @@ html {
   ul,
   ol {
     color: var(--uraohjain-burgundy);
-    font-size: 1.3rem;
+    font-size: var(--base-font-size-mobile);
     margin-left: 1.3rem;
   }
   ul {
@@ -184,6 +184,12 @@ html {
       color: var(--uraohjain-burgundy);
       padding: 1rem 0;
       font-size: var(--base-font-size);
+    }
+    ul,
+    ol {
+      color: var(--uraohjain-burgundy);
+      font-size: var(--base-font-size);
+      margin-left: 1.3rem;
     }
   }
 
