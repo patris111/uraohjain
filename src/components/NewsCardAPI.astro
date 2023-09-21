@@ -11,7 +11,7 @@ const articles = await fetchApi<Article[]>({
 });
 ---
 
-<article class='grid grid-cols-4 gap-4'>
+<article class='md:grid md:grid-cols-4 md:gap-4'>
   {
     articles.map((article) => (
       <a href={`/news/${article.attributes.slug}`}>
