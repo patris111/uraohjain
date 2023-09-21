@@ -14,97 +14,82 @@ import '../styles/index.scss';
 </script>
 
 <!-- Navbar -->
-<nav class='navbar shadow-lg'>
-  <div class='md:max-w-fit mx-auto'>
-    <div class='flex justify-between'>
-      <div class='flex'>
-        <div>
-          <!-- Primary Navbar items -->
-          <div class='hidden md:flex items-center space-x-20'>
-            <a href='/'>Etusivu</a>
-            <a href='/companies'>Yrityksille</a>
-            <a href='/signup'>Ilmoittaudu</a>
-            <a href='/news-api'>Ajankohtaista</a>
-            <a href='/project'>Hanke</a>
-            <a href='/contact'>Yhteystiedot</a>
-            <!-- <a href='' class='py-4 px-14 transition duration-300'>ENG</a> -->
-            <button class=''>EN</button>
-          </div>
-        </div>
-        <!-- Mobile menu button -->
-        <div class='md:hidden flex items-center'>
-          <button class='outline-none mobile-menu-button'>
-            <svg
-              class='w-6 h-6 text-gray-500 hover:text-green-500'
-              x-show='!showMenu'
-              fill='none'
-              stroke-linecap='round'
-              stroke-linejoin='round'
-              stroke-width='2'
-              viewBox='0 0 24 24'
-              stroke='currentColor'
-            >
-              <path d='M4 6h16M4 12h16M4 18h16'></path>
-            </svg>
-          </button>
-        </div>
-      </div>
+<nav class='navbar flex justify-between'>
+  <div class='md:mx-auto'>
+    <!-- Primary Navbar items -->
+    <div class='hidden md:flex items-center space-x-20'>
+      <a href='/'>Etusivu</a>
+      <a href='/companies'>Yrityksille</a>
+      <a href='/signup'>Ilmoittaudu</a>
+      <a href='/news-api'>Ajankohtaista</a>
+      <a href='/project'>Hanke</a>
+      <a href='/contact'>Yhteystiedot</a>
+      <!-- <a href='' class='py-4 px-14 transition duration-300'>ENG</a> -->
+      <button class=''>EN</button>
     </div>
-    <!-- mobile menu -->
-    <div class='hidden mobile-menu'>
-      <ul class=''>
-        <li class='active'>
-          <a href='/' class='block text-lg px-2 py-4 text-white bg-white font-semibold'>Etusivu</a>
-        </li>
-        <li>
-          <a
-            href='/companies'
-            class='block text-2xl px-2 py-4 hover:bg-rose-300 transition duration-300'
-            >Yrityksille</a
-          >
-        </li>
-        <li>
-          <a
-            href='/signup'
-            class='block text-2xl px-2 py-4 hover:bg-rose-300 transition duration-300'
-            >Ilmoittaudu</a
-          >
-        </li>
-        <li>
-          <a
-            href='/news-api'
-            class='block text-2xl px-2 py-4 hover:bg-rose-300 transition duration-300'
-            >Ajankohtaista</a
-          >
-        </li>
-        <li>
-          <a
-            href='/project'
-            class='block text-2xl px-2 py-4 hover:bg-rose-300 transition duration-300'>Hanke</a
-          >
-        </li>
-        <li>
-          <a
-            href='/contact'
-            class='block text-2xl px-2 py-4 hover:bg-rose-300 transition duration-300'
-            >Yhteystiedot</a
-          >
-        </li>
-        <li>
-          <a
-            href='#contact'
-            class='block text-2xl px-2 py-4 hover:bg-rose-300 transition duration-300'>ENG</a
-          >
-        </li>
-      </ul>
-    </div>
-    <script>
-      const btn = document.querySelector('button.mobile-menu-button');
-      const menu = document.querySelector('.mobile-menu');
-
-      btn?.addEventListener('click', () => {
-        menu?.classList.toggle('hidden');
-      });
-    </script>
   </div>
+
+  <!-- Mobile menu button -->
+  <div class='md:hidden'>
+    <button type='button' class='outline-none mobile-menu-button'>
+      <svg viewBox='0 0 100 80' width='40' height='40' style='fill: #f6f2f2;'>
+        <rect width='100' height='10' rx='10'></rect>
+        <rect y='30' width='100' height='10' rx='10'></rect>
+        <rect y='60' width='100' height='10' rx='10'></rect>
+      </svg>
+    </button>
+  </div>
+
+  <!-- mobile menu -->
+  <div class='hidden mobile-menu'>
+    <ul class=''>
+      <li class='active'>
+        <a href='/' class='block text-lg px-2 py-4 text-white bg-white font-semibold'>Etusivu</a>
+      </li>
+      <li>
+        <a
+          href='/companies'
+          class='block text-2xl px-2 py-4 hover:bg-rose-300 transition duration-300'>Yrityksille</a
+        >
+      </li>
+      <li>
+        <a href='/signup' class='block text-2xl px-2 py-4 hover:bg-rose-300 transition duration-300'
+          >Ilmoittaudu</a
+        >
+      </li>
+      <li>
+        <a
+          href='/news-api'
+          class='block text-2xl px-2 py-4 hover:bg-rose-300 transition duration-300'
+          >Ajankohtaista</a
+        >
+      </li>
+      <li>
+        <a
+          href='/project'
+          class='block text-2xl px-2 py-4 hover:bg-rose-300 transition duration-300'>Hanke</a
+        >
+      </li>
+      <li>
+        <a
+          href='/contact'
+          class='block text-2xl px-2 py-4 hover:bg-rose-300 transition duration-300'>Yhteystiedot</a
+        >
+      </li>
+      <li>
+        <a
+          href='#contact'
+          class='block text-2xl px-2 py-4 hover:bg-rose-300 transition duration-300'>ENG</a
+        >
+      </li>
+    </ul>
+  </div>
+  <script>
+    const btn = document.querySelector('button.mobile-menu-button');
+    const menu = document.querySelector('.mobile-menu');
+
+    btn?.addEventListener('click', () => {
+      menu?.classList.toggle('hidden');
+    });
+  </script>
 </nav>
