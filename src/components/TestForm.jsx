@@ -55,7 +55,7 @@ const TestForm = () => {
               <input
                 type='radio'
                 name='unemployement'
-                className='radio'
+                className='radio bg-slate-100'
                 onChange={() => {
                   handleAnswerChange('unemployement', 'Yes');
                 }}
@@ -64,7 +64,7 @@ const TestForm = () => {
               <input
                 type='radio'
                 name='unemployement'
-                className='radio'
+                className='radio bg-slate-100'
                 onChange={() => {
                   handleAnswerChange('unemployement', 'No');
                 }}
@@ -77,7 +77,7 @@ const TestForm = () => {
             <input
               type='radio'
               name='interest'
-              className='radio'
+              className='radio bg-slate-100'
               onChange={() => {
                 handleAnswerChange('interest', 'Yes');
               }}
@@ -86,7 +86,7 @@ const TestForm = () => {
             <input
               type='radio'
               name='interest'
-              className='radio'
+              className='radio bg-slate-100'
               onChange={() => {
                 handleAnswerChange('interest', 'No');
               }}
@@ -97,7 +97,7 @@ const TestForm = () => {
             <input
               type='radio'
               name='language'
-              className='radio'
+              className='radio bg-slate-100'
               onChange={() => {
                 handleAnswerChange('language', 'Yes');
               }}
@@ -106,7 +106,7 @@ const TestForm = () => {
             <input
               type='radio'
               name='language'
-              className='radio'
+              className='radio bg-slate-100'
               onChange={() => {
                 handleAnswerChange('language', 'No');
               }}
@@ -117,7 +117,7 @@ const TestForm = () => {
             <input
               type='radio'
               name='diploma'
-              className='radio'
+              className='radio bg-slate-100'
               onChange={() => {
                 handleAnswerChange('diploma', 'Yes');
               }}
@@ -126,7 +126,7 @@ const TestForm = () => {
             <input
               type='radio'
               name='diploma'
-              className='radio'
+              className='radio bg-slate-100'
               onChange={() => {
                 handleAnswerChange('diploma', 'No');
               }}
