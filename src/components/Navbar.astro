@@ -2,20 +2,9 @@
 import '../styles/index.scss';
 ---
 
-<script>
-  const nav = document.querySelector('.navbar');
-  const navLinks = nav?.querySelectorAll('a');
-  const currentURL = window.location.href;
-  navLinks?.forEach((link) => {
-    if (link.href === currentURL) {
-      link.classList.add('active');
-    }
-  });
-</script>
-
 <!-- Navbar -->
 <nav class='navbar flex justify-between'>
-  <div class='md:mx-auto'>
+  <div class='items-center md:mx-auto'>
     <!-- Primary Navbar items -->
     <div class='hidden md:flex items-center space-x-20'>
       <a href='/'>Etusivu</a>
@@ -28,7 +17,6 @@ import '../styles/index.scss';
       <button class=''>EN</button>
     </div>
   </div>
-
   <!-- Mobile menu button -->
   <div class='md:hidden'>
     <button type='button' class='outline-none mobile-menu-button'>
@@ -39,57 +27,46 @@ import '../styles/index.scss';
       </svg>
     </button>
   </div>
-
-  <!-- mobile menu -->
-  <div class='hidden mobile-menu'>
-    <ul class=''>
-      <li class='active'>
-        <a href='/' class='block text-lg px-2 py-4 text-white bg-white font-semibold'>Etusivu</a>
-      </li>
-      <li>
-        <a
-          href='/companies'
-          class='block text-2xl px-2 py-4 hover:bg-rose-300 transition duration-300'>Yrityksille</a
-        >
-      </li>
-      <li>
-        <a href='/signup' class='block text-2xl px-2 py-4 hover:bg-rose-300 transition duration-300'
-          >Ilmoittaudu</a
-        >
-      </li>
-      <li>
-        <a
-          href='/news-api'
-          class='block text-2xl px-2 py-4 hover:bg-rose-300 transition duration-300'
-          >Ajankohtaista</a
-        >
-      </li>
-      <li>
-        <a
-          href='/project'
-          class='block text-2xl px-2 py-4 hover:bg-rose-300 transition duration-300'>Hanke</a
-        >
-      </li>
-      <li>
-        <a
-          href='/contact'
-          class='block text-2xl px-2 py-4 hover:bg-rose-300 transition duration-300'>Yhteystiedot</a
-        >
-      </li>
-      <li>
-        <a
-          href='#contact'
-          class='block text-2xl px-2 py-4 hover:bg-rose-300 transition duration-300'>ENG</a
-        >
-      </li>
-    </ul>
-  </div>
-  <script>
-    const btn = document.querySelector('button.mobile-menu-button');
-    const menu = document.querySelector('.mobile-menu');
-
-    btn?.addEventListener('click', () => {
-      menu?.classList.toggle('hidden');
-    });
-  </script>
 </nav>
+<!-- Mobile menu -->
+<div class='mobile-menu w-full md:w-auto hidden'>
+  <a href='/' class='block text-lg px-2 py-4 text-white bg-white font-semibold'>Etusivu</a>
+  <a href='/companies' class='block text-2xl px-2 py-4 hover:bg-rose-300 transition duration-300'
+    >Yrityksille</a
+  >
+  <a href='/signup' class='block text-2xl px-2 py-4 hover:bg-rose-300 transition duration-300'
+    >Ilmoittaudu</a
+  >
+  <a href='/news-api' class='block text-2xl px-2 py-4 hover:bg-rose-300 transition duration-300'
+    >Ajankohtaista</a
+  >
+  <a href='/project' class='block text-2xl px-2 py-4 hover:bg-rose-300 transition duration-300'
+    >Hanke</a
+  >
+  <a href='/contact' class='block text-2xl px-2 py-4 hover:bg-rose-300 transition duration-300'
+    >Yhteystiedot</a
+  >
+  <a href='#contact' class='block text-2xl px-2 py-4 hover:bg-rose-300 transition duration-300'
+    >ENG</a
+  >
+</div>
+
+<!-- Script -->
+<script>
+  const nav = document.querySelector('.navbar');
+  const navLinks = nav?.querySelectorAll('a');
+  const currentURL = window.location.href;
+
+  navLinks?.forEach((link) => {
+    if (link.href === currentURL) {
+      link.classList.add('active');
+    }
+  });
+
+  const btn = document.querySelector('button.mobile-menu-button');
+  const menu = document.querySelector('.mobile-menu');
+
+  btn?.addEventListener('click', () => {
+    menu?.classList.toggle('hidden');
+  });
+</script>
