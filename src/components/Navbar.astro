@@ -3,53 +3,72 @@ import '../styles/index.scss';
 ---
 
 <!-- Navbar -->
-<nav class='navbar flex justify-between'>
-  <div class='items-center md:mx-auto'>
-    <!-- Primary Navbar items -->
-    <div class='hidden md:flex items-center space-x-20'>
-      <a href='/'>Etusivu</a>
-      <a href='/companies'>Yrityksille</a>
-      <a href='/signup'>Ilmoittaudu</a>
-      <a href='/news-api'>Ajankohtaista</a>
-      <a href='/project'>Hanke</a>
-      <a href='/contact'>Yhteystiedot</a>
-      <!-- <a href='' class='py-4 px-14 transition duration-300'>ENG</a> -->
-      <button class=''>EN</button>
+<navbar>
+  <div class='navbar flex justify-between'>
+    <div class='items-center md:mx-auto'>
+      <!-- Primary Navbar items -->
+      <div class='hidden md:flex items-center space-x-40'>
+        <a href='/'>Etusivu</a>
+        <a href='/companies'>Yrityksille</a>
+        <a href='/signup'>Ilmoittaudu</a>
+        <a href='/news-api'>Ajankohtaista</a>
+        <a href='/project'>Hanke</a>
+        <a href='/contact'>Yhteystiedot</a>
+        <!-- <a href='' class='py-4 px-14 transition duration-300'>ENG</a> -->
+        <button class=''>EN</button>
+      </div>
+    </div>
+    <!-- Mobile menu button -->
+    <div class='md:hidden'>
+      <button type='button' class='outline-none mobile-menu-button'>
+        <svg viewBox='0 0 100 80' width='40' height='40' style='fill: #f6f2f2;'>
+          <rect width='100' height='10' rx='10'></rect>
+          <rect y='30' width='100' height='10' rx='10'></rect>
+          <rect y='60' width='100' height='10' rx='10'></rect>
+        </svg>
+      </button>
     </div>
   </div>
-  <!-- Mobile menu button -->
-  <div class='md:hidden'>
-    <button type='button' class='outline-none mobile-menu-button'>
-      <svg viewBox='0 0 100 80' width='40' height='40' style='fill: #f6f2f2;'>
-        <rect width='100' height='10' rx='10'></rect>
-        <rect y='30' width='100' height='10' rx='10'></rect>
-        <rect y='60' width='100' height='10' rx='10'></rect>
-      </svg>
-    </button>
+
+  <!-- Mobile menu -->
+  <div class='mobile-menu w-full md:w-auto hidden'>
+    <a
+      href='/'
+      class='block text-2xl px-2 py-4 hover:bg-rose-200 hover:text-black transition duration-300'
+      >Etusivu</a
+    >
+    <a
+      href='/companies'
+      class='block text-2xl px-2 py-4 hover:bg-rose-200 hover:text-black transition duration-300'
+      >Yrityksille</a
+    >
+    <a
+      href='/signup'
+      class='block text-2xl px-2 py-4 hover:bg-rose-200 hover:text-black transition duration-300'
+      >Ilmoittaudu</a
+    >
+    <a
+      href='/news-api'
+      class='block text-2xl px-2 py-4 hover:bg-rose-200 hover:text-black transition duration-300'
+      >Ajankohtaista</a
+    >
+    <a
+      href='/project'
+      class='block text-2xl px-2 py-4 hover:bg-rose-200 hover:text-black transition duration-300'
+      >Hanke</a
+    >
+    <a
+      href='/contact'
+      class='block text-2xl px-2 py-4 hover:bg-rose-200 hover:text-black transition duration-300'
+      >Yhteystiedot</a
+    >
+    <a
+      href='#contact'
+      class='block text-2xl px-2 py-4 hover:bg-rose-300 hover:text-black transition duration-300'
+      >ENG</a
+    >
   </div>
-</nav>
-<!-- Mobile menu -->
-<div class='mobile-menu w-full md:w-auto hidden'>
-  <a href='/' class='block text-lg px-2 py-4 text-white bg-white font-semibold'>Etusivu</a>
-  <a href='/companies' class='block text-2xl px-2 py-4 hover:bg-rose-300 transition duration-300'
-    >Yrityksille</a
-  >
-  <a href='/signup' class='block text-2xl px-2 py-4 hover:bg-rose-300 transition duration-300'
-    >Ilmoittaudu</a
-  >
-  <a href='/news-api' class='block text-2xl px-2 py-4 hover:bg-rose-300 transition duration-300'
-    >Ajankohtaista</a
-  >
-  <a href='/project' class='block text-2xl px-2 py-4 hover:bg-rose-300 transition duration-300'
-    >Hanke</a
-  >
-  <a href='/contact' class='block text-2xl px-2 py-4 hover:bg-rose-300 transition duration-300'
-    >Yhteystiedot</a
-  >
-  <a href='#contact' class='block text-2xl px-2 py-4 hover:bg-rose-300 transition duration-300'
-    >ENG</a
-  >
-</div>
+</navbar>
 
 <!-- Script -->
 <script>
