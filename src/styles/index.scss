@@ -22,6 +22,9 @@
 }
 // Common elements
 html {
+  body {
+    background-color: #fff;
+  }
   h1 {
     font-size: 1.7rem !important;
     margin: 0.8rem 0;
@@ -140,10 +143,6 @@ html {
   a.active {
     font-weight: 800;
   }
-}
-
-.patnersLogos {
-  display: block;
 }
 
 // Responsiveness
