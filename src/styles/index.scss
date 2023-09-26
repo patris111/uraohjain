@@ -74,7 +74,9 @@ html {
 .main-wrapper {
   padding: 1rem;
 }
-
+.page-wrapper {
+  padding: 20rem;
+}
 .benefits-list {
   background-color: var(--uraohjain-pink);
   padding: 1rem;
@@ -157,6 +159,9 @@ html {
   .main-wrapper {
     padding: 1rem 5.5rem 3.5rem 5.5rem;
   }
+  .pad-wrapper {
+    padding: 1rem 10rem 3.5rem 10rem;
+  }
   .benefits-list {
     padding: 2rem 4rem;
   }
@@ -200,5 +205,11 @@ html {
     div {
       color: var(--uraohjain-burgundy);
     }
+  }
+}
+
+@media (min-width: 1920px) {
+  .main-wrapper {
+    padding: 1rem 40rem 3.5rem 40rem;
   }
 }
