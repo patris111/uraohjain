@@ -1,4 +1,4 @@
-# Uraohjain+ / Empower your career aspirations and supercharge your skillset.
+# Empower your career aspirations and supercharge your skillset with Uraohjain+
 
 ## About Uraohjain+
 
