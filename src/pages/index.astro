@@ -104,12 +104,12 @@ const pageTitle = 'Etusivu';
     <div class='flex justify-center'>
       <h3 class='py-7 md:py-16'>Ajankohtaiset asiat</h3>
     </div>
-    <div class='flex flex-col'>
+    <div class='flex flex-row'>
       {
         allNews.map((news) => (
           <div class='news-row'>
             <NewsCard
-              showImage={'hidden'}
+              showImage={'block'}
               frontmatter={news.frontmatter}
               url={news.url}
               tagType='h3'
