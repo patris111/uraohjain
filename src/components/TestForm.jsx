@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import SignupForm from './SignupForm';
+// import SignupForm from './SignupForm';
+import TermsOfService from './TermsOfService';
 import { motion } from 'framer-motion';
 
 const TestForm = () => {
@@ -14,6 +15,11 @@ const TestForm = () => {
   const [showSignupForm, setShowSignupForm] = useState(false);
   const [showMessage, setShowMessage] = useState(false);
   const [allRadioChecked, setAllRadioChecked] = useState(false);
+
+  const navigateToTermsOfService = () => {
+    // Replace this URL with the desired destination URL
+    window.location.href = '/new-page';
+  };
 
   const handleAnswerChange = (name, value) => {
     setAnswers((prevAnswers) => ({ ...prevAnswers, [name]: value }));
@@ -49,7 +55,7 @@ const TestForm = () => {
             animate={{ opacity: 1 }}
             transition={{ type: 'spring', duration: 1 }}
           >
-            <h2 className='mb-14'>Testaa sopiiko Uraohjain-palvelu sinulle ja ilmoittaudu!</h2>
+            <h3 className='mb-14'>Testaa sopiiko Uraohjain-palvelu sinulle ja ilmoittaudu!</h3>
             <ol className='list-decimal ml-5'>
               <li className='my-4'>Oletko ilmoittautunut työttömäksi työnhakijaksi?</li>
               <div className='mb-8'>
@@ -172,7 +178,8 @@ const TestForm = () => {
             animate={{ opacity: 1, translateX: 0 }}
             transition={{ type: 'spring', stiffness: 50, duration: 2 }}
           >
-            <SignupForm />
+            {/* <SignupForm /> */}
+            <TermsOfService />
           </motion.div>
         )}
       </form>
