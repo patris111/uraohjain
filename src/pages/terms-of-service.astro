@@ -1,0 +1,14 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import TermsOfService from '../components/TermsOfService.astro';
+const pageTitle = 'Ilmoittatuminen';
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <section>
+    <h2>
+      {pageTitle}
+    </h2>
+    <TermsOfService client:load />
+  </section>
+</BaseLayout>
