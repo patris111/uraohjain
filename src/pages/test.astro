@@ -1,0 +1,14 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import TestForm from '../components/TestForm.jsx';
+const pageTitle = 'Ilmoittatuminen';
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <section>
+    <h2 class='text-center mt-10 mb-16'>
+      {pageTitle}
+    </h2>
+    <TestForm client:load />
+  </section>
+</BaseLayout>
