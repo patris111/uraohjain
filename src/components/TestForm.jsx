@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 // import SignupForm from './SignupForm';
 import TermsOfService from './TermsOfService';
+import Survey from './Survey';
 import { motion } from 'framer-motion';
 
 const TestForm = () => {
@@ -12,14 +13,11 @@ const TestForm = () => {
   });
 
   const [showRadioForm, setShowRadioForm] = useState(true);
-  const [showSignupForm, setShowSignupForm] = useState(false);
+  const [showTermsOfService, setShowTermsOfService] = useState(false);
   const [showMessage, setShowMessage] = useState(false);
   const [allRadioChecked, setAllRadioChecked] = useState(false);
 
-  const navigateToTermsOfService = () => {
-    // Replace this URL with the desired destination URL
-    window.location.href = '/new-page';
-  };
+  const [showSurvey, setShowSurvey] = useState(true);
 
   const handleAnswerChange = (name, value) => {
     setAnswers((prevAnswers) => ({ ...prevAnswers, [name]: value }));
@@ -30,13 +28,17 @@ const TestForm = () => {
 
     if (allYesSelected) {
       setShowRadioForm(false);
-      setShowSignupForm(true);
+      setShowTermsOfService(true);
       setShowMessage(false);
     } else {
       setShowRadioForm(false);
-      setShowSignupForm(false);
+      setShowTermsOfService(false);
       setShowMessage(true);
     }
+  };
+
+  const handleSurveyNextClick = () => {
+    setShowSurvey(true);
   };
 
   useEffect(() => {
@@ -47,7 +49,7 @@ const TestForm = () => {
 
   return (
     <div className='md:grid md:grid-cols-2' id='pink-box'>
-      <form class='p-8 md:p-18 pink-bg'>
+      <form className='p-8 md:p-18 pink-bg'>
         {showRadioForm && (
           <motion.div
             className='p-10'
@@ -172,21 +174,23 @@ const TestForm = () => {
           </motion.div>
         )}
 
-        {showSignupForm && (
+        {showTermsOfService && (
           <motion.div
             initial={{ opacity: 0, translateX: 200 }}
             animate={{ opacity: 1, translateX: 0 }}
             transition={{ type: 'spring', stiffness: 50, duration: 2 }}
           >
-            {/* <SignupForm /> */}
-            <TermsOfService />
+            <TermsOfService onNextClick={handleSurveyNextClick} />
           </motion.div>
         )}
+
+        {/* Conditionally render the Survey component */}
+        {showSurvey && <Survey />}
       </form>
       <img
         src='/img/register/walking-man.jpg'
         alt=''
-        class='hidden md:block bg-cover w-full h-full'
+        className='hidden md:block bg-cover w-full h-full'
       />
     </div>
   );

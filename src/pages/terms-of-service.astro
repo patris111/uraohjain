@@ -1,7 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import TestForm from '../components/TestForm.jsx';
-import MultiStepper from '../components/MultiStepper';
+import TermsOfService from '../components/TermsOfService.jsx';
 const pageTitle = 'Ilmoittatuminen';
 ---
 
@@ -10,7 +9,6 @@ const pageTitle = 'Ilmoittatuminen';
     <h2 class='text-center mt-10 mb-16'>
       {pageTitle}
     </h2>
-    <!-- <TestForm client:load /> -->
-    <MultiStepper client:load />
+    <TermsOfService client:load />
   </section>
 </BaseLayout>
