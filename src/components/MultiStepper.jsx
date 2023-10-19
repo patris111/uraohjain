@@ -12,20 +12,13 @@ const MultiStepper = () => {
   ]);
 
   return (
-    <div>
-      <form>
-        <div style={{ position: 'absolute', top: '.5rem', right: '.5rem' }}>
+    <div className='md:grid md:grid-cols-2'>
+      <form className='p-8 md:p-18 pink-bg'>
+        <div>
           {currentStepIndex + 1} / {steps.length}
         </div>
         {step}
-        <div
-          style={{
-            marginTop: '1rem',
-            display: 'flex',
-            gap: '.5rem',
-            justifyContent: 'flex-end',
-          }}
-        >
+        <div>
           {!isFirstStep && (
             <button type='button' onClick={back}>
               Edellinen
@@ -36,6 +29,11 @@ const MultiStepper = () => {
           </button>
         </div>
       </form>
+      <img
+        src='/img/register/walking-man.jpg'
+        alt=''
+        className='hidden md:block bg-cover w-full h-full'
+      />
     </div>
   );
 };
