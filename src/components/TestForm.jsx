@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+// import SignupForm from './SignupForm';
+import MultiStepper from './MultiStepper';
 import { motion } from 'framer-motion';
 
 const TestForm = () => {
@@ -23,10 +25,11 @@ const TestForm = () => {
 
     if (allYesSelected) {
       setShowRadioForm(false);
+      setShowMultiStepper(true);
       setShowMessage(false);
-      window.location.href = 'http://localhost:3000/signup';
     } else {
       setShowRadioForm(false);
+      setShowMultiStepper(false);
       setShowMessage(true);
     }
   };
@@ -164,13 +167,15 @@ const TestForm = () => {
           </motion.div>
         )}
 
-        {/* {showMultiStepper && (
+        {showMultiStepper && (
           <motion.div
             initial={{ opacity: 0, translateX: 200 }}
             animate={{ opacity: 1, translateX: 0 }}
             transition={{ type: 'spring', stiffness: 50, duration: 2 }}
-          ></motion.div>
-        )} */}
+          >
+            <MultiStepper />
+          </motion.div>
+        )}
       </form>
       <img
         src='/img/register/walking-man.jpg'
