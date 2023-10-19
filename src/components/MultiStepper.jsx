@@ -14,9 +14,9 @@ const MultiStepper = () => {
   return (
     <div className='md:grid md:grid-cols-2'>
       <form className='p-8 md:p-18 pink-bg'>
-        <div>
+        <p className='text-right p-0 font-semibold'>
           {currentStepIndex + 1} / {steps.length}
-        </div>
+        </p>
         {step}
         <div>
           {!isFirstStep && (
