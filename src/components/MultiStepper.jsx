@@ -18,14 +18,14 @@ const MultiStepper = () => {
           {currentStepIndex + 1} / {steps.length}
         </p>
         {step}
-        <div>
-          {!isFirstStep && (
-            <button type='button' onClick={back}>
+        <div className='flex md:space-x-96 space-x-40 mt-10 md:mt-4 justify-end'>
+          {/* {!isFirstStep && (
+            <button type='button' className={'btn btn-lg btn-outline w-40'} onClick={back}>
               Edellinen
             </button>
-          )}
-          <button onClick={next} type='button'>
-            {isLastStep ? 'Finish' : 'Seuraava'}
+          )} */}
+          <button type='button' className={'btn btn-lg btn-outline w-40'} onClick={next}>
+            {isLastStep ? 'Kiitos!' : 'Seuraava'}
           </button>
         </div>
       </form>
