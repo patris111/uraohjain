@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Survey from './Survey';
 
-const TermsOfService = ({ onNextClick }) => {
+const TermsOfService = () => {
   return (
     <div className='p-8 md:p-18'>
       <h3 className='mt-0 mb-20'>Tervetuloa ilmoittautumaan Uraohjain-palveluun!</h3>
@@ -20,12 +20,6 @@ const TermsOfService = ({ onNextClick }) => {
           Hyväksyn tietojen vaihdon Uraohjain-palvelu toteuttajien kesken.
         </label>
       </div>
-
-      {/* <div className='flex justify-end mt-10 md:mt-4'>
-        <button className={'btn btn-lg btn-outline w-40'} onClick={onNextClick}>
-          Seuraava
-        </button>
-      </div> */}
     </div>
   );
 };

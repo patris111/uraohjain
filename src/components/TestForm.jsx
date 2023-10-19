@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 // import SignupForm from './SignupForm';
 import TermsOfService from './TermsOfService';
-import Survey from './Survey';
 import { motion } from 'framer-motion';
 
 const TestForm = () => {
@@ -16,8 +15,6 @@ const TestForm = () => {
   const [showTermsOfService, setShowTermsOfService] = useState(false);
   const [showMessage, setShowMessage] = useState(false);
   const [allRadioChecked, setAllRadioChecked] = useState(false);
-
-  const [showSurvey, setShowSurvey] = useState(true);
 
   const handleAnswerChange = (name, value) => {
     setAnswers((prevAnswers) => ({ ...prevAnswers, [name]: value }));
@@ -35,10 +32,6 @@ const TestForm = () => {
       setShowTermsOfService(false);
       setShowMessage(true);
     }
-  };
-
-  const handleSurveyNextClick = () => {
-    setShowSurvey(true);
   };
 
   useEffect(() => {
@@ -180,12 +173,9 @@ const TestForm = () => {
             animate={{ opacity: 1, translateX: 0 }}
             transition={{ type: 'spring', stiffness: 50, duration: 2 }}
           >
-            <TermsOfService onNextClick={handleSurveyNextClick} />
+            <TermsOfService />
           </motion.div>
         )}
-
-        {/* Conditionally render the Survey component */}
-        {showSurvey && <Survey />}
       </form>
       <img
         src='/img/register/walking-man.jpg'
