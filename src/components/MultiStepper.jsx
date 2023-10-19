@@ -7,8 +7,8 @@ import Booking from './Booking';
 const MultiStepper = () => {
   const { steps, currentStepIndex, step, isFirstStep, isLastStep, back, next } = useMultistepForm([
     <TermsOfService />,
-    <Booking />,
     <Survey />,
+    <Booking />,
   ]);
 
   return (

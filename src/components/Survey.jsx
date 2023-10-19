@@ -3,11 +3,10 @@ import React from 'react';
 const Survey = () => {
   return (
     <div>
-      This is the calendary component
-      {/* <iframe
-        src='https://outlook.office365.com/owa/calendar/Uraohjainaloitustapaaminen@opetus.hel.fi/bookings/'
-        style={{ border: '0' }}
-      ></iframe> */}
+      <iframe
+        src='https://forms.office.com/Pages/ResponsePage.aspx?id=wWvrPyLXJkeWbFtYtk33UkE8Jwxx_WlJs9JbeqLbPZJUMEEwQlNTWEk0TFVCRUZXMDk2WkU0NFBDNS4u&embed=true'
+        id='survey-iframe'
+      ></iframe>
     </div>
   );
 };
