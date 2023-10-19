@@ -3,12 +3,14 @@ import useMultistepForm from '../hooks/useMultistepForm';
 import TermsOfService from './TermsOfService';
 import Survey from './Survey';
 import Booking from './Booking';
+import FinalStep from './FinalStep';
 
 const MultiStepper = () => {
   const { steps, currentStepIndex, step, isFirstStep, isLastStep, back, next } = useMultistepForm([
     <TermsOfService />,
     <Survey />,
     <Booking />,
+    <FinalStep />,
   ]);
 
   return (
@@ -24,9 +26,12 @@ const MultiStepper = () => {
               Edellinen
             </button>
           )} */}
-          <button type='button' className={'btn btn-lg btn-outline w-40'} onClick={next}>
-            {isLastStep ? 'Kiitos!' : 'Seuraava'}
-          </button>
+
+          {!isLastStep && (
+            <button type='button' className={'btn btn-lg btn-outline w-40'} onClick={next}>
+              {isLastStep ? 'Kiitos!' : 'Seuraava'}
+            </button>
+          )}
         </div>
       </form>
       <img
