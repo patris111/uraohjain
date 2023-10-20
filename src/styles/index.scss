@@ -13,6 +13,9 @@
 .yellow-bg {
   background: var(--uraohjain-yellow);
 }
+.grey-bg {
+  background: var(--uraohjain-grey);
+}
 // Colors scheme
 .green-color {
   color: var(--uraohjain-green);
@@ -113,6 +116,13 @@ html {
   .headerSection {
     background-color: red !important;
   }
+}
+#study-offers {
+  padding: 0 21rem;
+}
+#study-offers #ict {
+  border-top: solid 20px var(--uraohjain-yellow);
+  margin: 4rem 0;
 }
 
 // Components styling

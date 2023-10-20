@@ -4,33 +4,98 @@ const pageTitle = 'Opintotarjonta';
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <section>
-    <h2 class='text-center mt-10 mb-16'>
+  <div class='px-92' id='study-offers'>
+    <h2 class='text-center'>
       {pageTitle}
     </h2>
-  </section>
-
-  <section>
-    <div class=''>
-      <h2>Rekrytoitko ICT-, ohjelmisto- tai media-alalle työntekijöitä?</h2>
-      <p>
-        Uuden tyollistymistä edistavan toimintamallin kehittanyt Uraohjain+ -kehityshanke etsii
-        yhteistyöyrityksiä. Etsimämme yhteistyokumppanit ovat valmiita vaikuttamaan
-        tyovoimatarjonnan kehittamiseen omia tarpeitaan parhaiten vastaavaksi. <br /><br />
-        Uraohjain-palvelussa kehitetaan yritysten tyovoima tarpeisiin perustuen tyonhakijoiden osaamista
-        ja muita valmiuksia seka yleisella tasolla etta yrityskohtaisesti. Yrityksen yhteistyo palvelun
-        kanssa koostuu osaamis­- ja tyovoimatarpeita kartoittavista tapaamisista ja esitystilaisuuksista
-        seka palveluun osallistuvien tyonhakijoiden huomioimisesta rekrytoinneissa. <br /><br />
-        Uraohjain-palvelussa tyonhakijat kehittavat ICT-, ohjelmisto- tai media-alan osaamistaan, urahallintataitojaan
-        seka vahvistavat toimintavalmiuksiaan. Toimintamallin perusteet on luotu aiemmissa hankkeissa,
-        joissa on saavutettu hyvia tuloksia. <br />
-        <br />
-        Palvelu on tarkoitettu tyottomille toisen tai korkea-asteen tutkinnon suorittaneille, jotka hakevat
-        toita ICT-, ohjelmistokehitys- tai media-alalta. Uraohjain+-hankkeen toteuttavat Helsingin kaupunki
-        (Stadin AO), Laurea-ammattikorkeakoulu ja Metropolia Ammattikorkeakoulu. Hanke on Euroopan unionin
-        osarahoittama. <br />
-        <br />
-      </p>
+    <p>
+      Uraohjainpalvelussa voit suorittaa ICT-, ohjelmistokehitys- ja media-alan täydentäviä
+      opintoja.
+    </p>
+    <div class='flex justify-center'>
+      <a class='yellow-bg px-4 mx-4 underline' href='#'><p>ICT ja ohjelmistokehitys</p></a><a
+        class='pink-bg px-4 underline'
+        href='#'><p>Media</p></a
+      >
     </div>
-  </section>
+
+    <div id='ict'>
+      <h2>ICT ja ohjelmistokehitys</h2>
+    </div>
+
+    <script>
+      const ictData = [
+        {
+          title: 'Osaamiskokonaisuus 1: Web-kehittäjä',
+          description:
+            'Tutustu verkkosivujen kehittämiseen. Perehdy webkehityksessä käytettäviin ohjelmointikieliin, -kehyksiin ja sisällönhallintajärjestelmiin.',
+        },
+        {
+          title: 'Osaamiskokonaisuus 2: Ohjelmistokehitys',
+          description:
+            'Saa haltuun ohjelmoinnin ja IT:n perusteita. Syvennä ohjelmointi osaamistasi ja perehdy testaukseen. Tutustu ohjelmistokehitys projektien prosesseihin.',
+        },
+        {
+          title: 'Osaamiskokonaisuus 3: Verkkotekniikka ja tietoturva',
+          description:
+            'Kiinnostaako tietoturvaan perehtyminen ja verkkotekniikka? Tutustu verkkojen toimintaan ja niiden käsittelyyn tarkoitettujen teknologioihin ja järjestelmiin. Hanki osaamista kyberturvallisuuden tekniikoista ja toiminta tavoista.',
+        },
+        {
+          title: 'Osaamiskokonaisuus 4: Pilvipalveluiden ja tietojärjestelmien hallinta',
+          description:
+            'Tutustu suurimpien pilvipalveluiden tarjoajien teknologioihin ja niiden tarjoamiin mahdollisuuksiin. Perehdy ja opi lisää niiden hallinnoinnista. Kehitä osaamistasi servereiden käyttöön ottamisessa ja hyödyntämisessä.',
+        },
+        {
+          title: 'Osaamiskokonaisuus 5: Tekoäly ja datan analysointi',
+          description:
+            'Kiinnostaako data-analytiikka? Perehdy datan hallintaan ja käsittelyyn käytettäviin teknologioihin sekä tietokantoihin. Opi lisää tekoälyn teknisestä puolesta.',
+        },
+        {
+          title: 'Osaamiskokonaisuus 6: Digitaalinen markkinointi ja myynti',
+          description:
+            'Hanki osaamista digitaalisen markkinoinnin työkaluista ja menetelmistä sekä myynnistä. Tutustu sosiaaliseen mediaan markkinoinnin näkökulmasta ja tunnista digitaalisen myynnin erityispiirteitä.',
+        },
+        {
+          title: 'Osaamiskokonaisuus 7: Pelikehitys',
+          description:
+            'Kehitä omia digitaalisia taitojasi vastamaan nykytyöelämän vaatimuksia. Ota haltuun yleisimmät työelämän teknologiat ja hanki työkaluja urasi rakentamiseen.',
+        },
+        {
+          title: 'Osaamiskokonaisuus 8: Työ- ja urataidot',
+          description:
+            'Kehitä omia digitaalisia taitojasi vastamaan nykytyöelämän vaatimuksia. Ota haltuun yleisimmät työelämän teknologiat ja hanki työkaluja urasi rakentamiseen.',
+        },
+        {
+          title: 'Osaamiskokonaisuus 9: Digitaalisten palveluiden muotoilu',
+          description:
+            'Perehdy digitaalisten palveluiden suunnittelun perusteisiin ja liiketoiminnan mahdollisuuksiin. Tutustu palveluiden muotoiluun ja hallinnointiin.',
+        },
+        {
+          title: 'Osaamiskokonaisuus 10: Ohjelmointikielet ja -kehykset',
+          description:
+            'Haluatko ottaa uuden ohjelmointikielen haltuun? Valitse laajasta tarjonnasta tarvitsemasi ohjelmointikielet tai -kehykset.',
+        },
+        {
+          title: 'Osaamiskokonaisuus 11: Johdanto IT-opintoihin',
+          description:
+            'Tutustu IT-alaan näiden kurssien avulla. Keskeisimmät kurssit IT-alan opintojen kannalta kerättynä yhteen paikkaan.',
+        },
+      ];
+
+      ictData.forEach((item, index) => {
+        const container = document.createElement('div');
+        const backgroundColorClass = index % 2 === 0 ? 'grey-bg' : 'bg-white';
+
+        container.innerHTML = `
+        <div class="mb-4 p-4 ${backgroundColorClass}">
+          <p class="p-0 m-0 font-bold">${item.title}</p>
+          <p class="p-0 m-0">${item.description}</p>
+        </div>
+    `;
+
+        const parentElement = document.getElementById('ict');
+        parentElement?.appendChild(container);
+      });
+    </script>
+  </div>
 </BaseLayout>
