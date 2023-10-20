@@ -4,44 +4,42 @@ const pageTitle = 'Yrityksille';
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <div class='pad-wrapper'>
-    <section>
-      <h2>
-        {pageTitle}
-      </h2>
-      <p class=''>
-        URAOHJAIN+-hanke keskittyy osaavaa työvoimaa etsivään IT-alaan sekä moniosaamista vaativaan
-        media-alaan. Pääkaupunkiseudulla aloille koulutettuja työttömiä on useita tuhansia. Samaan
-        aikaan työvoiman tarve etenkin IT-alalla on valtava. Hankkeen räätälöidyillä palveluilla
-        vastataan ko. alojen työvoiman kohtaanto-ongelmiin, työnantajien rekrytointihaasteisiin sekä
-        työntekijöille asetettaviin koulutus- ja osaamisvaatimuksiin. Hanke keskittyy nuorten ja
-        pitkäaikaistyöttömien työ- ja toimintakyvyn sekä työllistymisedellytysten vahvistamiseen.
-        Hankkeella haastetaan työnhakijat, työnantajat, työllisyyspalvelut ja oppilaitokset yhdessä
-        pohtimaan, kehittämään ja mallintamaan kestäviä työllisyysratkaisuja, joissa asiakkaan
-        osaaminen ja työnantajan tarpeet aidosti kohtaavat ja työllistyminen helpottuu. Hankkeen
-        tavoitteena on luoda uudenlainen kestävän työllistymisen malli.
-      </p>
-      <p class='font-bold'>Mallia kehitetään neljällä toisiinsa limittyvällä painopisteellä:</p>
-      <ol class='list-decimal pl-6'>
-        <li>asiakasohjauksen kehittämisellä nopeammin työllistymispliulle</li>
-        <li>yritysyhteistyön kehittäminen kestävien kumppanuuksien pohjalta</li>
-        <li>kokonaisvaltaisen ohjausmallin kehittäminen ja</li>
-        <li>jatkuva oppiminen työllistymisen tukena</li>
-      </ol>
-      <p>
-        Uudessa mallissa panostetaan samanaikaisesti tarjonnan monipuolistamiseen ja palvelupolun
-        selkeyteen henkilöasiakkaan näkökulmasta. Mallissa eri oppilaitosten koulutustarjontaa ja
-        ohjausosaamista yhdistelemällä räätälöidään henkilöasiakkaalle yhdistelmä osaamista ja
-        tukea. Hankekumppanit luovat yhdessä saumattoman palvelukokonaisuuden, jossa työ- ja
-        toimintakyvyn, työelämätaitojen ja substanssiosaamisen kehittäminen tapahtuu yhtäaikaisesti,
-        jolloin työllistymispolkuja saadaan nopeutettua ja tehostettua.
-      </p>
-      <p>
-        Malli juurrutetaan hankkeen aikana osaksi Helsingin työllisyyspalveluiden palvelutarjontaa.
-        Pilotoinnin jälkeen malli kuvataan yksityiskohtaisesti ja julkaistaan vapaasti
-        käytettäväksi. Vaikuttavuuden arviointi toteutetaan määrällisin ja laadullisin mittarein.
-        Vaikuttavuusarviointi julkaistaan mallin julkaisun yhteydessä.
-      </p>
-    </section>
-  </div>
+  <section>
+    <h2 class='text-center mt-10 mb-16'>
+      {pageTitle}
+    </h2>
+
+    <div class='md:grid md:grid-cols-2'>
+      <div class='p-8 md:p-18 pink-bg'>
+        <h2>Rekrytoitko ICT-, ohjelmisto- tai media-alalle työntekijöitä?</h2>
+        <p>
+          Uuden tyollistymistä edistavan toimintamallin kehittanyt Uraohjain+ -kehityshanke etsii
+          yhteistyöyrityksiä. Etsimämme yhteistyokumppanit ovat valmiita vaikuttamaan
+          tyovoimatarjonnan kehittamiseen omia tarpeitaan parhaiten vastaavaksi. <br /><br />
+
+          Uraohjain-palvelussa kehitetaan yritysten tyovoima tarpeisiin perustuen tyonhakijoiden
+          osaamista ja muita valmiuksia seka yleisella tasolla etta yrityskohtaisesti. Yrityksen
+          yhteistyo palvelun kanssa koostuu osaamis­- ja tyovoimatarpeita kartoittavista
+          tapaamisista ja esitystilaisuuksista seka palveluun osallistuvien tyonhakijoiden
+          huomioimisesta rekrytoinneissa. <br /><br />
+
+          Uraohjain-palvelussa tyonhakijat kehittavat ICT-, ohjelmisto- tai media-alan osaamistaan,
+          urahallintataitojaan seka vahvistavat toimintavalmiuksiaan. Toimintamallin perusteet on
+          luotu aiemmissa hankkeissa, joissa on saavutettu hyvia tuloksia. <br />
+          <br />
+
+          Palvelu on tarkoitettu tyottomille toisen tai korkea-asteen tutkinnon suorittaneille,
+          jotka hakevat toita ICT-, ohjelmistokehitys- tai media-alalta. Uraohjain+-hankkeen
+          toteuttavat Helsingin kaupunki (Stadin AO), Laurea-ammattikorkeakoulu ja Metropolia
+          Ammattikorkeakoulu. Hanke on Euroopan unionin osarahoittama. <br />
+          <br />
+        </p>
+      </div>
+      <img
+        src='/img/register/walking-man.jpg'
+        alt=''
+        class='hidden md:block bg-cover w-full h-full'
+      />
+    </div>
+  </section>
 </BaseLayout>
