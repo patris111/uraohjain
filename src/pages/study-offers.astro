@@ -97,5 +97,53 @@ const pageTitle = 'Opintotarjonta';
         parentElement?.appendChild(container);
       });
     </script>
+
+    <div id='media'>
+      <h2>Media</h2>
+    </div>
+
+    <script>
+      const mediaData = [
+        {
+          title: 'Osaamiskokonaisuus 12: Media-alan tuotanto-osaaminen',
+          description:
+            'Elokuva- ja tv-tuotannot kasvavat ja kansainvälistyvät, ja tuotanto-osaamista tarvitaan. Opi tuotannon keskeiset asiat, vahvista kielitaitojasi sekä markkinoinnin ja yritystalouden osaamistasi.',
+        },
+        {
+          title: 'Osaamiskokonaisuus 13 :Journalismi ja verkkomedia, sosiaalinen media',
+          description:
+            'Mikä on journalismin rooli ja tehtävä yhteiskunnassa, ja mitä journalistinen työ pitää sisällään? Opi havainnoimaan, hankkimaan ja jalostamaan tietoa sekä tuottamaan journalistista sisältöä eri alustoille ja verkkoon',
+        },
+        {
+          title: 'Osaamiskokonaisuus 14: Elokuvan ja television perusopinnot',
+          description:
+            'Opiskele Metropolia Ammattikorkeakoulun elokuvan ja television koulutusohjelman perusopinnot.',
+        },
+        {
+          title: 'Osaamiskokonaisuus 15: Yrittäjyys media-alalla',
+          description:
+            'Media-alalla työskentely tarkoittaa usein freelance-työskentelyä itsenäisenä yrittäjänä. Opi media-alan yrittäjyyden erityispiirteet, yritysmuodot sekä yrityksen perustamisen prosessi ja liiketoimintaedellytysten arviointi. Syvennä osaamista markkinoinnin ja yritystalouden sekä kielten opinnoilla.',
+        },
+        {
+          title: 'Osaamiskokonaisuus 16: Kuva ja ääni',
+          description:
+            'Kuva ja ääni ovat AV-tuotantojen kivijalka, ja tämä kokonaisuus tarjoaa aiheista perustiedot',
+        },
+      ];
+      mediaData.forEach((item, index) => {
+        const container = document.createElement('div');
+        const backgroundColorClass = index % 2 === 0 ? 'grey-bg' : 'bg-white';
+
+        container.innerHTML = `
+        <div class="mb-4 p-4 ${backgroundColorClass}">
+          <p class="p-0 m-0 font-bold">${item.title}</p>
+          <p class="p-0 m-0">${item.description}</p>
+        </div>
+    `;
+
+        const parentElement = document.getElementById('media');
+        parentElement?.appendChild(container);
+      });
+    </script>
   </div>
 </BaseLayout>

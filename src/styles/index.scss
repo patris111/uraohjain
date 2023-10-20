@@ -120,9 +120,17 @@ html {
 #study-offers {
   padding: 0 21rem;
 }
+#study-offers #ict,
+#study-offers #media {
+  margin: 4rem 0;
+}
+
 #study-offers #ict {
   border-top: solid 20px var(--uraohjain-yellow);
-  margin: 4rem 0;
+}
+
+#study-offers #media {
+  border-top: solid 20px var(--uraohjain-pink);
 }
 
 // Components styling
