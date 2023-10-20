@@ -109,10 +109,14 @@ const pageTitle = 'Etusivu';
     <div class='flex justify-center'>
       <h2 class='py-7 md:py-16'>Ajankohtaista</h2>
     </div>
-    <div class='flex flex-row'>
+
+    <!-- Uncomment the div flex below to get a news row -->
+    <!-- <div class='flex flex-row'> -->
+    <!-- Comment the div below if you uncomment the div flex above to display a news row -->
+    <div class='md:w-1/5'>
       {
         allNews.map((news) => (
-          <div class='news-row'>
+          <div class='news-row '>
             <NewsCard
               showImage={'block'}
               frontmatter={news.frontmatter}

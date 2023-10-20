@@ -9,14 +9,15 @@ const { title, description, date, image } = Astro.props;
     <!-- <p class='font-bold'>{formatDate(date)}</p> -->
     <h3 class='text-center mt-10 mb-16'>Ajankohtaista</h3>
     <h1>{title}</h1>
-    <Picture
+    <!-- <Picture
       src={image.src}
       alt={image.alt}
       widths={[395, 400, 800]}
       sizes='(max-width: 800px) 100vw, 800px'
       aspectRatio='16:9'
       format='webp'
-    />
+    /> -->
+    <img src='../../public/img/news/news-1.jpg' alt='Kehitä osaamistasi joustavasti! image' />
     <!-- <p>{description}</p> -->
   </div>
 </header>
