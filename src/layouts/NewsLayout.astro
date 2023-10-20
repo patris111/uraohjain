@@ -1,16 +1,31 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import NewsHeader from '../components/NewsHeader.astro';
+import NewsCard from '../components/NewsCard.astro';
+const allNews = await Astro.glob('../pages/news/*.md');
 const { frontmatter } = Astro.props;
 const { title, description, date, image } = frontmatter;
 ---
 
 <BaseLayout {title} {description}>
   <NewsHeader {title} {description} {date} {image} />
-  <div>
+  <div class='flex flex-col'>
     <div class='text-xl'>
       <slot />
     </div>
-    <div class='sidebar'></div>
+    <!-- <div class='flex flex-row'>
+      {
+        allNews.map((news) => (
+          <div class='news-row'>
+            <NewsCard
+              showImage={'block'}
+              frontmatter={news.frontmatter}
+              url={news.url}
+              tagType='h3'
+            />
+          </div>
+        ))
+      }
+    </div> -->
   </div>
 </BaseLayout>

@@ -15,20 +15,20 @@ Uraohjain-jakson tapaamiset ohjaajien kanssa ja palveluun kuuluvat hyvinvointike
 
 ### Kasvokkaiset tapaamiset:
 
-· Aloitustapamainen
+- Aloitustapamainen
 
-· Hyvinvointikeskustelut
+- Hyvinvointikeskustelut
 
-· Ensimmäinen ura- ja opinto-ohjaustapaaminen
+- Ensimmäinen ura- ja opinto-ohjaustapaaminen
 
 ### Etätapaamiset ja työskentely:
 
-· Urasuunnittelu
+- Urasuunnittelu
 
-· Valitun osaamiskokonaisuuden suorittaminen
+- Valitun osaamiskokonaisuuden suorittaminen
 
-· Väli- ja loppukeskustelut
+- Väli- ja loppukeskustelut
 
 Uraohjauksen väli- ja loppukeskustelut tarjoavat mahdollisuuden arvioida edistymistä ja saada jakson lopulla ohjausta, joka auttaa viemään suunnitelmia päätökseen. Uraohjain-palvelussa vahvistat osaamistasi ja kirkastat uratavoitteitasi.
 
-## Oletko valmis aloittamaan?
+### Oletko valmis aloittamaan?
