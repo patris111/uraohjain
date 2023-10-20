@@ -11,16 +11,17 @@ const { title, date, author, image, description } = frontmatter;
 
 <article>
   <a href={url} aria-hidden='true' tabindex='-1' class={showImage}>
-    <Image
+    <!-- <Image
       src={image.src}
       alt={image.alt}
-      width='400'
-      height='250'
+      width='250'
+      height='325'
       format='webp'
       fit='cover'
       quality={80}
       aspectRatio='4:1'
-    />
+    /> -->
+    <img src='././public/img/news/news-1-card.jpg' alt='news 1 card' />
   </a>
   <Tag class='h3'>
     <a href={url}>{title}</a>

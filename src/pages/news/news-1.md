@@ -1,6 +1,6 @@
 ---
 layout: '../../layouts/NewsLayout.astro'
-title: Uraohjaus+
+title: Kehitä osaamistasi joustavasti!
 date: 2022-11-20
 author: Darnell McClure
 image: { src: '/img/news/news-1.jpg', alt: 'Two women sitting on sofas and working' }
@@ -9,22 +9,26 @@ draft: false
 category: Reference Docs
 ---
 
-Uraohjaus+ palvelee laajasti kaikkia, jotka haluavat apua koulutus- tai työpolun suunnittelemiseen. Palveluun voivat hakeutua kaikki Suomessa asuvat henkilöt taustasta tai työ- ja opiskelutilanteesta riippumatta.
+Uraohjain tarjoaa monipuolisen ja joustavan tavan kehittää omaa osaamistaan. Palvelu on suunniteltu tukemaan matkaa kohti ammatillisten tavoitteiden saavuttamista. Uraohjain-jakson alkuun kuuluvat kasvokkaiset tapaamiset kokeneiden ohjaajien kanssa ja palautetta omasta työskentelystä saa koko jakson ajan. Etätyöskentelyyn antaa vapauden oppia ja työskennellä itselle sopivalla tavalla.
 
-Uraohjaus+ auttaa sinua suunnittelemaan koulutus- tai työpolkua, oli sitten kyse nykyisen osaamisesi laajentamisesta tai uudelle alalle suuntaamisesta. Uraohjauksessa selvitetään yhdessä, millaisia vaihtoehtoja sinulle on tarjolla oman osaamisesi kehittämiseen ja millaista tukea siihen on saatavissa. Ohjauksessa huomioidaan mielenkiintosi kohteet, osaamisesi, koulutuksesi sekä aiempi työkokemuksesi. Omnian uraohjauksessa saat tietoa opiskeluvaihtoehdoista niin Omniassa kuin muissakin oppilaitoksissa.
+Uraohjain-jakson tapaamiset ohjaajien kanssa ja palveluun kuuluvat hyvinvointikeskustelut käydään Metropolia AMK:n Myllypuron kampuksella.
 
-### Ammatinvalinnan ohjauksen tavoiteet
+### Kasvokkaiset tapaamiset:
 
-Nisi duis ex aliqua eu officia eiusmod duis magna pariatur. Irure laborum qui aliqua nulla esse cillum laborum aliquip nulla elit. Id id Lorem duis irure cillum culpa. Nulla sint et aliqua velit do. Nulla sit sit proident consectetur enim ullamco aliqua in reprehenderit ullamco officia.
+· Aloitustapamainen
 
-Ipsum adipisicing exercitation dolor pariatur labore qui. Culpa cupidatat ea elit eiusmod tempor ea qui dolor Lorem laborum adipisicing. Ad ea laboris qui cupidatat deserunt culpa. Nulla ex velit adipisicing proident fugiat deserunt sunt eu adipisicing sint incididunt quis qui. Nulla fugiat labore duis ullamco reprehenderit excepteur laboris tempor ullamco aliquip laborum aliqua. Est tempor nisi magna ut elit pariatur commodo.
+· Hyvinvointikeskustelut
 
-### Kenelle?
+· Ensimmäinen ura- ja opinto-ohjaustapaaminen
 
-Ad ipsum velit sint enim exercitation mollit consequat elit mollit qui commodo aute. Laboris culpa voluptate aliquip incididunt duis. Cupidatat aliquip et sunt aute fugiat cupidatat irure voluptate. Occaecat officia et sunt.
+### Etätapaamiset ja työskentely:
 
-Officia tempor voluptate enim consequat cillum aute fugiat cupidatat incididunt magna labore in commodo. Eiusmod nostrud non deserunt. Incididunt excepteur pariatur magna. Proident aute ad in velit labore enim sit cillum ad mollit proident et qui. Esse sunt ullamco ullamco ipsum enim eu esse id eu exercitation laboris magna Lorem. Anim nostrud officia anim velit do exercitation labore mollit excepteur excepteur ex.
+· Urasuunnittelu
 
-Ipsum adipisicing exercitation dolor pariatur labore qui. Culpa cupidatat ea elit eiusmod tempor ea qui dolor Lorem laborum adipisicing. Ad ea laboris qui cupidatat deserunt culpa. Nulla ex velit adipisicing proident fugiat deserunt sunt eu adipisicing sint incididunt quis qui. Nulla fugiat labore duis ullamco reprehenderit excepteur laboris tempor ullamco aliquip laborum aliqua. Est tempor nisi magna ut elit pariatur commodo.
+· Valitun osaamiskokonaisuuden suorittaminen
 
-Labore commodo do incididunt amet ad et exercitation magna veniam veniam aute laboris excepteur occaecat Lorem. Fugiat in magna commodo magna nulla eu. Fugiat nulla aliqua sunt duis enim irure aliquip fugiat aliqua Lorem ad tempor incididunt proident incididunt. Labore fugiat tempor esse cillum voluptate culpa anim sunt consequat. Ipsum minim nostrud laborum sit aliquip duis officia consequat est. Fugiat mollit elit nulla. Sit minim est elit labore. Sunt eu pariatur pariatur ut deserunt nulla labore in non sit tempor voluptate ex.
+· Väli- ja loppukeskustelut
+
+Uraohjauksen väli- ja loppukeskustelut tarjoavat mahdollisuuden arvioida edistymistä ja saada jakson lopulla ohjausta, joka auttaa viemään suunnitelmia päätökseen. Uraohjain-palvelussa vahvistat osaamistasi ja kirkastat uratavoitteitasi.
+
+## Oletko valmis aloittamaan?
