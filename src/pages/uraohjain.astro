@@ -1,0 +1,43 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import MultiStepper from '../components/MultiStepper';
+const pageTitle = 'Uraohjain+';
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <section>
+    <h2 class='text-center mt-10 mb-16'>
+      {pageTitle}
+    </h2>
+
+    <div class='md:grid md:grid-cols-2'>
+      <div class='p-8 md:p-18 pink-bg'>
+        <h2>URAOHJAIN+ rakentaa uudenlaisen kestävän työllistymisen mallin</h2>
+        <p>
+          URAOHJAIN+ -hanke on noussut tarpeesta lisätä ICT-, ohjelmistokehitys- ja media-alojen
+          työnhakijoiden ja työnantajien kohtaamista. Hankkeessa kehitettävä Uraohjain-palvelu
+          vahvistaa ICT-, ohjelmistokehitys- ja media-alan työnhakijoiden osaamista vastaamaan
+          työelämän tarpeisiin. Samalla vastataan yritysten rekrytointihaasteeseen.
+          <br /><br />
+          Uraohjain-palvelu on tarkoitettu ICT-, ohjelmistokehitys- ja media-alan työttömille työnhakijoille,
+          joilla on tarve täydentää osaamistaan ja kehittää työllistymis- ja urasuunnittelutaitojaan.
+          Palvelun aikana vahvistetaan arkea ja työllistymistä tukevaa hyvinvointia.
+          <br /><br />
+          URAOHJAIN+ on Stadin ammattiopiston, Laurea-ammattikorkeakoulun ja Metropolia Ammattikorkeakoulun
+          yhteishanke. Yhteistyötä tehdään Helsingin kaupungin Työllisyyspalveluiden sekä yritysten kanssa.
+          Euroopan unionin sosiaalirahasto osarahoittaa hanketta.
+        </p>
+      </div>
+      <img
+        src='/img/register/walking-man.jpg'
+        alt=''
+        class='hidden md:block bg-cover w-full h-full'
+      />
+    </div>
+  </section>
+
+  <section>
+    <h3 class='my-16'>URAOHJAIN+ -hankkeen neljä painopistettä</h3>
+  </section>
+</BaseLayout>
