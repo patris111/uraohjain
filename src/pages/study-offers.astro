@@ -4,17 +4,19 @@ const pageTitle = 'Opintotarjonta';
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <div class='px-92' id='study-offers'>
-    <h2 class='text-center mt-10'>
+  <div class='' id='study-offers'>
+    <h2 class='text-center md:mt-10'>
       {pageTitle}
     </h2>
-    <p>
+    <p class='m-3 md:m-0'>
       Uraohjainpalvelussa voit suorittaa ICT-, ohjelmistokehitys- ja media-alan täydentäviä
       opintoja.
     </p>
     <div class='flex justify-center anchors'>
-      <a class='yellow-bg px-6 mx-4 underline' href='#ict'><p>ICT ja ohjelmistokehitys</p></a>
-      <a class='pink-bg px-28 underline' href='#media'><p>Media</p></a>
+      <a class='yellow-bg px-3 md:px-6 mr-4 underline' href='#ict'
+        ><p>ICT ja ohjelmistokehitys</p></a
+      >
+      <a class='pink-bg px-12 md:px-28 underline' href='#media'><p>Media</p></a>
     </div>
 
     <div id='ict'>
