@@ -42,7 +42,7 @@ const TestForm = () => {
 
   return (
     <div className='md:grid md:grid-cols-2' id='pink-box'>
-      <form className='p-8 md:p-18 pink-bg'>
+      <form className='p-4 md:p-18 pink-bg'>
         {showRadioForm && (
           <motion.div
             className='md:p-10'

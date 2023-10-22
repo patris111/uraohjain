@@ -3,8 +3,8 @@ import Survey from './Survey';
 
 const TermsOfService = () => {
   return (
-    <div className='p-8 md:p-18'>
-      <h3 className='mt-0 mb-20'>Tervetuloa ilmoittautumaan Uraohjain-palveluun!</h3>
+    <div className='p-2 md:p-18'>
+      <h3 className='md:mt-0 md:mb-8'>Tervetuloa ilmoittautumaan Uraohjain-palveluun!</h3>
       <p>
         Varaa ilmoittautumiseen aikaa noin 20 minuuttia. Aloita ilmoittautuminen täyttämällä
         taustoittava kysely ammatillisesta osaamisestasi. Tämän jälkeen pääset täyttämään
