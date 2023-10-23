@@ -109,11 +109,11 @@ import '../styles/index.scss';
     }
   });
 
-  function setActiveLink(links: NodeListOf<HTMLAnchorElement>, currentURL: string) {
+  function setActiveLink(links: NodeListOf<HTMLAnchorElement> | null, currentURL: string) {
     const currentPathname = new URL(currentURL).pathname;
 
     links?.forEach((link) => {
-      if (link instanceof HTMLAnchorElement && new URL(link.href).pathname === currentPathname) {
+      if (link.href && currentURL.includes(link.href)) {
         link.classList.add('active');
       }
     });
