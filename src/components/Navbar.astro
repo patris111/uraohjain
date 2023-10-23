@@ -109,9 +109,11 @@ import '../styles/index.scss';
     }
   });
 
-  function setActiveLink(links: NodeListOf<Element> | null, currentURL: string) {
+  function setActiveLink(links: NodeListOf<HTMLAnchorElement>, currentURL: string) {
+    const currentPathname = new URL(currentURL).pathname;
+
     links?.forEach((link) => {
-      if (link instanceof HTMLAnchorElement && link.href === currentURL) {
+      if (link instanceof HTMLAnchorElement && new URL(link.href).pathname === currentPathname) {
         link.classList.add('active');
       }
     });
@@ -120,9 +122,9 @@ import '../styles/index.scss';
   // Desktop menu links active
   const navLinks = document.querySelectorAll('.navbar a');
   const currentURL = window.location.href;
-  setActiveLink(navLinks, currentURL);
+  setActiveLink(navLinks as NodeListOf<HTMLAnchorElement>, currentURL);
 
   // Mobile menu links active
   const mobileMenuLinks = document.querySelectorAll('.mobile-menu a');
-  setActiveLink(mobileMenuLinks, currentURL);
+  setActiveLink(mobileMenuLinks as NodeListOf<HTMLAnchorElement>, currentURL);
 </script>
