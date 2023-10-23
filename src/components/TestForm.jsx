@@ -152,7 +152,7 @@ const TestForm = () => {
         {showMessage && (
           <motion.div
             className='flex flex-col items-center py-24 md:px-8 md:py-48'
-            initial={{ opacity: 0, translateX: 200 }}
+            initial={{ opacity: 0, translateX: 100 }}
             animate={{ opacity: 1, translateX: 0 }}
             transition={{ type: 'spring', stiffness: 80, duration: 0.5 }}
           >
@@ -169,7 +169,7 @@ const TestForm = () => {
 
         {showMultiStepper && (
           <motion.div
-            initial={{ opacity: 0, translateX: 200 }}
+            initial={{ opacity: 0, translateX: 20 }}
             animate={{ opacity: 1, translateX: 0 }}
             transition={{ type: 'spring', stiffness: 50, duration: 2 }}
           >
