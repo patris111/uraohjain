@@ -28,7 +28,7 @@ const MultiStepper = () => {
           )} */}
 
           {!isLastStep && (
-            <button type='button' className={'btn btn-lg btn-outline w-40'} onClick={next}>
+            <button type='button' className={'btn btn-lg btn-outline btn-form w-40'} onClick={next}>
               {isLastStep ? 'Kiitos!' : 'Seuraava'}
             </button>
           )}

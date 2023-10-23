@@ -21,7 +21,7 @@
   color: var(--uraohjain-green);
 }
 .burgundy-color {
-  color: var(--uraohjain-burgundy);
+  color: var(--uraohjain-burgundy) !important;
 }
 // Common elements
 html {
@@ -134,7 +134,13 @@ html {
     width: 100%;
   }
 }
-
+.btn-form {
+  color: var(--uraohjain-burgundy) !important;
+}
+.btn-form:hover {
+  color: var(--uraohjain-white) !important;
+  background: var(--uraohjain-burgundy) !important;
+}
 // Components styling
 .navbar {
   background-color: var(--uraohjain-green);
