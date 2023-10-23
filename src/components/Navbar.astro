@@ -113,7 +113,7 @@ import '../styles/index.scss';
     const currentPathname = new URL(currentURL).pathname;
 
     links?.forEach((link) => {
-      if (link.href && currentURL.includes(link.href)) {
+      if (link.href && (currentURL === link.href || currentURL === link.href + '/')) {
         link.classList.add('active');
       }
     });
