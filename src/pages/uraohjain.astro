@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-const pageTitle = 'Uraohjain+';
+const pageTitle = 'URAOHJAIN+ -yhteiskehittämishanke';
 ---
 
 <BaseLayout pageTitle={pageTitle}>
@@ -29,7 +29,7 @@ const pageTitle = 'Uraohjain+';
       </div>
       <img
         src='/img/register/walking-man.jpg'
-        alt=''
+        alt='walking man'
         class='hidden md:block bg-cover w-full h-full'
       />
     </div>
@@ -37,5 +37,13 @@ const pageTitle = 'Uraohjain+';
 
   <section>
     <h3 class='my-16'>URAOHJAIN+ -hankkeen neljä painopistettä</h3>
+    <!-- md:w-1/2 -->
+    <div id='diagram-focus'>
+      <img src='/img/uraohjain+/diagram.jpg' alt='diagram' />
+      <p class='p-4 my-14 pink-bg'>
+        URAOHJAIN+ alkoi 1.3.2023 ja se jatkuu 28.02.2025 asti. <br /> Palvelua kehitetään koko hankkeen
+        ajan, ja hankeajan lopussa julkaistaan malli kehitetystä palvelusta ja sen vaikuttavuudesta.
+      </p>
+    </div>
   </section>
 </BaseLayout>

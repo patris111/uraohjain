@@ -129,6 +129,11 @@ html {
     border-top: solid 20px var(--uraohjain-pink);
   }
 }
+#diagram-focus {
+  p {
+    width: 100%;
+  }
+}
 
 // Components styling
 .navbar {
@@ -229,12 +234,16 @@ html {
       }
     }
   }
-
   #study-offers {
     padding: 0 21rem;
     #ict,
     #media {
       margin: 5.5rem 4rem;
+    }
+  }
+  #diagram-focus {
+    p {
+      width: 731px;
     }
   }
 }
