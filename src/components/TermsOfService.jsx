@@ -3,7 +3,7 @@ import Survey from './Survey';
 
 const TermsOfService = () => {
   return (
-    <div className='p-2 md:p-18'>
+    <div className='p-4 md:py-10'>
       <h3 className='md:mt-0 md:mb-8'>Tervetuloa ilmoittautumaan Uraohjain-palveluun!</h3>
       <p>
         Varaa ilmoittautumiseen aikaa noin 20 minuuttia. Aloita ilmoittautuminen täyttämällä
@@ -12,12 +12,16 @@ const TermsOfService = () => {
         tulee hyväksyä tietosuojaseloste ja suostumus tietojen vaihtoon. Hyväksyn
         tietosuojaselosteen. Hyväksyn osallistumiseni Uraohjain+ -kehityshankkeeseen.
       </p>
-      <div className='flex flex-col'>
-        <input type='checkbox' name='privacy' id='privacy' />
-        <label htmlFor='privacy'>Hyväksyn tietosuojaselosteen.</label>
-        <input type='checkbox' name='information' id='information' />
-        <label htmlFor='information'>
-          Hyväksyn tietojen vaihdon Uraohjain-palvelu toteuttajien kesken.
+      <div className='form-control w-3/4 burgundy-color mt-10 text-lg'>
+        <label className='cursor-pointer label justify-start'>
+          <input type='checkbox' name='privacy' id='privacy' className='checkbox mr-4' />
+          <span htmlFor='privacy'>Hyväksyn tietosuojaselosteen.</span>
+        </label>
+        <label className='cursor-pointer label justify-start'>
+          <input type='checkbox' name='information' id='information' className='checkbox mr-4' />
+          <span htmlFor='information'>
+            Hyväksyn tietojen vaihdon Uraohjain-palvelu toteuttajien kesken.
+          </span>
         </label>
       </div>
     </div>

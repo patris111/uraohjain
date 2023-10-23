@@ -45,7 +45,7 @@ const TestForm = () => {
       <form className='p-4 md:p-18 pink-bg'>
         {showRadioForm && (
           <motion.div
-            className='md:p-10'
+            className='md:p-8'
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ type: 'spring', duration: 1 }}
