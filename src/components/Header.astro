@@ -4,9 +4,15 @@ import PartnersLogos from '../components/PartnersLogos.astro';
 ---
 
 <Navbar />
-<div class='w-full bg-cover bg-center' style='background-image: url(/img/frontpage/header.jpg);'>
-  <div class='px-8 py-8 md:px-24 md:py-20'>
-    <img src='/img/frontpage/logo.svg' alt='' />
+<div
+  id='header'
+  class='w-full bg-cover bg-center'
+  style='background-image: url(/img/frontpage/header.jpg);'
+>
+  <div id='header-logos'>
+    <div class='px-8 py-8 md:px-24 md:py-20'>
+      <img src='/img/frontpage/logo.svg' alt='' />
+    </div>
+    <PartnersLogos />
   </div>
-  <PartnersLogos />
 </div>

@@ -231,9 +231,8 @@ html {
     footer {
       background-color: var(--uraohjain-white);
       font-size: 1.1rem !important;
-      // padding: 2rem 5rem 5.5rem 5rem;
-
-      a {
+      padding: 2rem 3rem;
+      padding: a {
         color: var(--uraohjain-burgundy);
       }
       div {
@@ -264,8 +263,22 @@ html {
     padding: 0 21rem;
   }
 }
-@media (min-width: 1920px) {
+@media (min-width: 1920px) and (max-width: 2559px) {
   .main-wrapper {
-    padding: 1rem 10rem 3.5rem 10rem;
+    // padding: 1rem 10rem 3.5rem 10rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 2560px) {
+  .main-wrapper,
+  footer,
+  .navbar,
+  #header-logos {
+    width: 54%;
+    margin: 0 auto;
+  }
+  #study-offers {
+    padding: 0 8rem;
   }
 }
