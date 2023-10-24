@@ -1,8 +1,12 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import TestForm from '../components/TestForm.jsx';
-import MultiStepper from '../components/MultiStepper';
-const pageTitle = 'Ilmoittatuminen';
+import { changeLanguage } from "i18next";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TestForm from "../components/TestForm.jsx";
+import MultiStepper from "../components/MultiStepper";
+
+changeLanguage("fi");
+
+const pageTitle = "Ilmoittatuminen";
 ---
 
 <BaseLayout pageTitle={pageTitle}>

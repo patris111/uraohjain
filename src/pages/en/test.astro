@@ -1,9 +1,9 @@
 ---
 import { changeLanguage } from "i18next";
-import BaseLayout from "../layouts/BaseLayout.astro";
-import TermsOfService from "../components/TermsOfService.jsx";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import TestForm from "../../components/TestForm.jsx";
 
-changeLanguage("fi");
+changeLanguage("en");
 
 const pageTitle = "Ilmoittatuminen";
 ---
@@ -13,6 +13,6 @@ const pageTitle = "Ilmoittatuminen";
     <h2 class='text-center mt-10 mb-16'>
       {pageTitle}
     </h2>
-    <TermsOfService client:load />
+    <TestForm client:load />
   </section>
 </BaseLayout>
