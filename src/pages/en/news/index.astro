@@ -1,13 +1,12 @@
 ---
-import { changeLanguage } from 'i18next';
-// import BaseLayout from '../../../layouts/BaseLayout.astro';
-import BaseLayout from '../../../layouts/BaseLayout.astro';
-import NewsCard from '../../../components/NewsCard.astro';
+import { changeLanguage } from "i18next";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import NewsCard from "../../../components/NewsCard.astro";
 
-changeLanguage('en');
+changeLanguage("en");
 
-const allNews = await Astro.glob('../news/*.md');
-const pageTitle = 'Ajankohtaista';
+const allNews = await Astro.glob("../../news/*.md");
+const pageTitle = "Ajankohtaista";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
