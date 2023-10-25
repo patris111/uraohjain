@@ -8,13 +8,15 @@
     "benefitsTools": "Tools for planning your career",
     "benefitsCounselling": "Guidance counselling ",
     "benefitsWellbeing": "Wellbeing discussions",
-    "benefitsNetworking": "Cooperation and networking"
+    "benefitsNetworking": "Cooperation and networking",
+
+    "profileTitle": "For whom is the CareerDriver service intended?",
+    "profileBullet1": "You have obtained at least an upper secondary or higher education degree.",
+    "profileBullet2": "Your goal is to find employment in the field of ICT, software development or media.",
+    "profileBullet3": "Your Finnish or English skills are at least at the B2 level.",
+    "profileBullet4": "You are registered as an unemployed job seeker at Helsinki Employment Services.",
+
+    "testLink": "Take our test to see <br /> whether  the service is <br /> right for you and sign up!"
   },
-  "profile": {
-    "title": "For whom is the CareerDriver service intended?",
-    "bullet1": "You have obtained at least an upper secondary or higher education degree.",
-    "bullet2": "Your goal is to find employment in the field of ICT, software development or media.",
-    "bullet3": "Your Finnish or English skills are at least at the B2 level.",
-    "bullet4": "You are registered as an unemployed job seeker at Helsinki Employment Services."
-  }
+  "news": {}
 }

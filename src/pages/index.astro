@@ -23,7 +23,7 @@ const pageTitle = "Etusivu";
     <p class='md:text-2xl mb-4 md:mb-14 leading-9'>
       <Trans i18nKey='frontpage.introDescription'>
         Tule täydentämään osaamistasi työelämän nopeita muutostarpeita vastaavaksi, suunnittelemaan
-        uraasi ja oivaltamaan lisää oman osaamisen markkinoinnista. Uraohjain-palvelu tarjoaa
+        uraasi ja oivaltamaan lisää oman osaamisesi markkinoinnista. Uraohjain-palvelu tarjoaa
         sinulle mahdollisuuden vahvistaa ammatillisia verkostojasi. Pääset keskustelemaan oman
         arkesi hyvinvoinnista työllistymisen tueksi. Osaamispolut rakentuvat Laurean ja Metropolian
         ICT-, ohjelmistokehitys- ja media-alojen opintotarjonnasta. Osaamispolut ovat kestoltaan
@@ -107,27 +107,31 @@ const pageTitle = "Etusivu";
   <section class='md:flex justify-around mb-4 md:mb-16 mt-6'>
     <div class='md:basis-3/5 green-bg py-6 px-6 md:py-12 md:px-12'>
       <h3 class='text-white'>
-        {t('profile.title')}
+        {t('frontpage.profileTitle')}
       </h3>
       <ul class='text-white list-disc ml-6'>
         <li>
-          {t('profile.bullet1')}
+          {t('frontpage.profileBullet1')}
         </li>
         <li>
-          {t('profile.bullet2')}
+          {t('frontpage.profileBullet2')}
         </li>
         <li>
-          {t('profile.bullet3')}
+          {t('frontpage.profileBullet3')}
         </li>
         <li>
-          {t('profile.bullet4')}
+          {t('frontpage.profileBullet4')}
         </li>
       </ul>
     </div>
     <!-- Take test section -->
     <div class='md:basis-2/5 yellow-bg mt-4 md:mt-0 md:ml-5 flex justify-center items-center'>
       <h2 class='green-color underline font-semibold'>
-        <a href='/signup'>Testaa sopiiko <br />Uraohjain-palvelu <br />sinulle ja ilmoittaudu!</a>
+        <a href='/signup'>
+          <Trans i18nKey='frontpage.testLink'>
+            Testaa sopiiko <br />Uraohjain-palvelu <br />sinulle ja ilmoittaudu!
+          </Trans></a
+        >
       </h2>
     </div>
   </section>
