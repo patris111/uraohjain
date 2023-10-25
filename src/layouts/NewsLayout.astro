@@ -13,7 +13,7 @@ const { title, description, date, image } = frontmatter;
     <div class='text-xl'>
       <slot />
     </div>
-    <!-- <div class='flex flex-row'>
+    <div class='flex flex-row w-3/5 gap-4 mt-20'>
       {
         allNews.map((news) => (
           <div class='news-row'>
@@ -26,6 +26,6 @@ const { title, description, date, image } = frontmatter;
           </div>
         ))
       }
-    </div> -->
+    </div>
   </div>
 </BaseLayout>
