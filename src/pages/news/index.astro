@@ -1,22 +1,20 @@
 ---
-import { changeLanguage } from "i18next";
-import BaseLayout from "../../layouts/BaseLayout.astro";
-import NewsCard from "../../components/NewsCard.astro";
+import { changeLanguage } from 'i18next';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import NewsCard from '../../components/NewsCard.astro';
 
-changeLanguage("fi");
+changeLanguage('fi');
 
-const allNews = await Astro.glob("./*.md");
-const pageTitle = "Ajankohtaista";
+const allNews = await Astro.glob('./*.md');
+const pageTitle = 'Ajankohtaista';
 ---
 
 <BaseLayout pageTitle={pageTitle}>
   <h2 class='text-center mt-10 mb-16'>Ajankohtaista</h2>
   <!-- <section class='flex justify-center' aria-label='New Blog News'> -->
   <section aria-label='New Blog News'>
-    <!-- Uncomment the div grid below to get a news row -->
-    <!-- <div class='grid grid-cols-1 gap-1'> -->
-    <!-- Comment the div below if you uncomment the div grid above to display a news row -->
-    <div class='md:w-1/5'>
+    <div class='grid grid-cols-4 gap-4'>
+      <!-- <div class='md:w-1/5'> -->
       {
         allNews.map((news) => (
           <div class='news-row'>
