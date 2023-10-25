@@ -8,9 +8,9 @@ const TermsOfService = () => {
       <p>
         Varaa ilmoittautumiseen aikaa noin 20 minuuttia. Aloita ilmoittautuminen täyttämällä
         taustoittava kysely ammatillisesta osaamisestasi. Tämän jälkeen pääset täyttämään
-        henkilötietosi ja varaamaan ajan aloitustapaamiseen. Ilmoittautuaksesi palveluun, sinun
-        tulee hyväksyä tietosuojaseloste ja suostumus tietojen vaihtoon. Hyväksyn
-        tietosuojaselosteen. Hyväksyn osallistumiseni Uraohjain+ -kehityshankkeeseen.
+        henkilötietosi ja varaamaan ajan aloitustapaamiseen. Aloitustapaamisessa vahvistetaan
+        osallistumisesi Uraohjain-palveluun. Ilmoittautuaksesi palveluun sinun tulee hyväksyä
+        tietosuojaseloste ja suostumus tietojen vaihtoon Uraohjain-palvelun toteuttajien kesken.
       </p>
       <div className='form-control w-3/4 burgundy-color mt-8 text-lg'>
         <label className='cursor-pointer label justify-start'>
@@ -29,6 +29,11 @@ const TermsOfService = () => {
           </span>
         </label>
       </div>
+      <p class='mt-4'>
+        Uraohjain-palvelun aloituspaikkojen määrä on rajallinen. Jos seuraavan kahden viikon
+        aloitustapaamisten ajat on täytetty, ilmoitamme tästä seuraavan sivun kyselyn alussa. Löydät
+        tiedon kyselyn ylälaidasta. 
+      </p>
     </div>
   );
 };

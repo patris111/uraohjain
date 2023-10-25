@@ -52,7 +52,9 @@ const TestForm = () => {
           >
             <h3 className='mb-14'>Testaa sopiiko Uraohjain-palvelu sinulle ja ilmoittaudu!</h3>
             <ol className='list-decimal ml-5'>
-              <li className='my-4'>Oletko ilmoittautunut työttömäksi työnhakijaksi?</li>
+              <li className='my-4'>
+                Oletko ilmoittautunut työttömäksi työnhakijaksi Helsingin työllisyyspalveluihin?
+              </li>
               <div className='mb-8'>
                 <input
                   type='radio'
@@ -95,7 +97,7 @@ const TestForm = () => {
               />
               <span className='mx-4 font-bold'>Ei</span>
 
-              <li className='my-4'>Onko suomen/englannin kielen tasosi vähintään B2?</li>
+              <li className='my-4'>Onko suomen tai englannin kielen tasosi vähintään B2?</li>
               <input
                 type='radio'
                 name='language'
