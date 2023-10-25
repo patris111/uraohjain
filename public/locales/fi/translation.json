@@ -9,5 +9,12 @@
     "benefitsCounselling": "Opinto-ohjaus",
     "benefitsWellbeing": "Hyvinvointikeskustelut",
     "benefitsNetworking": "Ammatillisen verkostoitumisen tukeminen"
+  },
+  "profile": {
+    "title": "Kenelle Uraohjain-palvelu on?",
+    "bullet1": "Olet suorittanut toisen tai korkea-asteen tutkinnon",
+    "bullet2": "Tavoitteesi on työllistyä ICT-, ohjelmistokehitys tai media-alalle",
+    "bullet3": "Suomen tai englanninkielen tasosi on vähintään B2",
+    "bullet4": "Olet Helsingin työllisyyspalveluiden asiaka"
   }
 }

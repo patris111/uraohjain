@@ -1,13 +1,13 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import NewsCard from '../components/NewsCard.astro';
-const allNews = await Astro.glob('../pages/news/*.md');
-import i18next, { t, changeLanguage } from 'i18next';
-import { Trans, HeadHrefLangs } from 'astro-i18next/components';
+import BaseLayout from "../layouts/BaseLayout.astro";
+import NewsCard from "../components/NewsCard.astro";
+const allNews = await Astro.glob("../pages/news/*.md");
+import i18next, { t, changeLanguage } from "i18next";
+import { Trans, HeadHrefLangs } from "astro-i18next/components";
 
-changeLanguage('fi');
+changeLanguage("fi");
 
-const pageTitle = 'Etusivu';
+const pageTitle = "Etusivu";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
@@ -103,17 +103,28 @@ const pageTitle = 'Etusivu';
       <source src='/videos/uraohjain-presentation.mp4' type='video/mp4' />
     </video>
   </section>
-  <!-- Take test section -->
+  <!-- Profile section -->
   <section class='md:flex justify-around mb-4 md:mb-16 mt-6'>
     <div class='md:basis-3/5 green-bg py-6 px-6 md:py-12 md:px-12'>
-      <h3 class='text-white'>Kenelle Uraohjain-palvelu on?</h3>
+      <h3 class='text-white'>
+        {t('profile.title')}
+      </h3>
       <ul class='text-white list-disc ml-6'>
-        <li>Olet suorittanut toisen tai korkea-asteen tutkinnon</li>
-        <li>Tavoitteesi on työllistyä ICT-, ohjelmistokehitys tai media-alalle</li>
-        <li>Suomen tai englanninkielen tasosi on vähintään B2</li>
-        <li>Olet Helsingin työllisyyspalveluiden asiakas</li>
+        <li>
+          {t('profile.bullet1')}
+        </li>
+        <li>
+          {t('profile.bullet2')}
+        </li>
+        <li>
+          {t('profile.bullet3')}
+        </li>
+        <li>
+          {t('profile.bullet4')}
+        </li>
       </ul>
     </div>
+    <!-- Take test section -->
     <div class='md:basis-2/5 yellow-bg mt-4 md:mt-0 md:ml-5 flex justify-center items-center'>
       <h2 class='green-color underline font-semibold'>
         <a href='/signup'>Testaa sopiiko <br />Uraohjain-palvelu <br />sinulle ja ilmoittaudu!</a>
