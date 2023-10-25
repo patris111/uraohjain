@@ -1,13 +1,13 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-import NewsCard from "../components/NewsCard.astro";
-const allNews = await Astro.glob("../pages/news/*.md");
-import i18next, { t, changeLanguage } from "i18next";
-import { Trans, HeadHrefLangs } from "astro-i18next/components";
+import BaseLayout from '../layouts/BaseLayout.astro';
+import NewsCard from '../components/NewsCard.astro';
+const allNews = await Astro.glob('../pages/news/*.md');
+import i18next, { t, changeLanguage } from 'i18next';
+import { Trans, HeadHrefLangs } from 'astro-i18next/components';
 
-changeLanguage("fi");
+changeLanguage('fi');
 
-const pageTitle = "Etusivu";
+const pageTitle = 'Etusivu';
 ---
 
 <BaseLayout pageTitle={pageTitle}>
@@ -100,7 +100,7 @@ const pageTitle = "Etusivu";
       vel maiores totam sapiente molestiae praesentium exercitationem excepturi.
     </p>
     <video class='mx-auto py-4 md:py-8 w-full md:w-3/4' autoplay loop controls muted>
-      <source src='/videos/team.mp4' type='video/mp4' />
+      <source src='/videos/uraohjain-presentation.mp4' type='video/mp4' />
     </video>
   </section>
   <!-- Take test section -->
