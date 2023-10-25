@@ -1,13 +1,13 @@
 ---
-import BaseLayout from "../../layouts/BaseLayout.astro";
-import NewsCard from "../../components/NewsCard.astro";
-const allNews = await Astro.glob("../../pages/news/*.md");
-import i18next, { t, changeLanguage } from "i18next";
-import { Trans, HeadHrefLangs } from "astro-i18next/components";
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import NewsCard from '../../components/NewsCard.astro';
+const allNews = await Astro.glob('../../pages/news/*.md');
+import i18next, { t, changeLanguage } from 'i18next';
+import { Trans, HeadHrefLangs } from 'astro-i18next/components';
 
-changeLanguage("en");
+changeLanguage('en');
 
-const pageTitle = "Etusivu";
+const pageTitle = 'Etusivu';
 ---
 
 <BaseLayout pageTitle={pageTitle}>
@@ -139,12 +139,12 @@ const pageTitle = "Etusivu";
   <section class='flex flex-col justify-center items-center'>
     <h2>Palvelupolku</h2>
     <p>Kesto 3-6kk</p>
-    <img src='/img/frontpage/service-path.png' alt='service-path' />
+    <img src='/img/frontpage/service-path-en.png' alt='service-path' />
   </section>
   <!-- News section -->
   <section>
-    <div class='flex justify-center'>
-      <h2 class='py-7 md:py-16'>Ajankohtaista</h2>
+    <div class='flex justify-center my-7 md:mt-2 md:mb-16'>
+      <h2 class=''>Ajankohtaista</h2>
     </div>
 
     <div class='flex flex-row w-2/4 gap-4'>
