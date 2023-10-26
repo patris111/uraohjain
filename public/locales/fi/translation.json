@@ -1,12 +1,12 @@
 {
-  "navbar": {
-    "item1": "Etusivu",
-    "item2": "Ajankohtaista",
-    "item3": "ilmoittautuminen",
-    "item4": "Opintotarjonta",
-    "item5": "Yrityksille",
-    "item6": "Hanke",
-    "item7": "Yhteystiedot"
+  "section": {
+    "home": "Etusivu",
+    "news": "Ajankohtaista",
+    "signup": "ilmoittautuminen",
+    "studyOfferings": "Opintotarjonta",
+    "forBusinesses": "Yrityksille",
+    "project": "Hanke",
+    "contact": "Yhteystiedot"
   },
 
   "frontpage": {

@@ -1,12 +1,12 @@
 {
-  "navbar": {
-    "item1": "Home",
-    "item2": "News",
-    "item3": "Signup",
-    "item4": "Study Offerings",
-    "item5": "For businesses",
-    "item6": "Project",
-    "item7": "Contact"
+  "section": {
+    "home": "Home",
+    "news": "News",
+    "signup": "Signup",
+    "studyOfferings": "Study Offerings",
+    "forBusinesses": "For businesses",
+    "project": "Project",
+    "contact": "Contact"
   },
 
   "frontpage": {
