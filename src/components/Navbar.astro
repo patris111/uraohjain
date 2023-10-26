@@ -1,5 +1,6 @@
 ---
 import '../styles/index.scss';
+import i18next, { t } from 'i18next';
 ---
 
 <!-- Navbar -->
@@ -8,13 +9,13 @@ import '../styles/index.scss';
     <div class='items-center md:mx-auto'>
       <!-- Primary Navbar items -->
       <div class='hidden md:flex items-center space-x-8 md:space-x-2 2xl'>
-        <a href='/'>Etusivu</a>
-        <a href='/news'>Ajankohtaista</a>
-        <a href='/signup'>Ilmoittautuminen</a>
-        <a href='/study-offers'>Opintotarjonta</a>
-        <a href='/companies'>Yrityksille</a>
-        <a href='/uraohjain'>Hanke</a>
-        <a href='#contact'>Yhteystiedot</a>
+        <a href='/'> {t('navbar.item1')}</a>
+        <a href='/news'>{t('navbar.item2')}</a>
+        <a href='/signup'>{t('navbar.item3')}</a>
+        <a href='/study-offers'>{t('navbar.item4')}</a>
+        <a href='/companies'>{t('navbar.item5')}</a>
+        <a href='/uraohjain'>{t('navbar.item6')}</a>
+        <a href='#contact'>{t('navbar.item7')}</a>
         <!-- <a href='' class='py-4 px-14 transition duration-300'>ENG</a> -->
 
         <button class=''>EN</button>
@@ -39,38 +40,38 @@ import '../styles/index.scss';
     <a
       href='/'
       class='block text-2xl px-2 py-4 hover:bg-rose-200 hover:text-black transition duration-300'
-      >Etusivu</a
+      >{t('navbar.item1')}</a
     >
     <a
       href='/news'
       class='block text-2xl px-2 py-4 hover:bg-rose-200 hover:text-black transition duration-300'
-      >Ajankohtaista</a
+      >{t('navbar.item2')}</a
     >
     <a
       href='/signup'
       class='block text-2xl px-2 py-4 hover:bg-rose-200 hover:text-black transition duration-300'
-      >Ilmoittautuminen</a
+      >{t('navbar.item3')}</a
     >
     <a
       href='/study-offers'
       class='block text-2xl px-2 py-4 hover:bg-rose-200 hover:text-black transition duration-300'
-      >Opintotarjonta</a
+      >{t('navbar.item4')}</a
     >
     <a
       href='/companies'
       class='block text-2xl px-2 py-4 hover:bg-rose-200 hover:text-black transition duration-300'
-      >Yrityksille</a
+      >{t('navbar.item5')}</a
     >
 
     <a
       href='/uraohjain'
       class='block text-2xl px-2 py-4 hover:bg-rose-200 hover:text-black transition duration-300'
-      >Hanke</a
+      >{t('navbar.item6')}</a
     >
     <a
       href='#contact'
       class='block text-2xl px-2 py-4 hover:bg-rose-200 hover:text-black transition duration-300'
-      >Yhteystiedot</a
+      >{t('navbar.item7')}</a
     >
     <a
       href='#'

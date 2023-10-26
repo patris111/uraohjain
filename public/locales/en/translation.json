@@ -1,4 +1,14 @@
 {
+  "navbar": {
+    "item1": "Home",
+    "item2": "News",
+    "item3": "Signup",
+    "item4": "Study Offerings",
+    "item5": "For businesses",
+    "item6": "Project",
+    "item7": "Contact"
+  },
+
   "frontpage": {
     "introTitle": "CAREERDRIVER+ <br /> Towards employment through supplemented ICT, <br /> software development and media know-how",
     "introDescription": "Come supplement your skills to make them meet the rapidly changing needs of working life, plan your career and learn more about verbalising and marketing your own know-how. The CareerDriver service will provide you with an opportunity to strengthen your professional networks. You will get to discuss your everyday wellbeing to support your employment. The competence paths are built from the ICT, software development and media study offerings of Laurea and Metropolia. The duration of the competence paths is 3–6 months. ",
@@ -25,6 +35,5 @@
     "servicePathDuration": "Duration 3-6 months",
 
     "news": "News"
-  },
-  "news": {}
+  }
 }

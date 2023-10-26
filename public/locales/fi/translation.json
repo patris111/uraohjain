@@ -1,4 +1,14 @@
 {
+  "navbar": {
+    "item1": "Etusivu",
+    "item2": "Ajankohtaista",
+    "item3": "ilmoittautuminen",
+    "item4": "Opintotarjonta",
+    "item5": "Yrityksille",
+    "item6": "Hanke",
+    "item7": "Yhteystiedot"
+  },
+
   "frontpage": {
     "introTitle": "URAOHJAIN <br /> ICT-, ohjelmistokehitys- ja media-alan osaamisen <br />täydentämisellä kohti työllistymistä.",
     "introDescription": "Tule täydentämään osaamistasi työelämän nopeita muutostarpeita vastaavaksi, suunnittelemaan uraasi ja oivaltamaan lisää oman osaamisesi markkinoinnista. Uraohjain-palvelu tarjoaa sinulle mahdollisuuden vahvistaa ammatillisia verkostojasi. Pääset keskustelemaan oman arkesi hyvinvoinnista työllistymisen tueksi. Osaamispolut rakentuvat Laurean ja Metropolian ICT-, ohjelmistokehitys- ja media-alojen opintotarjonnasta. Osaamispolut ovat kestoltaan 3–6kk.",
@@ -25,6 +35,5 @@
     "servicePathDuration": "Kesto 3-6kk",
 
     "news": "Ajankohtaista"
-  },
-  "news": {}
+  }
 }
