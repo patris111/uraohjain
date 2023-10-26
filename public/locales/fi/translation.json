@@ -10,11 +10,21 @@
     "benefitsWellbeing": "Hyvinvointikeskustelut",
     "benefitsNetworking": "Ammatillisen verkostoitumisen tukeminen",
 
+    "videoTitle": "Kirkasta urasuunnitelmasi ja vahvista osaamistasi",
+    "videoDescription": "Haluatko päivittää osaamisesi vastaamaan IT-alojen nopeasti kehittyviä työelämän tarpeita? Etsitkö omaa tapaasi työllistyä media-alalla? Mietitkö urasi seuraavaa askelta tai toimivaa tapaa kertoa osaamisestasi? Uraohjain-palvelussa pääset kehittämään osaamistasi ja löytämään ratkaisuja uraasi koskeviin kysymyksiin.",
+
     "profileTitle": "Kenelle Uraohjain-palvelu on?",
     "profileBullet1": "Olet suorittanut toisen tai korkea-asteen tutkinnon",
     "profileBullet2": "Tavoitteesi on työllistyä ICT-, ohjelmistokehitys tai media-alalle",
     "profileBullet3": "Suomen tai englanninkielen tasosi on vähintään B2",
-    "profileBullet4": "Olet Helsingin työllisyyspalveluiden asiakas"
+    "profileBullet4": "Olet Helsingin työllisyyspalveluiden asiakas",
+
+    "testLink": "Testaa sopiiko <br />Uraohjain-palvelu <br />sinulle ja ilmoittaudu!",
+
+    "servicePath": "Palvelupolku",
+    "servicePathDuration": "Kesto 3-6kk",
+
+    "news": "Ajankohtaista"
   },
   "news": {}
 }

@@ -10,13 +10,21 @@
     "benefitsWellbeing": "Wellbeing discussions",
     "benefitsNetworking": "Cooperation and networking",
 
+    "videoTitle": "Enhance Your Career Prospects and Boost Your Expertise",
+    "videoDescription": "Are you eager to align your skills with the ever-changing demands of the IT industry? Seeking a personalized path to excel in the dynamic world of media? Contemplating your next career move and how to effectively showcase your capabilities? Uraohjain service empowers you to elevate your skill set and provides tailored solutions to your career inquiries. Unleash your potential with us!",
+
     "profileTitle": "For whom is the CareerDriver service intended?",
     "profileBullet1": "You have obtained at least an upper secondary or higher education degree.",
     "profileBullet2": "Your goal is to find employment in the field of ICT, software development or media.",
     "profileBullet3": "Your Finnish or English skills are at least at the B2 level.",
     "profileBullet4": "You are registered as an unemployed job seeker at Helsinki Employment Services.",
 
-    "testLink": "Take our test to see <br /> whether  the service is <br /> right for you and sign up!"
+    "testLink": "Take our test to see <br /> whether  the service is <br /> right for you and sign up!",
+
+    "servicePath": "Service path",
+    "servicePathDuration": "Duration 3-6 months",
+
+    "news": "News"
   },
   "news": {}
 }

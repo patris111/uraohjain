@@ -93,11 +93,9 @@ const pageTitle = 'Etusivu';
   </section>
   <!-- Video section -->
   <section class='bg-gray-200 mt-6 px-4 md:px-36 py-6 text-center'>
-    <h2>Video otsikko</h2>
+    <h2>{t('frontpage.videoTitle')}</h2>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolor maxime excepturi?
-      Consequatur facere, ducimus nobis repellendus perferendis tenetur rerum tempora! Dignissimos
-      vel maiores totam sapiente molestiae praesentium exercitationem excepturi.
+      {t('frontpage.videoDescription')}
     </p>
     <video class='mx-auto py-4 md:py-8 w-full md:w-3/4' autoplay loop controls muted>
       <source src='/videos/uraohjain-presentation.mp4' type='video/mp4' />
@@ -137,14 +135,14 @@ const pageTitle = 'Etusivu';
   </section>
   <!-- Service path -->
   <section class='flex flex-col justify-center items-center'>
-    <h2>Palvelupolku</h2>
-    <p>Kesto 3-6kk</p>
+    <h2>{t('frontpage.servicePath')}</h2>
+    <p>{t('frontpage.servicePathDuration')}</p>
     <img src='/img/frontpage/service-path-en.png' alt='service-path' />
   </section>
   <!-- News section -->
   <section>
-    <div class='flex justify-center my-7 md:mt-2 md:mb-16'>
-      <h2 class=''>Ajankohtaista</h2>
+    <div class='flex justify-center my-7 md:mt-20 md:mb-16'>
+      <h2 class=''>{t('frontpage.news')}</h2>
     </div>
 
     <div class='flex flex-row w-2/4 gap-4'>
@@ -163,4 +161,5 @@ const pageTitle = 'Etusivu';
       }
     </div>
   </section>
+</BaseLayout>
 </BaseLayout>
