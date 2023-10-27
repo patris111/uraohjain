@@ -35,5 +35,18 @@
     "servicePathDuration": "Kesto 3-6kk",
 
     "news": "Ajankohtaista"
+  },
+
+  "companies": {
+    "pageTitle": "Yrityksille",
+    "title": "Rekrytoitko ICT-, ohjelmisto- tai media-alalle työntekijöitä?",
+    "description": "Uuden työllistymistä edistävän toimintamallin kehittänyt Uraohjain+ -kehityshanke etsii yhteistyökumppaneita. Etsimämme yhteistyökumppanit ovat valmiita vaikuttamaan työvoimatarjonnan kehittämiseen omia tarpeitaan parhaiten vastaavaksi. <br /><br /> Uraohjain-palvelussa kehitetään yritysten työvoimatarpeisiin perustuen työnhakijoiden osaamista ja muita valmiuksia sekä yleisellä tasolla että yrityskohtaisesti. Yrityksen yhteistyö palvelun kanssa koostuu osaamis- ja työvoimatarpeita kartoittavista tapaamisista ja esitystilaisuuksista sekä palveluun osallistuvien työnhakijoiden huomioimisesta rekrytoinneissa. <br /><br /> Uraohjain-palvelussa työnhakijat kehittävät ICT-, ohjelmisto- tai media-alan osaamistaan, uranhallintataitojaan sekä vahvistavat toimintavalmiuksiaan. Toimintamallin perusteet on luotu aiemmissa hankkeissa, joissa on saavutettu hyviä tuloksia. <br /> <br /> Palvelu on tarkoitettu työttömille toisen tai korkea-asteen tutkinnon suorittaneille, jotka hakevat töitä ICT-, ohjelmistokehitys- tai media-alalta. Uraohjain+-hanketta toteuttavat Helsingin kaupunki (Stadin AO), Laurea-ammattikorkeakoulu ja Metropolia Ammattikorkeakoulu. Hanke on Euroopan unionin osarahoittama. <br />",
+    "email": " Kiinnostuitko? <br /> Ota yhteyttä: "
+  },
+  "project": {
+    "pageTitle": "URAOHJAIN+ -yhteiskehittämishanke ",
+    "title": "Rekrytoitko ICT-, ohjelmisto- tai media-alalle työntekijöitä?",
+    "graphicTitle": "Uuden työllistymistä edistävän toimintamallin kehittänyt Uraohjain+ -kehityshanke etsii yhteistyökumppaneita. Etsimämme yhteistyökumppanit ovat valmiita vaikuttamaan työvoimatarjonnan kehittämiseen omia tarpeitaan parhaiten vastaavaksi. <br /><br /> Uraohjain-palvelussa kehitetään yritysten työvoimatarpeisiin perustuen työnhakijoiden osaamista ja muita valmiuksia sekä yleisellä tasolla että yrityskohtaisesti. Yrityksen yhteistyö palvelun kanssa koostuu osaamis- ja työvoimatarpeita kartoittavista tapaamisista ja esitystilaisuuksista sekä palveluun osallistuvien työnhakijoiden huomioimisesta rekrytoinneissa. <br /><br /> Uraohjain-palvelussa työnhakijat kehittävät ICT-, ohjelmisto- tai media-alan osaamistaan, uranhallintataitojaan sekä vahvistavat toimintavalmiuksiaan. Toimintamallin perusteet on luotu aiemmissa hankkeissa, joissa on saavutettu hyviä tuloksia. <br /> <br /> Palvelu on tarkoitettu työttömille toisen tai korkea-asteen tutkinnon suorittaneille, jotka hakevat töitä ICT-, ohjelmistokehitys- tai media-alalta. Uraohjain+-hanketta toteuttavat Helsingin kaupunki (Stadin AO), Laurea-ammattikorkeakoulu ja Metropolia Ammattikorkeakoulu. Hanke on Euroopan unionin osarahoittama. <br />",
+    "messageBox": " Kiinnostuitko? <br /> Ota yhteyttä: "
   }
 }

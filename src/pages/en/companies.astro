@@ -1,6 +1,7 @@
 ---
-import { changeLanguage } from "i18next";
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import i18next, { t, changeLanguage } from "i18next";
+import { Trans, HeadHrefLangs } from "astro-i18next/components";
 
 changeLanguage("en");
 
@@ -10,37 +11,47 @@ const pageTitle = "Yrityksille";
 <BaseLayout pageTitle={pageTitle}>
   <section>
     <h2 class='text-center mt-10 mb-16'>
-      {pageTitle}
+      <!-- {pageTitle} -->
+      {t('companies.pageTitle')}
     </h2>
 
     <div class='md:grid md:grid-cols-2'>
       <div class='p-8 md:p-18 pink-bg'>
-        <h2>Rekrytoitko ICT-, ohjelmisto- tai media-alalle työntekijöitä?</h2>
+        <h2>{t('companies.title')}</h2>
         <p>
-          Uuden työllistymistä edistävän toimintamallin kehittänyt Uraohjain+ -kehityshanke etsii 
-          yhteistyökumppaneita. Etsimämme yhteistyökumppanit ovat valmiita vaikuttamaan työvoimatarjonnan
-          kehittämiseen omia tarpeitaan parhaiten vastaavaksi. <br /><br />
+          <Trans i18nKey='companies.description'>
+            Uuden työllistymistä edistävän toimintamallin kehittänyt Uraohjain+ -kehityshanke etsii
+            yhteistyökumppaneita. Etsimämme yhteistyökumppanit ovat valmiita vaikuttamaan
+            työvoimatarjonnan kehittämiseen omia tarpeitaan parhaiten vastaavaksi. <br /><br />
 
-          Uraohjain-palvelussa kehitetään yritysten työvoimatarpeisiin perustuen työnhakijoiden osaamista 
-          ja muita valmiuksia sekä yleisellä tasolla että yrityskohtaisesti. Yrityksen yhteistyö palvelun
-          kanssa koostuu osaamis- ja työvoimatarpeita kartoittavista tapaamisista ja esitystilaisuuksista
-          sekä palveluun osallistuvien työnhakijoiden huomioimisesta rekrytoinneissa. <br /><br />
+            Uraohjain-palvelussa kehitetään yritysten työvoimatarpeisiin perustuen työnhakijoiden
+            osaamista ja muita valmiuksia sekä yleisellä tasolla että yrityskohtaisesti. Yrityksen
+            yhteistyö palvelun kanssa koostuu osaamis- ja työvoimatarpeita kartoittavista
+            tapaamisista ja esitystilaisuuksista sekä palveluun osallistuvien työnhakijoiden
+            huomioimisesta rekrytoinneissa. <br /><br />
 
-          Uraohjain-palvelussa työnhakijat kehittävät ICT-, ohjelmisto- tai media-alan osaamistaan, uranhallintataitojaan
-          sekä vahvistavat toimintavalmiuksiaan. Toimintamallin perusteet on luotu aiemmissa hankkeissa, joissa on
-          saavutettu hyviä tuloksia. <br />  <br />
-        
+            Uraohjain-palvelussa työnhakijat kehittävät ICT-, ohjelmisto- tai media-alan
+            osaamistaan, uranhallintataitojaan sekä vahvistavat toimintavalmiuksiaan. Toimintamallin
+            perusteet on luotu aiemmissa hankkeissa, joissa on saavutettu hyviä tuloksia. <br />
+            <br />
 
-          Palvelu on tarkoitettu työttömille toisen tai korkea-asteen tutkinnon suorittaneille, jotka hakevat töitä ICT-,
-          ohjelmistokehitys- tai media-alalta. Uraohjain+-hanketta toteuttavat Helsingin kaupunki (Stadin AO),
-          Laurea-ammattikorkeakoulu ja Metropolia Ammattikorkeakoulu. Hanke on Euroopan unionin osarahoittama. <br />
+            Palvelu on tarkoitettu työttömille toisen tai korkea-asteen tutkinnon suorittaneille,
+            jotka hakevat töitä ICT-, ohjelmistokehitys- tai media-alalta. Uraohjain+-hanketta
+            toteuttavat Helsingin kaupunki (Stadin AO), Laurea-ammattikorkeakoulu ja Metropolia
+            Ammattikorkeakoulu. Hanke on Euroopan unionin osarahoittama. <br />
+          </Trans>
         </p>
-        <h4>Kiinnostuitko? <br /> 
-          Ota yhteyttä: jaakko.hyytia@hel.fi</h4>
+        <h4>
+          <Trans i18nKey='companies.email'>
+            Kiinnostuitko? <br />
+            Ota yhteyttä:
+          </Trans>
+          jaakko.hyytia@hel.fi
+        </h4>
       </div>
       <img
-        src='/img/register/walking-man.jpg'
-        alt=''
+        src='/img/companies/walking-man-original.jpg'
+        alt='Walking man'
         class='hidden md:block bg-cover w-full h-full'
       />
     </div>

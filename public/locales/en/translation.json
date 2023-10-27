@@ -35,5 +35,11 @@
     "servicePathDuration": "Duration 3-6 months",
 
     "news": "News"
+  },
+  "companies": {
+    "pageTitle": "For businesses",
+    "title": "Are you recruiting in the field of ICT/ software development / media?",
+    "description": "The CareerDriver+ development project has developed a new operating model to promote employment and is seeking businesses to cooperate with. The partners we seek are ready to contribute to the development of labour available to make it best suit their own needs. <br /><br />The CareerDriver service involves using businesses’ labour needs as the basis for developing job seekers’ know-how and other competences, both at the general level and business-specifically. The business’s cooperation with the service will consist of meetings and presentation events to chart know-how and labour needs, and taking job seekers participating in the service into account in recruitment. <br /><br /> In the CareerDriver service, job seekers will develop their know-how in the field of ICT / software development / media and their career management skills and strengthen their operational capabilities. The basics of the operating model were established in previous projects that achieved good results. The service is intended for unemployed job seekers who have an upper secondary or higher education degree and are looking for employment in the fields of ICT, software development or media. <br /><br />The CareerDriver+ project is carried out by the City of Helsinki (Helsinki Vocational College and Adult Institute), Laurea University of Applied Sciences and Metropolia University of Applied Sciences. The project is partially funded by the EU. <br /><br />",
+    "email": "Interested? <br /> Contact "
   }
 }
