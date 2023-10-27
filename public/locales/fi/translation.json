@@ -44,9 +44,84 @@
     "email": " Kiinnostuitko? <br /> Ota yhteyttä: "
   },
   "project": {
-    "pageTitle": "URAOHJAIN+ -yhteiskehittämishanke ",
-    "title": "Rekrytoitko ICT-, ohjelmisto- tai media-alalle työntekijöitä?",
-    "graphicTitle": "Uuden työllistymistä edistävän toimintamallin kehittänyt Uraohjain+ -kehityshanke etsii yhteistyökumppaneita. Etsimämme yhteistyökumppanit ovat valmiita vaikuttamaan työvoimatarjonnan kehittämiseen omia tarpeitaan parhaiten vastaavaksi. <br /><br /> Uraohjain-palvelussa kehitetään yritysten työvoimatarpeisiin perustuen työnhakijoiden osaamista ja muita valmiuksia sekä yleisellä tasolla että yrityskohtaisesti. Yrityksen yhteistyö palvelun kanssa koostuu osaamis- ja työvoimatarpeita kartoittavista tapaamisista ja esitystilaisuuksista sekä palveluun osallistuvien työnhakijoiden huomioimisesta rekrytoinneissa. <br /><br /> Uraohjain-palvelussa työnhakijat kehittävät ICT-, ohjelmisto- tai media-alan osaamistaan, uranhallintataitojaan sekä vahvistavat toimintavalmiuksiaan. Toimintamallin perusteet on luotu aiemmissa hankkeissa, joissa on saavutettu hyviä tuloksia. <br /> <br /> Palvelu on tarkoitettu työttömille toisen tai korkea-asteen tutkinnon suorittaneille, jotka hakevat töitä ICT-, ohjelmistokehitys- tai media-alalta. Uraohjain+-hanketta toteuttavat Helsingin kaupunki (Stadin AO), Laurea-ammattikorkeakoulu ja Metropolia Ammattikorkeakoulu. Hanke on Euroopan unionin osarahoittama. <br />",
-    "messageBox": " Kiinnostuitko? <br /> Ota yhteyttä: "
+    "pageTitle": "URAOHJAIN+ -yhteiskehitt\u00E4mishanke",
+    "title": "URAOHJAIN+ rakentaa uudenlaisen kestävän työllistymisen mallin",
+    "description": "URAOHJAIN+ -hanke on noussut tarpeesta lisätä ICT-, ohjelmistokehitys- ja media-alojen työnhakijoiden ja työnantajien kohtaamista. Hankkeessa kehitettävä Uraohjain-palvelu vahvistaa ICT-, ohjelmistokehitys- ja media-alan työnhakijoiden osaamista vastaamaan työelämän tarpeisiin. Samalla vastataan yritysten rekrytointihaasteeseen. <br /><br /> Uraohjain-palvelu on tarkoitettu ICT-, ohjelmistokehitys- ja media-alan työttömille työnhakijoille, joilla on tarve täydentää osaamistaan ja kehittää työllistymis- ja urasuunnittelutaitojaan. Palvelun aikana vahvistetaan arkea ja työllistymistä tukevaa hyvinvointia. <br /><br /> URAOHJAIN+ on Stadin ammattiopiston, Laurea-ammattikorkeakoulun ja Metropolia Ammattikorkeakoulun yhteishanke. Yhteistyötä tehdään Helsingin kaupungin Työllisyyspalveluiden sekä yritysten kanssa. Euroopan unionin sosiaalirahasto osarahoittaa hanketta.",
+    "graphicTitle": "URAOHJAIN+ -hankkeen neljä painopistettä",
+    "messageBox": "URAOHJAIN+ alkoi 1.3.2023 ja se jatkuu 28.02.2025 asti. <br /> Palvelua kehitetään koko hankkeen ajan, ja hankeajan lopussa julkaistaan malli kehitetystä palvelusta ja sen vaikuttavuudesta."
+  },
+  "studyOfferings": {
+    "pageTitle": "Opintotarjonta",
+    "description": "Uraohjainpalvelussa voit suorittaa ICT-, ohjelmistokehitys- ja media-alan täydentäviä opintoja.",
+    "ict": "ICT ja ohjelmistokehitys",
+    "media": "Media",
+    "ictData": [
+      {
+        "title": "Osaamiskokonaisuus 1: Web-kehittäjä",
+        "description": "Tutustu verkkosivujen kehittämiseen. Perehdy webkehityksessä käytettäviin ohjelmointikieliin, -kehyksiin ja sisällönhallintajärjestelmiin."
+      },
+      {
+        "title": "Osaamiskokonaisuus 2: Ohjelmistokehitys",
+        "description": "Saa haltuun ohjelmoinnin ja IT:n perusteita. Syvennä ohjelmointiosaamistasi ja perehdy testaukseen. Tutustu ohjelmistokehitysprojektien prosesseihin."
+      },
+      {
+        "title": "Osaamiskokonaisuus 3: Verkkotekniikka ja tietoturva",
+        "description": "Kiinnostaako tietoturvaan perehtyminen ja verkkotekniikka? Tutustu verkkojen toimintaan ja niiden käsittelyyn tarkoitettuihin teknologioihin ja järjestelmiin. Hanki osaamista kyberturvallisuuden tekniikoista ja toimintatavoista."
+      },
+      {
+        "title": "Osaamiskokonaisuus 4: Pilvipalveluiden ja tietojärjestelmien hallinta",
+        "description": "Tutustu suurimpien pilvipalveluiden tarjoajien teknologioihin ja niiden tarjoamiin mahdollisuuksiin. Perehdy ja opi lisää niiden hallinnoinnista. Kehitä osaamistasi palvelinten käyttöönotossa ja hyödyntämisessä."
+      },
+      {
+        "title": "Osaamiskokonaisuus 5: Tekoäly ja datan analysointi",
+        "description": "Kiinnostaako data-analytiikka? Perehdy datan hallintaan ja käsittelyyn käytettäviin teknologioihin sekä tietokantoihin. Opi lisää tekoälyn teknisestä puolesta."
+      },
+      {
+        "title": "Osaamiskokonaisuus 6: Digitaalinen markkinointi ja myynti",
+        "description": "Hanki osaamista digitaalisen markkinoinnin työkaluista ja menetelmistä sekä myynnistä. Tutustu sosiaaliseen mediaan markkinoinnin näkökulmasta ja tunnista digitaalisen myynnin erityispiirteitä."
+      },
+      {
+        "title": "Osaamiskokonaisuus 7: Pelikehitys",
+        "description": "Kehitä omia digitaalisia taitojasi vastaamaan nykytyöelämän vaatimuksia. Ota haltuun yleisimmät työelämän teknologiat ja hanki työkaluja urasi rakentamiseen."
+      },
+      {
+        "title": "Osaamiskokonaisuus 8: Työ- ja urataidot",
+        "description": "Kehitä omia digitaalisia taitojasi vastaamaan nykytyöelämän vaatimuksia. Ota haltuun yleisimmät työelämän teknologiat ja hanki työkaluja urasi rakentamiseen."
+      },
+      {
+        "title": "Osaamiskokonaisuus 9: Digitaalisten palveluiden muotoilu",
+        "description": "Perehdy digitaalisten palveluiden suunnittelun perusteisiin ja liiketoiminnan mahdollisuuksiin. Tutustu palveluiden muotoiluun ja hallinnointiin."
+      },
+      {
+        "title": "Osaamiskokonaisuus 10: Ohjelmointikielet ja -kehykset",
+        "description": "Haluatko ottaa uuden ohjelmointikielen haltuun? Valitse laajasta tarjonnasta tarvitsemasi ohjelmointikielet tai -kehykset."
+      },
+      {
+        "title": "Osaamiskokonaisuus 11: Johdanto IT-opintoihin",
+        "description": "Tutustu IT-alaan näiden kurssien avulla. Keskeisimmät kurssit IT-alan opintojen kannalta kerättynä yhteen paikkaan."
+      }
+    ],
+    "mediaData": [
+      {
+        "title": "Osaamiskokonaisuus 12: Media-alan tuotanto-osaaminen",
+        "description": "Elokuva- ja tv-tuotannot kasvavat ja kansainvälistyvät, ja tuotanto-osaamista tarvitaan. Opi tuotannon keskeiset asiat, vahvista kielitaitojasi sekä markkinoinnin ja yritystalouden osaamistasi."
+      },
+      {
+        "title": "Osaamiskokonaisuus 13: Journalismi ja verkkomedia, sosiaalinen media",
+        "description": "Mikä on journalismin rooli ja tehtävä yhteiskunnassa, ja mitä journalistinen työ pitää sisällään? Opi havainnoimaan, hankkimaan ja jalostamaan tietoa sekä tuottamaan journalistista sisältöä eri alustoille ja verkkoon."
+      },
+      {
+        "title": "Osaamiskokonaisuus 14: Elokuvan ja television perusopinnot",
+        "description": "Opiskele Metropolia Ammattikorkeakoulun elokuvan ja television koulutusohjelman perusopinnot."
+      },
+      {
+        "title": "Osaamiskokonaisuus 15: Yrittäjyys media-alalla",
+        "description": "Media-alalla työskentely tarkoittaa usein freelance-työskentelyä itsenäisenä yrittäjänä. Opi media-alan yrittäjyyden erityispiirteet, yritysmuodot sekä yrityksen perustamisen prosessi ja liiketoimintaedellytysten arviointi. Syvennä osaamista markkinoinnin ja yritystalouden sekä kielten opinnoilla."
+      },
+      {
+        "title": "Osaamiskokonaisuus 16: Kuva ja ääni",
+        "description": "Kuva ja ääni ovat AV-tuotantojen kivijalka, ja tämä kokonaisuus tarjoaa aiheista perustiedot."
+      }
+    ]
   }
 }

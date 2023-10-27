@@ -1,6 +1,7 @@
 ---
-import { changeLanguage } from "i18next";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import i18next, { t, changeLanguage } from "i18next";
+import { Trans } from "astro-i18next/components";
 
 changeLanguage("fi");
 
@@ -10,25 +11,28 @@ const pageTitle = "URAOHJAIN+ -yhteiskehitt\u00E4mishanke";
 <BaseLayout pageTitle={pageTitle}>
   <section>
     <h2 class='text-center mt-10 mb-16'>
-      {pageTitle}
+      <!-- {pageTitle} -->
+      {t('project.pageTitle')}
     </h2>
 
     <div class='md:grid md:grid-cols-2'>
       <div class='p-8 md:p-18 pink-bg'>
-        <h2>URAOHJAIN+ rakentaa uudenlaisen kestävän työllistymisen mallin</h2>
+        <h2>{t('project.title')}</h2>
         <p>
-          URAOHJAIN+ -hanke on noussut tarpeesta lisätä ICT-, ohjelmistokehitys- ja media-alojen
-          työnhakijoiden ja työnantajien kohtaamista. Hankkeessa kehitettävä Uraohjain-palvelu
-          vahvistaa ICT-, ohjelmistokehitys- ja media-alan työnhakijoiden osaamista vastaamaan
-          työelämän tarpeisiin. Samalla vastataan yritysten rekrytointihaasteeseen.
-          <br /><br />
-          Uraohjain-palvelu on tarkoitettu ICT-, ohjelmistokehitys- ja media-alan työttömille työnhakijoille,
-          joilla on tarve täydentää osaamistaan ja kehittää työllistymis- ja urasuunnittelutaitojaan.
-          Palvelun aikana vahvistetaan arkea ja työllistymistä tukevaa hyvinvointia.
-          <br /><br />
-          URAOHJAIN+ on Stadin ammattiopiston, Laurea-ammattikorkeakoulun ja Metropolia Ammattikorkeakoulun
-          yhteishanke. Yhteistyötä tehdään Helsingin kaupungin Työllisyyspalveluiden sekä yritysten kanssa.
-          Euroopan unionin sosiaalirahasto osarahoittaa hanketta.
+          <Trans i18nKey='project.description'>
+            URAOHJAIN+ -hanke on noussut tarpeesta lisätä ICT-, ohjelmistokehitys- ja media-alojen
+            työnhakijoiden ja työnantajien kohtaamista. Hankkeessa kehitettävä Uraohjain-palvelu
+            vahvistaa ICT-, ohjelmistokehitys- ja media-alan työnhakijoiden osaamista vastaamaan
+            työelämän tarpeisiin. Samalla vastataan yritysten rekrytointihaasteeseen.
+            <br /><br />
+            Uraohjain-palvelu on tarkoitettu ICT-, ohjelmistokehitys- ja media-alan työttömille työnhakijoille,
+            joilla on tarve täydentää osaamistaan ja kehittää työllistymis- ja urasuunnittelutaitojaan.
+            Palvelun aikana vahvistetaan arkea ja työllistymistä tukevaa hyvinvointia.
+            <br /><br />
+            URAOHJAIN+ on Stadin ammattiopiston, Laurea-ammattikorkeakoulun ja Metropolia Ammattikorkeakoulun
+            yhteishanke. Yhteistyötä tehdään Helsingin kaupungin Työllisyyspalveluiden sekä yritysten
+            kanssa. Euroopan unionin sosiaalirahasto osarahoittaa hanketta.
+          </Trans>
         </p>
       </div>
       <img
@@ -40,13 +44,15 @@ const pageTitle = "URAOHJAIN+ -yhteiskehitt\u00E4mishanke";
   </section>
 
   <section>
-    <h3 class='my-16'>URAOHJAIN+ -hankkeen neljä painopistettä</h3>
+    <h3 class='my-16'>{t('project.graphicTitle')}</h3>
     <!-- md:w-1/2 -->
     <div id='diagram-focus'>
       <img src='/img/uraohjain+/diagram.jpg' alt='diagram' />
       <p class='p-4 my-14 pink-bg'>
-        URAOHJAIN+ alkoi 1.3.2023 ja se jatkuu 28.02.2025 asti. <br /> Palvelua kehitetään koko hankkeen
-        ajan, ja hankeajan lopussa julkaistaan malli kehitetystä palvelusta ja sen vaikuttavuudesta.
+        <Trans i18nKey='project.messageBox'>
+          URAOHJAIN+ alkoi 1.3.2023 ja se jatkuu 28.02.2025 asti. <br /> Palvelua kehitetään koko hankkeen
+          ajan, ja hankeajan lopussa julkaistaan malli kehitetystä palvelusta ja sen vaikuttavuudesta.
+        </Trans>
       </p>
     </div>
   </section>
