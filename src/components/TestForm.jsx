@@ -153,18 +153,32 @@ const TestForm = () => {
 
         {showMessage && (
           <motion.div
-            className='flex flex-col items-center py-24 md:px-8 md:py-48'
+            className='flex flex-col items-center py-28 md:px-8 md:py-24'
             initial={{ opacity: 0, translateX: 100 }}
             animate={{ opacity: 1, translateX: 0 }}
             transition={{ type: 'spring', stiffness: 80, duration: 0.5 }}
           >
-            <h3 className='text-center'>Kiitos mielenkiinnostasi!</h3>
-            <p className='text-center'>
-              Valitettavasti et täytä <br />
-              Uraohjain+ -palvelun <br />
-              osallistumisvaatimuksia.
-              <br /> Suosittelemme olemaan yhteydessä xxx <br />
-              sinulle sopivan palvelun löytämiseksi.
+            <h3 className=''>Kiitos mielenkiinnostasi!</h3>
+            <p className=''>
+              Valitettavasti Uraohjain-palvelun osallistumiskriteerit eivät täyty kohdallasi. Voit
+              olla yhteydessä{' '}
+              <a href='https://stadinao.fi/palvelut-tyollistymiseen-ja-opintoihin/'>
+                Stadin Ammatti- ja aikuisopiston ura- ja opinto-ohjauspalveluihin
+              </a>
+              tai vierailla
+              <a href='https://tyollisyyspalvelut.hel.fi/yhteystiedot/neuvonta'>
+                Helsingin työllisyyspalveluiden neuvontapisteillä
+              </a>
+              sopivan palvelun löytämiseksi. <br />
+              <br />
+              Opintoihin liittyen voit kysyä ohjausta
+              <a href='https://www.laurea.fi/tyoelamapalvelut/palveluteot/avoin-amk-ohjauspalvelut/'>
+                Laurea-ammattikorkeakoulun avoimen AMK:n ohjauspalveluista
+              </a>
+              tai
+              <a href='https://www.metropolia.fi/fi/opiskelu-metropoliassa/yleista-tietoa-opiskelusta/opiskelijapalvelut'>
+                Metropolia Ammattikorkeakoulun ohjauspalveluista
+              </a>
             </p>
           </motion.div>
         )}

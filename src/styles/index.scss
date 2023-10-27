@@ -1,6 +1,7 @@
 @import 'global';
 
 // Background colors scheme
+
 .burgundy-bg {
   background: var(--uraohjain-burgundy);
 }
@@ -17,6 +18,7 @@
   background: var(--uraohjain-grey);
 }
 // Colors scheme
+
 .green-color {
   color: var(--uraohjain-green);
 }
@@ -24,6 +26,7 @@
   color: var(--uraohjain-burgundy) !important;
 }
 // Common elements
+
 html {
   body {
     background-color: #fff;
@@ -77,6 +80,7 @@ html {
 }
 
 // Others
+
 .main-wrapper {
   padding: 1rem;
 }
@@ -144,7 +148,9 @@ html {
   color: var(--uraohjain-white) !important;
   background: var(--uraohjain-burgundy) !important;
 }
+
 // Components styling
+
 .navbar {
   background-color: var(--uraohjain-green);
   color: var(--uraohjain-white);
@@ -186,6 +192,8 @@ html {
 }
 
 // Responsiveness
+
+// Breakpoint 1024px
 
 @media (min-width: 1024px) {
   .calendar {
@@ -257,6 +265,11 @@ html {
     }
   }
 }
+// Breakpoint 1280px
+
+@media (min-width: 1280px) {
+}
+
 @media (min-width: 1700px) {
   .navbar {
     a {
@@ -273,6 +286,8 @@ html {
     margin-left: 6.1rem;
   }
 }
+// Breakpoint 1920px to 2559px
+
 @media (min-width: 1920px) and (max-width: 2559px) {
   .main-wrapper {
     // padding: 1rem 10rem 3.5rem 10rem;
@@ -280,6 +295,8 @@ html {
     margin: 0 auto;
   }
 }
+// Breakpoint 2560px
+
 @media (min-width: 2560px) {
   .main-wrapper,
   footer,
