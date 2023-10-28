@@ -1,6 +1,7 @@
 ---
 import '../styles/index.scss';
 import i18next, { t } from 'i18next';
+import { LanguageSelector } from 'astro-i18next/components';
 ---
 
 <!-- Navbar -->
@@ -16,9 +17,14 @@ import i18next, { t } from 'i18next';
         <a href='/companies'>{t('section.forBusinesses')}</a>
         <a href='/uraohjain'>{t('section.project')}</a>
         <a href='#contact'>{t('section.contact')}</a>
-        <!-- <a href='' class='py-4 px-14 transition duration-300'>ENG</a> -->
 
-        <button class=''>EN</button>
+        <!-- LanguageSelector with custom language naming -->
+        <LanguageSelector
+          showFlag={false}
+          languageMapping={{ fi: 'FI', en: 'EN' }}
+          id='language-selector'
+          class=''
+        />
       </div>
     </div>
     <!-- Mobile menu button -->
