@@ -2,6 +2,7 @@
 import '../styles/index.scss';
 import i18next, { t } from 'i18next';
 import { LanguageSelector } from 'astro-i18next/components';
+import { localizePath } from 'astro-i18next';
 ---
 
 <!-- Navbar -->
@@ -10,12 +11,12 @@ import { LanguageSelector } from 'astro-i18next/components';
     <div class='items-center md:mx-auto'>
       <!-- Primary Navbar items -->
       <div class='hidden md:flex items-center space-x-8 md:space-x-2 2xl'>
-        <a href='/'> {t('section.home')}</a>
-        <a href='/news'>{t('section.news')}</a>
-        <a href='/signup'>{t('section.signup')}</a>
-        <a href='/study-offers'>{t('section.studyOfferings')}</a>
-        <a href='/companies'>{t('section.forBusinesses')}</a>
-        <a href='/uraohjain'>{t('section.project')}</a>
+        <a href={localizePath('/')}> {t('section.home')}</a>
+        <a href={localizePath('/news')}>{t('section.news')}</a>
+        <a href={localizePath('/signup')}>{t('section.signup')}</a>
+        <a href={localizePath('/study-offers')}>{t('section.studyOfferings')}</a>
+        <a href={localizePath('/companies')}>{t('section.forBusinesses')}</a>
+        <a href={localizePath('/uraohjain')}>{t('section.project')}</a>
         <a href='#contact'>{t('section.contact')}</a>
 
         <!-- LanguageSelector with custom language naming -->
