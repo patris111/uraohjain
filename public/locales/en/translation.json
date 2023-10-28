@@ -50,7 +50,77 @@
     "messageBox": "CAREERDRIVER+ launched on 1 March 2023 and will continue until 28 February 2025. The service will be developed throughout the entire project, and a model of the service developed and its effectiveness will be published at the end of the project period. "
   },
   "studyOfferings": {
-    "pageTitle": " Study offerings",
-    "title": ""
+    "pageTitle": "Study offerings",
+    "description": "In the Career Guidance Service, you can complete supplementary studies in ICT, software development, and the media industry.",
+    "ict": "ICT and Software Development",
+    "media": "Media",
+    "ictData": [
+      {
+        "title": "Competence module 1: Web Developer",
+        "description": "Learn about the development of websites. Familiarize yourself with programming languages, frameworks, and content management systems used in web development."
+      },
+      {
+        "title": "Competence module 2: Software Development",
+        "description": "Master the basics of programming and IT. Deepen your programming expertise and learn about testing. Understand the processes of software development projects."
+      },
+      {
+        "title": "Competence module 3: Network Technology and Data Security",
+        "description": "Are you interested in learning about data security and network technology? Familiarize yourself with the operation of networks and technologies and systems intended for their processing. Gain expertise in cyber security technologies and related operating procedures."
+      },
+      {
+        "title": "Competence module 4: Management of Cloud Services and Information Systems",
+        "description": "Familiarize yourself with the technologies of major cloud service providers and the opportunities they offer. Delve into and learn more about their administration. Develop your expertise in commissioning and utilizing servers."
+      },
+      {
+        "title": "Competence module 5: Artificial Intelligence and Data Analysis",
+        "description": "Are you interested in data analytics? Familiarize yourself with data management and processing technologies and databases. Learn more about the technical aspects of AI."
+      },
+      {
+        "title": "Competence module 6: Digital Marketing and Sales",
+        "description": "Gain expertise in digital marketing tools and methods, as well as sales. Explore social media from a marketing perspective and identify the unique characteristics of digital sales operations."
+      },
+      {
+        "title": "Competence module 7: Game Development",
+        "description": "Are you interested in game development? Familiarize yourself with industry practices, as well as game development and production. Develop your expertise in graphic design."
+      },
+      {
+        "title": "Competence module 8: Work and Career Skills",
+        "description": "Develop your digital skills to meet the demands of today's working life. Master the most common workplace technologies and acquire tools for building your career."
+      },
+      {
+        "title": "Competence module 9: Digital Service Design",
+        "description": "Familiarize yourself with the basics and business opportunities of designing digital services. Learn about service design and administration."
+      },
+      {
+        "title": "Competence module 10: Programming Languages and Frameworks",
+        "description": "Would you like to master a new programming language? Choose the programming languages or frameworks you need from our wide selection."
+      },
+      {
+        "title": "Competence module 11: Introduction to IT Studies",
+        "description": "Learn about the field of IT through these courses. The most essential courses for IT studies compiled in one place."
+      }
+    ],
+    "mediaData": [
+      {
+        "title": "Competence module 12: Media Production Know-How",
+        "description": "Film and TV productions are growing and becoming more international, which calls for production know-how. Learn about key production aspects and strengthen your language skills and your expertise in marketing and business economics."
+      },
+      {
+        "title": "Competence module 13: Journalism and Online Media, Social Media",
+        "description": "What is the role and duty of journalism in society, and what does journalistic work entail? Learn to observe, acquire, and refine information and produce journalistic content for different platforms and the internet."
+      },
+      {
+        "title": "Competence module 14: Basic Studies in Film and Television",
+        "description": "Take the basic studies of Metropolia University of Applied Sciences' film and television training program."
+      },
+      {
+        "title": "Competence module 15: Entrepreneurship in the Field of Media",
+        "description": "Working in the field of media often means freelancing as an independent entrepreneur. Learn about the special characteristics of media entrepreneurship, business forms, the process of starting a business, and assessing business conditions. Deepen your expertise through studies in marketing, business economics, and languages."
+      },
+      {
+        "title": "Competence module 16: Image and Audio",
+        "description": "Image and audio are a cornerstone of AV productions, and this module provides basic information about the subject."
+      }
+    ]
   }
 }

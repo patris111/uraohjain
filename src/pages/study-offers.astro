@@ -1,11 +1,11 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import i18next, { t, changeLanguage } from 'i18next';
-import { Trans } from 'astro-i18next/components';
+import BaseLayout from "../layouts/BaseLayout.astro";
+import i18next, { t, changeLanguage } from "i18next";
+import { Trans } from "astro-i18next/components";
 
-changeLanguage('fi');
+changeLanguage("fi");
 
-const pageTitle = 'Opintotarjonta';
+const pageTitle = "Opintotarjonta";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
@@ -39,29 +39,98 @@ const pageTitle = 'Opintotarjonta';
           {t('studyOfferings.ictData.1.description')}
         </p>
       </div>
+      <div class='mb-4 p-4 grey-bg'>
+        <p class='p-0 m-0 font-bold'>{t('studyOfferings.ictData.2.title')}</p>
+        <p class='p-0 m-0'>
+          {t('studyOfferings.ictData.2.description')}
+        </p>
+      </div>
+      <div class='mb-4 p-4 bg-white'>
+        <p class='p-0 m-0 font-bold'>{t('studyOfferings.ictData.3.title')}</p>
+        <p class='p-0 m-0'>
+          {t('studyOfferings.ictData.3.description')}
+        </p>
+      </div>
+      <div class='mb-4 p-4 grey-bg'>
+        <p class='p-0 m-0 font-bold'>{t('studyOfferings.ictData.4.title')}</p>
+        <p class='p-0 m-0'>
+          {t('studyOfferings.ictData.4.description')}
+        </p>
+      </div>
+      <div class='mb-4 p-4 bg-white'>
+        <p class='p-0 m-0 font-bold'>{t('studyOfferings.ictData.5.title')}</p>
+        <p class='p-0 m-0'>
+          {t('studyOfferings.ictData.5.description')}
+        </p>
+      </div>
+      <div class='mb-4 p-4 grey-bg'>
+        <p class='p-0 m-0 font-bold'>{t('studyOfferings.ictData.6.title')}</p>
+        <p class='p-0 m-0'>
+          {t('studyOfferings.ictData.6.description')}
+        </p>
+      </div>
+      <div class='mb-4 p-4 bg-white'>
+        <p class='p-0 m-0 font-bold'>{t('studyOfferings.ictData.7.title')}</p>
+        <p class='p-0 m-0'>
+          {t('studyOfferings.ictData.7.description')}
+        </p>
+      </div>
+      <div class='mb-4 p-4 grey-bg'>
+        <p class='p-0 m-0 font-bold'>{t('studyOfferings.ictData.8.title')}</p>
+        <p class='p-0 m-0'>
+          {t('studyOfferings.ictData.8.description')}
+        </p>
+      </div>
+      <div class='mb-4 p-4 bg-white'>
+        <p class='p-0 m-0 font-bold'>{t('studyOfferings.ictData.9.title')}</p>
+        <p class='p-0 m-0'>
+          {t('studyOfferings.ictData.9.description')}
+        </p>
+      </div>
+      <div class='mb-4 p-4 grey-bg'>
+        <p class='p-0 m-0 font-bold'>{t('studyOfferings.ictData.10.title')}</p>
+        <p class='p-0 m-0'>
+          {t('studyOfferings.ictData.10.description')}
+        </p>
+      </div>
     </div>
 
     <div id='media'>
       <h2>Media</h2>
       <div class='mb-4 p-4 grey-bg'>
-        <p class='p-0 m-0 font-bold'>Osaamiskokonaisuus 12: Media-alan tuotanto-osaaminen</p>
+        <p class='p-0 m-0 font-bold'>{t('studyOfferings.mediaData.0.title')}</p>
         <p class='p-0 m-0'>
-          Elokuva- ja tv-tuotannot kasvavat ja kansainvälistyvät, ja tuotanto-osaamista tarvitaan.
-          Opi tuotannon keskeiset asiat, vahvista kielitaitojasi sekä markkinoinnin ja
-          yritystalouden osaamistasi.
+          {t('studyOfferings.mediaData.0.description')}
         </p>
       </div>
       <div class='mb-4 p-4 bg-white'>
         <p class='p-0 m-0 font-bold'>
-          Osaamiskokonaisuus 13: Journalismi ja verkkomedia, sosiaalinen media
+          {t('studyOfferings.mediaData.1.title')}
         </p>
         <p class='p-0 m-0'>
-          Mikä on journalismin rooli ja tehtävä yhteiskunnassa, ja mitä journalistinen työ pitää
-          sisällään? Opi havainnoimaan, hankkimaan ja jalostamaan tietoa sekä tuottamaan
-          journalistista sisältöä eri alustoille ja verkkoon.
+          {t('studyOfferings.mediaData.1.description')}
         </p>
       </div>
-      <!-- Repeat the pattern for other items -->
+      <div class='mb-4 p-4 grey-bg'>
+        <p class='p-0 m-0 font-bold'>{t('studyOfferings.mediaData.2.title')}</p>
+        <p class='p-0 m-0'>
+          {t('studyOfferings.mediaData.2.description')}
+        </p>
+      </div>
+      <div class='mb-4 p-4 bg-white'>
+        <p class='p-0 m-0 font-bold'>
+          {t('studyOfferings.mediaData.3.title')}
+        </p>
+        <p class='p-0 m-0'>
+          {t('studyOfferings.mediaData.3.description')}
+        </p>
+      </div>
+      <div class='mb-4 p-4 grey-bg'>
+        <p class='p-0 m-0 font-bold'>{t('studyOfferings.mediaData.4.title')}</p>
+        <p class='p-0 m-0'>
+          {t('studyOfferings.mediaData.4.description')}
+        </p>
+      </div>
     </div>
   </div>
 </BaseLayout>

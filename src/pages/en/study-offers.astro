@@ -11,144 +11,126 @@ const pageTitle = "Opintotarjonta";
 <BaseLayout pageTitle={pageTitle}>
   <div class='' id='study-offers'>
     <h2 class='text-center md:mt-10'>
-      <!-- {pageTitle} -->
       {t('studyOfferings.pageTitle')}
     </h2>
     <p class='m-3 md:m-0 text-center'>
       {t('studyOfferings.description')}
     </p>
     <div class='flex justify-center anchors'>
-      <a class='yellow-bg px-3 md:px-6 mr-4 underline' href='#ict'
-        ><p>{t('studyOfferings.ict')}</p></a
-      >
-      <a class='pink-bg px-12 md:px-28 underline' href='#media'><p>Media</p></a>
+      <a class='yellow-bg px-3 md:px-6 mr-4 underline' href='#ict'>
+        <p>{t('studyOfferings.ict')}</p>
+      </a>
+      <a class='pink-bg px-12 md:px-28 underline' href='#media'>
+        <p>Media</p>
+      </a>
     </div>
 
     <div id='ict'>
       <h2>{t('studyOfferings.ict')}</h2>
+      <div class='mb-4 p-4 grey-bg'>
+        <p class='p-0 m-0 font-bold'>{t('studyOfferings.ictData.0.title')}</p>
+        <p class='p-0 m-0'>
+          {t('studyOfferings.ictData.0.description')}
+        </p>
+      </div>
+      <div class='mb-4 p-4 bg-white'>
+        <p class='p-0 m-0 font-bold'>{t('studyOfferings.ictData.1.title')}</p>
+        <p class='p-0 m-0'>
+          {t('studyOfferings.ictData.1.description')}
+        </p>
+      </div>
+      <div class='mb-4 p-4 grey-bg'>
+        <p class='p-0 m-0 font-bold'>{t('studyOfferings.ictData.2.title')}</p>
+        <p class='p-0 m-0'>
+          {t('studyOfferings.ictData.2.description')}
+        </p>
+      </div>
+      <div class='mb-4 p-4 bg-white'>
+        <p class='p-0 m-0 font-bold'>{t('studyOfferings.ictData.3.title')}</p>
+        <p class='p-0 m-0'>
+          {t('studyOfferings.ictData.3.description')}
+        </p>
+      </div>
+      <div class='mb-4 p-4 grey-bg'>
+        <p class='p-0 m-0 font-bold'>{t('studyOfferings.ictData.4.title')}</p>
+        <p class='p-0 m-0'>
+          {t('studyOfferings.ictData.4.description')}
+        </p>
+      </div>
+      <div class='mb-4 p-4 bg-white'>
+        <p class='p-0 m-0 font-bold'>{t('studyOfferings.ictData.5.title')}</p>
+        <p class='p-0 m-0'>
+          {t('studyOfferings.ictData.5.description')}
+        </p>
+      </div>
+      <div class='mb-4 p-4 grey-bg'>
+        <p class='p-0 m-0 font-bold'>{t('studyOfferings.ictData.6.title')}</p>
+        <p class='p-0 m-0'>
+          {t('studyOfferings.ictData.6.description')}
+        </p>
+      </div>
+      <div class='mb-4 p-4 bg-white'>
+        <p class='p-0 m-0 font-bold'>{t('studyOfferings.ictData.7.title')}</p>
+        <p class='p-0 m-0'>
+          {t('studyOfferings.ictData.7.description')}
+        </p>
+      </div>
+      <div class='mb-4 p-4 grey-bg'>
+        <p class='p-0 m-0 font-bold'>{t('studyOfferings.ictData.8.title')}</p>
+        <p class='p-0 m-0'>
+          {t('studyOfferings.ictData.8.description')}
+        </p>
+      </div>
+      <div class='mb-4 p-4 bg-white'>
+        <p class='p-0 m-0 font-bold'>{t('studyOfferings.ictData.9.title')}</p>
+        <p class='p-0 m-0'>
+          {t('studyOfferings.ictData.9.description')}
+        </p>
+      </div>
+      <div class='mb-4 p-4 grey-bg'>
+        <p class='p-0 m-0 font-bold'>{t('studyOfferings.ictData.10.title')}</p>
+        <p class='p-0 m-0'>
+          {t('studyOfferings.ictData.10.description')}
+        </p>
+      </div>
     </div>
-
-    <script>
-      const ictData = [
-        {
-          title: 'Osaamiskokonaisuus 1: Web-kehittäjä',
-          description:
-            'Tutustu verkkosivujen kehittämiseen. Perehdy webkehityksessä käytettäviin ohjelmointikieliin, -kehyksiin ja sisällönhallintajärjestelmiin.',
-        },
-        {
-          title: 'Osaamiskokonaisuus 2: Ohjelmistokehitys',
-          description:
-            'Saa haltuun ohjelmoinnin ja IT:n perusteita. Syvennä ohjelmointi osaamistasi ja perehdy testaukseen. Tutustu ohjelmistokehitys projektien prosesseihin.',
-        },
-        {
-          title: 'Osaamiskokonaisuus 3: Verkkotekniikka ja tietoturva',
-          description:
-            'Kiinnostaako tietoturvaan perehtyminen ja verkkotekniikka? Tutustu verkkojen toimintaan ja niiden käsittelyyn tarkoitettujen teknologioihin ja järjestelmiin. Hanki osaamista kyberturvallisuuden tekniikoista ja toiminta tavoista.',
-        },
-        {
-          title: 'Osaamiskokonaisuus 4: Pilvipalveluiden ja tietojärjestelmien hallinta',
-          description:
-            'Tutustu suurimpien pilvipalveluiden tarjoajien teknologioihin ja niiden tarjoamiin mahdollisuuksiin. Perehdy ja opi lisää niiden hallinnoinnista. Kehitä osaamistasi servereiden käyttöön ottamisessa ja hyödyntämisessä.',
-        },
-        {
-          title: 'Osaamiskokonaisuus 5: Tekoäly ja datan analysointi',
-          description:
-            'Kiinnostaako data-analytiikka? Perehdy datan hallintaan ja käsittelyyn käytettäviin teknologioihin sekä tietokantoihin. Opi lisää tekoälyn teknisestä puolesta.',
-        },
-        {
-          title: 'Osaamiskokonaisuus 6: Digitaalinen markkinointi ja myynti',
-          description:
-            'Hanki osaamista digitaalisen markkinoinnin työkaluista ja menetelmistä sekä myynnistä. Tutustu sosiaaliseen mediaan markkinoinnin näkökulmasta ja tunnista digitaalisen myynnin erityispiirteitä.',
-        },
-        {
-          title: 'Osaamiskokonaisuus 7: Pelikehitys',
-          description:
-            'Kehitä omia digitaalisia taitojasi vastamaan nykytyöelämän vaatimuksia. Ota haltuun yleisimmät työelämän teknologiat ja hanki työkaluja urasi rakentamiseen.',
-        },
-        {
-          title: 'Osaamiskokonaisuus 8: Työ- ja urataidot',
-          description:
-            'Kehitä omia digitaalisia taitojasi vastamaan nykytyöelämän vaatimuksia. Ota haltuun yleisimmät työelämän teknologiat ja hanki työkaluja urasi rakentamiseen.',
-        },
-        {
-          title: 'Osaamiskokonaisuus 9: Digitaalisten palveluiden muotoilu',
-          description:
-            'Perehdy digitaalisten palveluiden suunnittelun perusteisiin ja liiketoiminnan mahdollisuuksiin. Tutustu palveluiden muotoiluun ja hallinnointiin.',
-        },
-        {
-          title: 'Osaamiskokonaisuus 10: Ohjelmointikielet ja -kehykset',
-          description:
-            'Haluatko ottaa uuden ohjelmointikielen haltuun? Valitse laajasta tarjonnasta tarvitsemasi ohjelmointikielet tai -kehykset.',
-        },
-        {
-          title: 'Osaamiskokonaisuus 11: Johdanto IT-opintoihin',
-          description:
-            'Tutustu IT-alaan näiden kurssien avulla. Keskeisimmät kurssit IT-alan opintojen kannalta kerättynä yhteen paikkaan.',
-        },
-      ];
-
-      ictData.forEach((item, index) => {
-        const container = document.createElement('div');
-        const backgroundColorClass = index % 2 === 0 ? 'grey-bg' : 'bg-white';
-
-        container.innerHTML = `
-        <div class="mb-4 p-4 ${backgroundColorClass}">
-          <p class="p-0 m-0 font-bold">${item.title}</p>
-          <p class="p-0 m-0">${item.description}</p>
-        </div>
-    `;
-
-        const parentElement = document.getElementById('ict');
-        parentElement?.appendChild(container);
-      });
-    </script>
 
     <div id='media'>
       <h2>Media</h2>
+      <div class='mb-4 p-4 grey-bg'>
+        <p class='p-0 m-0 font-bold'>{t('studyOfferings.mediaData.0.title')}</p>
+        <p class='p-0 m-0'>
+          {t('studyOfferings.mediaData.0.description')}
+        </p>
+      </div>
+      <div class='mb-4 p-4 bg-white'>
+        <p class='p-0 m-0 font-bold'>
+          {t('studyOfferings.mediaData.1.title')}
+        </p>
+        <p class='p-0 m-0'>
+          {t('studyOfferings.mediaData.1.description')}
+        </p>
+      </div>
+      <div class='mb-4 p-4 grey-bg'>
+        <p class='p-0 m-0 font-bold'>{t('studyOfferings.mediaData.2.title')}</p>
+        <p class='p-0 m-0'>
+          {t('studyOfferings.mediaData.2.description')}
+        </p>
+      </div>
+      <div class='mb-4 p-4 bg-white'>
+        <p class='p-0 m-0 font-bold'>
+          {t('studyOfferings.mediaData.3.title')}
+        </p>
+        <p class='p-0 m-0'>
+          {t('studyOfferings.mediaData.3.description')}
+        </p>
+      </div>
+      <div class='mb-4 p-4 grey-bg'>
+        <p class='p-0 m-0 font-bold'>{t('studyOfferings.mediaData.4.title')}</p>
+        <p class='p-0 m-0'>
+          {t('studyOfferings.mediaData.4.description')}
+        </p>
+      </div>
     </div>
-
-    <script>
-      const mediaData = [
-        {
-          title: 'Osaamiskokonaisuus 12: Media-alan tuotanto-osaaminen',
-          description:
-            'Elokuva- ja tv-tuotannot kasvavat ja kansainvälistyvät, ja tuotanto-osaamista tarvitaan. Opi tuotannon keskeiset asiat, vahvista kielitaitojasi sekä markkinoinnin ja yritystalouden osaamistasi.',
-        },
-        {
-          title: 'Osaamiskokonaisuus 13 :Journalismi ja verkkomedia, sosiaalinen media',
-          description:
-            'Mikä on journalismin rooli ja tehtävä yhteiskunnassa, ja mitä journalistinen työ pitää sisällään? Opi havainnoimaan, hankkimaan ja jalostamaan tietoa sekä tuottamaan journalistista sisältöä eri alustoille ja verkkoon',
-        },
-        {
-          title: 'Osaamiskokonaisuus 14: Elokuvan ja television perusopinnot',
-          description:
-            'Opiskele Metropolia Ammattikorkeakoulun elokuvan ja television koulutusohjelman perusopinnot.',
-        },
-        {
-          title: 'Osaamiskokonaisuus 15: Yrittäjyys media-alalla',
-          description:
-            'Media-alalla työskentely tarkoittaa usein freelance-työskentelyä itsenäisenä yrittäjänä. Opi media-alan yrittäjyyden erityispiirteet, yritysmuodot sekä yrityksen perustamisen prosessi ja liiketoimintaedellytysten arviointi. Syvennä osaamista markkinoinnin ja yritystalouden sekä kielten opinnoilla.',
-        },
-        {
-          title: 'Osaamiskokonaisuus 16: Kuva ja ääni',
-          description:
-            'Kuva ja ääni ovat AV-tuotantojen kivijalka, ja tämä kokonaisuus tarjoaa aiheista perustiedot',
-        },
-      ];
-      mediaData.forEach((item, index) => {
-        const container = document.createElement('div');
-        const backgroundColorClass = index % 2 === 0 ? 'grey-bg' : 'bg-white';
-
-        container.innerHTML = `
-        <div class="mb-4 p-4 ${backgroundColorClass}">
-          <p class="p-0 m-0 font-bold">${item.title}</p>
-          <p class="p-0 m-0">${item.description}</p>
-        </div>
-    `;
-
-        const parentElement = document.getElementById('media');
-        parentElement?.appendChild(container);
-      });
-    </script>
   </div>
 </BaseLayout>
