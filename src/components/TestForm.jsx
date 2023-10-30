@@ -53,7 +53,9 @@ const TestForm = () => {
           >
             <h3 className='mb-14'>Testaa sopiiko Uraohjain-palvelu sinulle ja ilmoittaudu!</h3>
             <ol className='list-decimal ml-5'>
-              <li className='my-4'>{t('signup.testForm.0.question')}</li>
+              <li className='my-4'>
+                Oletko ilmoittautunut työttömäksi työnhakijaksi Helsingin työllisyyspalveluihin?
+              </li>
               <div className='mb-8'>
                 <input
                   type='radio'
