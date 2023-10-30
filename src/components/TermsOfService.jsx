@@ -12,10 +12,17 @@ const TermsOfService = () => {
         osallistumisesi Uraohjain-palveluun. Ilmoittautuaksesi palveluun sinun tulee hyväksyä
         tietosuojaseloste ja suostumus tietojen vaihtoon Uraohjain-palvelun toteuttajien kesken.
       </p>
-      <div className='form-control w-3/4 burgundy-color mt-8 text-lg'>
+      <div className='form-control  burgundy-color mt-8 text-lg'>
         <label className='cursor-pointer label justify-start'>
           <input type='checkbox' name='privacy' id='privacy' className='checkbox mr-4 bg-neutral' />
-          <span htmlFor='privacy'>Hyväksyn tietosuojaselosteen.</span>
+          <div class='flex flex-col md:flex-row'>
+            <span htmlFor='privacy'>Hyväksyn tietosuojaselosteen.</span>
+            <span class='mx-4'>
+              <a class='underline' href='/doc/uraohjain-tietosuojaseloste.pdf' target='_blank'>
+                Lue lisää
+              </a>
+            </span>
+          </div>
         </label>
         <label className='cursor-pointer label justify-start'>
           <input
@@ -24,9 +31,16 @@ const TermsOfService = () => {
             id='information'
             className='checkbox mr-4 bg-neutral'
           />
-          <span htmlFor='information'>
-            Hyväksyn tietojen vaihdon Uraohjain-palvelu toteuttajien kesken.
-          </span>
+          <div class='flex flex-col md:flex-row'>
+            <span htmlFor='information'>
+              Hyväksyn tietojen vaihdon Uraohjain-palvelu toteuttajien kesken.
+            </span>
+            <span class='mx-4'>
+              <a class='underline' href='/doc/uraohjain-suostumuslomake.pdf' target='_blank'>
+                Lue lisää
+              </a>
+            </span>
+          </div>
         </label>
       </div>
       <p class='mt-4'>

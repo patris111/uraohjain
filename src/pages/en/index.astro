@@ -21,21 +21,14 @@ const pageTitle = "Etusivu";
     </h1>
 
     <p class='md:text-2xl mb-4 md:mb-14 leading-9'>
-      <Trans i18nKey='frontpage.introDescription'>
-        Tule täydentämään osaamistasi työelämän nopeita muutostarpeita vastaavaksi, suunnittelemaan
-        uraasi ja oivaltamaan lisää oman osaamisesi markkinoinnista. Uraohjain-palvelu tarjoaa
-        sinulle mahdollisuuden vahvistaa ammatillisia verkostojasi. Pääset keskustelemaan oman
-        arkesi hyvinvoinnista työllistymisen tueksi. Osaamispolut rakentuvat Laurean ja Metropolian
-        ICT-, ohjelmistokehitys- ja media-alojen opintotarjonnasta. Osaamispolut ovat kestoltaan
-        3–6kk.
-      </Trans>
+      {t('frontpage.introDescription')}
     </p>
   </section>
   <!-- Benefits section -->
   <section class='md:flex justify-around'>
     <div class='benefits-list md:basis-2/3'>
       <h3>
-        <Trans i18nKey='frontpage.benefitsTitle'>Uraohjain-palvelussa saat:</Trans>
+        {t('frontpage.benefitsTitle')}
       </h3>
       <ul class='text-xl font-semibold mt-10 ml-0'>
         <li class='flex flex-row items-center my-4'>
@@ -43,9 +36,7 @@ const pageTitle = "Etusivu";
             <img src='/img/frontpage/pathway.svg' alt='Pathway logo' />
           </div>
           <p>
-            <Trans i18nKey='frontpage.benefitsCompetence'>
-              Yksilölliset räätälöidyt osaamispolut
-            </Trans>
+            {t('frontpage.benefitsCompetence')}
           </p>
         </li>
 
@@ -53,36 +44,34 @@ const pageTitle = "Etusivu";
           <div class='relative w-14 h-14 bg-white rounded-full mr-4'>
             <img src='/img/frontpage/conversation.svg' alt='Conversation logo' />
           </div>
-          <p><Trans i18nKey='frontpage.benefitsDiscussion'>Yksilöidyt ohjauskeskustelut</Trans></p>
+          <p>{t('frontpage.benefitsDiscussion')}</p>
         </li>
         <li class='flex flex-row items-center my-4'>
           <div class='relative w-14 h-14 bg-white rounded-full mr-4'>
             <img src='/img/frontpage/tool.svg' alt='Tool logo' />
           </div>
-          <p><Trans i18nKey='frontpage.benefitsTools'>Työkaluja urasuunnitteluun</Trans></p>
+          <p>{t('frontpage.benefitsTools')}</p>
         </li>
         <li class='flex flex-row items-center'>
           <div class='relative w-14 h-14 bg-white rounded-full mr-4'>
             <img src='/img/frontpage/guidance.svg' alt='Guidance logo' />
           </div>
           <p>
-            <Trans i18nKey='frontpage.benefitsCounselling'>Opinto-ohjaus</Trans>
+            {t('frontpage.benefitsCounselling')}
           </p>
         </li>
         <li class='flex flex-row items-center'>
           <div class='relative w-14 h-14 bg-white rounded-full mr-4'>
             <img src='/img/frontpage/wellbeing.svg' alt='Wellbeing logo' />
           </div>
-          <p><Trans i18nKey='frontpage.benefitsWellbeing'>Hyvinvointikeskustelut</Trans></p>
+          <p>{t('frontpage.benefitsWellbeing')}</p>
         </li>
         <li class='flex flex-row items-center'>
           <div class='relative w-14 h-14 bg-white rounded-full mr-4'>
             <img src='/img/frontpage/networking.svg' alt='Networking logo' />
           </div>
           <p>
-            <Trans i18nKey='frontpage.benefitsNetworking'>
-              Ammatillisen verkostoitumisen tukeminen
-            </Trans>
+            {t('frontpage.benefitsNetworking')}
           </p>
         </li>
       </ul>

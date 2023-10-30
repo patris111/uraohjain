@@ -1,4 +1,5 @@
 ---
+import { localizePath } from 'astro-i18next';
 import i18next, { t, changeLanguage } from 'i18next';
 import { Trans, HeadHrefLangs } from 'astro-i18next/components';
 // library imports
@@ -28,7 +29,7 @@ const { title, date, author, image, description } = frontmatter;
     <img src={image.src} alt={image.alt} />
   </a>
   <Tag class='uppercase text-xl'>
-    <a href={url}>{title}</a>
+    <a href={localizePath(url)}>{title}</a>
   </Tag>
 
   <!-- <a href={url}>
