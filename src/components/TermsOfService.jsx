@@ -35,15 +35,15 @@ const TermsOfService = () => {
             <span htmlFor='information'>
               Hyväksyn tietojen vaihdon Uraohjain-palvelu toteuttajien kesken.
             </span>
-            <span class='mx-4'>
-              <a class='underline' href='/doc/uraohjain-suostumuslomake.pdf' target='_blank'>
+            <span className='mx-4'>
+              <a className='underline' href='/doc/uraohjain-suostumuslomake.pdf' target='_blank'>
                 Lue lisää
               </a>
             </span>
           </div>
         </label>
       </div>
-      <p class='mt-4'>
+      <p className='mt-4'>
         Uraohjain-palvelun aloituspaikkojen määrä on rajallinen. Jos seuraavan kahden viikon
         aloitustapaamisten ajat on täytetty, ilmoitamme tästä seuraavan sivun kyselyn alussa. Löydät
         tiedon kyselyn ylälaidasta. 
