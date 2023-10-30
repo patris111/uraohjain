@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 // import SignupForm from './SignupForm';
 import MultiStepper from './MultiStepper';
 import { motion } from 'framer-motion';
+import i18next, { t, changeLanguage } from 'i18next';
 
 const TestForm = () => {
   const [answers, setAnswers] = useState({
@@ -52,9 +53,7 @@ const TestForm = () => {
           >
             <h3 className='mb-14'>Testaa sopiiko Uraohjain-palvelu sinulle ja ilmoittaudu!</h3>
             <ol className='list-decimal ml-5'>
-              <li className='my-4'>
-                Oletko ilmoittautunut työttömäksi työnhakijaksi Helsingin työllisyyspalveluihin?
-              </li>
+              <li className='my-4'>{t('signup.testForm.0.question')}</li>
               <div className='mb-8'>
                 <input
                   type='radio'

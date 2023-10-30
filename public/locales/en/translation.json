@@ -122,5 +122,21 @@
         "description": "Image and audio are a cornerstone of AV productions, and this module provides basic information about the subject."
       }
     ]
+  },
+  "signup": {
+    "testForm": [
+      {
+        "question": "Are you registered as an unemployed job seeker at Helsinki Employment Services?"
+      },
+      {
+        "question": "Is your goal to find employment in the field of ICT, software development or media?"
+      },
+      {
+        "question": "Are your Finnish or English skills at least at the B2 level? "
+      },
+      {
+        "question": "Do you have an upper secondary or higher education degree?"
+      }
+    ]
   }
 }

@@ -123,5 +123,21 @@
         "description": "Kuva ja ääni ovat AV-tuotantojen kivijalka, ja tämä kokonaisuus tarjoaa aiheista perustiedot."
       }
     ]
+  },
+  "signup": {
+    "testForm": [
+      {
+        "question": "Oletko ilmoittautunut työttömäksi työnhakijaksi Helsingin työllisyyspalveluihin?"
+      },
+      {
+        "question": "Onko tavoitteesi työllistyä ICT-, ohjelmistokehitys-, tai media-alalle?"
+      },
+      {
+        "question": "Onko suomen tai englannin kielen tasosi vähintään B2?"
+      },
+      {
+        "question": "Onko sinulla toisen tai korkea-asteen tutkinto?"
+      }
+    ]
   }
 }
