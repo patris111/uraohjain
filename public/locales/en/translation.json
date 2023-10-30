@@ -139,6 +139,9 @@
       }
     ]
   },
+  "footer": {
+    "header": "Contact"
+  },
   "news": {
     "pageTitle": "News",
     "article": [

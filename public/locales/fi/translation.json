@@ -140,6 +140,9 @@
       }
     ]
   },
+  "footer": {
+    "header": "Yhteystiedot"
+  },
   "news": {
     "pageTitle": "Ajankohtaista",
     "article": [
