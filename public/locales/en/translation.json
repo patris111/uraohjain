@@ -179,5 +179,13 @@
         "body": ""
       }
     ]
+  },
+  "termsOfService": {
+    "pageTitle": "Signup",
+    "title": "Welcome to sign up for the Career Guides service!",
+    "description": "Please reserve roughly 20 minutes for signing up. Start by filling out a background survey on your professional know-how. After that, you can fill out your personal information and schedule a kick-off meeting. To sign up for the service, you must accept the privacy statement and consent to information exchange",
+    "notice": "There are a limited number of starting places for the CareerDriver service. If the start dates for the next two weeks are full, we will announce this at the beginning of the enquiry on the next page. You will find this information at the top of the survey.",
+    "privacyStatement": "I accept the privacy statement",
+    "informationExchange": "I consent to information exchange between implementers"
   }
 }
