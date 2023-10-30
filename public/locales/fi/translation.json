@@ -139,5 +139,42 @@
         "question": "Onko sinulla toisen tai korkea-asteen tutkinto?"
       }
     ]
+  },
+  "news": {
+    "pageTitle": "Ajankohtaista",
+    "article": [
+      {
+        "title": "",
+        "body": ""
+      },
+      {
+        "title": "",
+        "body": ""
+      },
+      {
+        "title": "",
+        "body": ""
+      },
+      {
+        "title": "",
+        "body": ""
+      },
+      {
+        "title": "",
+        "body": ""
+      },
+      {
+        "title": "",
+        "body": ""
+      },
+      {
+        "title": "",
+        "body": ""
+      },
+      {
+        "title": "",
+        "body": ""
+      }
+    ]
   }
 }

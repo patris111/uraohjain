@@ -138,5 +138,42 @@
         "question": "Do you have an upper secondary or higher education degree?"
       }
     ]
+  },
+  "news": {
+    "pageTitle": "News",
+    "article": [
+      {
+        "title": "",
+        "body": ""
+      },
+      {
+        "title": "",
+        "body": ""
+      },
+      {
+        "title": "",
+        "body": ""
+      },
+      {
+        "title": "",
+        "body": ""
+      },
+      {
+        "title": "",
+        "body": ""
+      },
+      {
+        "title": "",
+        "body": ""
+      },
+      {
+        "title": "",
+        "body": ""
+      },
+      {
+        "title": "",
+        "body": ""
+      }
+    ]
   }
 }

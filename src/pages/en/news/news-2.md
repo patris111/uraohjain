@@ -1,34 +1,34 @@
 ---
 layout: '../../../layouts/NewsLayout.astro'
-title: Kehitä osaamistasi joustavasti!
+title: Develop your skills flexibly!
 date: 2023-10-25
 author: Leea Hiltunen
 image: { src: '/img/news/news-card.jpg', alt: 'Two women sitting on sofas and working' }
-description: Uraohjaus+ palvelee laajasti kaikkia, jotka haluavat apua koulutus- tai työpolun suunnittelemiseen.
+description: Career Guidance+ provides a wide range of services for anyone who wants help in planning their education or career path.
 draft: false
 category: Reference Docs
 ---
 
-Uraohjain tarjoaa monipuolisen ja joustavan tavan kehittää omaa osaamistaan. Palvelu on suunniteltu tukemaan matkaa kohti ammatillisten tavoitteiden saavuttamista. Uraohjain-jakson alkuun kuuluvat kasvokkaiset tapaamiset kokeneiden ohjaajien kanssa ja palautetta omasta työskentelystä saa koko jakson ajan. Etätyöskentelyyn antaa vapauden oppia ja työskennellä itselle sopivalla tavalla.
+The CareerDriver offers a versatile and flexible way to develop your skills. The service is designed to support you on your journey towards achieving your professional goals. The CareerDriver period starts with face-to-face meetings with experienced counsellors and feedback on your own work is provided throughout the period. Distance working gives you the freedom to learn and work in a way that suits you.
 
-Uraohjain-jakson tapaamiset ohjaajien kanssa ja palveluun kuuluvat hyvinvointikeskustelut käydään Metropolia AMK:n Myllypuron kampuksella.
+The meetings with the counsellors and the wellbeing discussions that are part of the service take place at Metropolia's  Myllypuro campus.
 
-### Kasvokkaiset tapaamiset:
+### Face-to-face meetings:
 
-- Aloitustapamainen
+- Start-up meeting
 
-- Hyvinvointikeskustelut
+- Wellbeing discussions
 
-- Ensimmäinen ura- ja opinto-ohjaustapaaminen
+- First career and study guidance meeting
 
-### Etätapaamiset ja työskentely:
+### Distance meetings and working:
 
-- Urasuunnittelu
+- Career Planning
 
-- Valitun osaamiskokonaisuuden suorittaminen
+- Completion of the chosen module
 
-- Väli- ja loppukeskustelut
+- Mid-term and final interviews
 
-Uraohjauksen väli- ja loppukeskustelut tarjoavat mahdollisuuden arvioida edistymistä ja saada jakson lopulla ohjausta, joka auttaa viemään suunnitelmia päätökseen. Uraohjain-palvelussa vahvistat osaamistasi ja kirkastat uratavoitteitasi.
+The CareerDriver service will help you strengthen your skills and clarify your career goals.
 
-### Oletko valmis aloittamaan?
+### Are you ready to start?
