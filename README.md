@@ -43,11 +43,11 @@ npm install
 
 ### Usage
 
-Now that you've installed the project and its dependencies, you can start your Uraohjain+ with:
+Now that you've installed the project and its dependencies, you can start Uraohjain+ with:
 
 npm run dev
 
-Your website will be available at `http://localhost:3000`. You can start building your stunning Astro-powered website!
+Uraohjain+ will be available at `http://localhost:3000`
 
 ### Deployment
 
