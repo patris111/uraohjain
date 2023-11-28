@@ -15,6 +15,7 @@ This website is created with the following technologies:
 - **Astro**: A lightning-fast static site generator that enhances the performance and user experience of our platform.
 - **React**: A powerful JavaScript library that enables dynamic, interactive, and responsive features throughout the site.
 - **TailwindCSS**: An innovative, utility-first CSS framework that empowers developers to craft efficient, responsive, and visually appealing designs.
+- **SCSS**: A style sheet language used for enhancing the styling and visual aesthetics of the platform, offering features like variables and nested rules to streamline the development process.
 - **Strapi**: A robust headless CMS (Content Management System) that facilitates seamless content management and delivery.
 - **Astro-i18next**: An astro integration of i18next + some utility components to help translations
 
