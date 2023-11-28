@@ -1,0 +1,26 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import i18next, { t, changeLanguage } from "i18next";
+import { Trans, HeadHrefLangs } from "astro-i18next/components";
+
+changeLanguage("en");
+
+const pageTitle = "404";
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <!-- Intro section -->
+  <section class='md:text-center px-0 md:px-20'>
+    <h1>{t('404.heading')}</h1>
+    <p>
+      <Trans i18nKey='404.message'>
+        Näyttäisi siltä, että olet eksynyt. Harmi homma! <br />
+        Palaa takaisin turvalliselle reitillesi ja kokeile uudestaan. <br />
+        Jos tämä vaikuttaa virheeltä, ilmoita siitä ylläpidollemme. Kiitos!
+        <br />
+        <br />
+      </Trans>
+      <a href='/' class='underline uppercase'> {t('404.link')}</a>
+    </p>
+  </section>
+</BaseLayout>

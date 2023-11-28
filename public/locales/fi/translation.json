@@ -189,5 +189,10 @@
     "notice": "Uraohjain-palvelun aloituspaikkojen määrä on rajallinen. Jos seuraavan kahden viikon aloitustapaamisten ajat on täytetty, ilmoitamme tästä seuraavan sivun kyselyn alussa. Löydät tiedon kyselyn ylälaidasta.",
     "privacyStatement": "Hyväksyn tietosuojaselosteen.",
     "informationExchange": "Hyväksyn tietojen vaihdon Uraohjain-palvelu toteuttajien kesken."
+  },
+  "404": {
+    "heading": "Tervetuloa harhautuneelle polulle!",
+    "message": " Näyttäisi siltä, että olet eksynyt. Harmi homma! <br /> Palaa takaisin turvalliselle reitillesi ja kokeile uudestaan. <br /> Jos tämä vaikuttaa virheeltä, ilmoita siitä ylläpidollemme. Kiitos!<br /><br /> ",
+    "link": "Palaa etusivulle"
   }
 }

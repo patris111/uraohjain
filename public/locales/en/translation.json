@@ -188,5 +188,11 @@
     "notice": "There are a limited number of starting places for the CareerDriver service. If the start dates for the next two weeks are full, we will announce this at the beginning of the enquiry on the next page. You will find this information at the top of the survey.",
     "privacyStatement": "I accept the privacy statement",
     "informationExchange": "I consent to information exchange between implementers"
+  },
+
+  "404": {
+    "heading": "Welcome to the Lost Path!",
+    "message": "It looks like you've wandered off the beaten track. <br> Oh dear! Head back to the safe route and give it another shot. <br> If this seems like an error, let our team know. Thank you!",
+    "link": "Return to the homepage"
   }
 }
