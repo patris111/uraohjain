@@ -32,8 +32,6 @@ To set up and run your Astro website, follow these simple steps:
 
 1. Clone this repository to your local machine:
 
-https://github.com/nedpat/uraohjain/tree/main
-
 2. Navigate to the project directory:
 
 cd to directory where you cloned the repository
